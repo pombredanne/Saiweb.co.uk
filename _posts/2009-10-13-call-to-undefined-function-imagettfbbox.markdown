@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: Call to undefined function imagettfbbox()
+tags: []
+
+---
+<strong>Call to undefined function imagettfbbox()</strong>
+
+Either you do not have php GD installed (check your phpinfo(); and see if GD has laoded with TTF support)
+
+Or if you are compiling from source add: --with-gd  --with-freetype-dir=/lib64 --with-ttf=/lib64 --enable-gd-native-ttf
+
+ to your configure line.
+
+Note: you'll need gd-devel and freetype-devel libs installed, and im using /lib64 as im running a 64bit OS.

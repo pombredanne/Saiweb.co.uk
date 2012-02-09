@@ -1,0 +1,32 @@
+--- 
+layout: post
+title: Making the bird tweet using python
+tags: 
+- twitter
+- python
+---
+After taking another look at Python I am quickly coming to love it, as an "exercise" in re-learning python I decided to write a very simple command line "tweeter" this uses the Twitter API to update your twitter status, extending from the "<a href="http://www.saiweb.co.uk/linux/update-twitter-in-a-single-line">update twitter in a single line</a>"
+
+You can grab a copy of the script from here: <a href="http://svn.saiweb.co.uk/branches/python/tweet.py">http://svn.saiweb.co.uk/branches/python/tweet.py</a>
+
+<strong>UPDATE 24/03/2011:</strong>Oauth version <a href="https://github.com/Oneiroi/nagios_addons/blob/master/twitter/nagios_bot.py">here</a>
+
+Example usage:
+
+<code lang="bash">
+
+
+./tweet.py -u username -p password -t your tweet goes here
+
+
+</code>
+
+If you want to parse the JSON data normally returned after submitting a new tweet simply add the -j flag.
+
+If you are prompted for a username and password when running this script the username and password supplied using the -u and -p flags was incorrect.
+
+
+
+
+
+
