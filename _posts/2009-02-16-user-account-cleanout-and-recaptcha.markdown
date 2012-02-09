@@ -4,6 +4,7 @@ title: User account cleanout and reCaptcha
 tags: 
 - recaptcha
 - wp-recaptcha
+date: "2009-02-16"
 ---
 Due to the several hundred registered accounts in the last couple of days I have had a clean out.
 

@@ -7,6 +7,7 @@ tags:
 - 3.x
 - 2.x
 - changes
+date: "2011-08-12"
 ---
 If you tie in your web application to automatically PURGE content when you modify it, thus keeping the content "fresh" while using Varnish you may notice if you made the jump from 2.x to 3.x that your PURGE VCL is no longer working, I refer you to: <a href="https://www.varnish-software.com/blog/bans-and-purges-varnish-30">https://www.varnish-software.com/blog/bans-and-purges-varnish-30</a>
 

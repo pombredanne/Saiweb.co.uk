@@ -9,6 +9,7 @@ tags:
 - property management
 - property management software
 - iportfoliotracker
+date: "2008-09-11"
 ---
 Property secrets have released a free online property management web application, at least for the time being it is free during development and testing!
 

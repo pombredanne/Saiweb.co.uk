@@ -5,6 +5,7 @@ tags:
 - windows xp
 - mac address
 - arp
+date: "2008-04-24"
 ---
 <p>Just a quick blog about this ...</p>
 <p>Ever had the problem of having to assign a DHCP reservation with no mac address resolving software on your laptop? (NOOB! haha)</p>

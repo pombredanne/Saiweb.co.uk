@@ -4,6 +4,7 @@ title: Saiweb Update - What do you want to see?
 tags: 
 - update
 - saiweb
+date: "2008-11-17"
 ---
 Well the giant banner at the top of the blog can't of escaped your attention, and I still need your votes! so please check out the blog entry for <a href="http://www.saiweb.co.uk/general/vote-buzz-for-it-superhero-2008">IT Super Hero 2008</a>
 

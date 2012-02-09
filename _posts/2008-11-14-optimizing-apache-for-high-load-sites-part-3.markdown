@@ -4,6 +4,7 @@ title: Optimizing Apache for high load sites - Part 3
 tags: 
 - apache
 - optimize
+date: "2008-11-14"
 ---
 <b>Pulling it all together.</b>
 

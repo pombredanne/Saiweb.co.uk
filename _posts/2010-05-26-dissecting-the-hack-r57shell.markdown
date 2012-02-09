@@ -8,6 +8,7 @@ tags:
 - hack
 - r57
 - r57shell
+date: "2010-05-26"
 ---
 <span style="color: #ff0000;"><strong>Before you read any further note, I will not be including the original hack file, simply due to peoples stupidity in putting this on a production environment to play with, if you use the code you do so at your own risk, and by reading this blog entry / using the code provided you agree to accept all liability upon yourself for your own actions. Don't be an idiot.</strong></span>
 
@@ -32,13 +33,13 @@ Were you to run this line you would get
 eval(gzinflate(base64_decode('DATA2')));
 [/cc]
 
-<a href="http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/05/sense-this-picture-makes-none.jpg"><img src="http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/05/sense-this-picture-makes-none-240x300.jpg" alt="" title="sense-this-picture-makes-none" width="240" height="300" class="aligncenter size-medium wp-image-870" /></a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/05/sense-this-picture-makes-none.jpg"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/05/sense-this-picture-makes-none-240x300.jpg" alt="" title="sense-this-picture-makes-none" width="240" height="300" class="aligncenter size-medium wp-image-870" /></a>
 
 Confused yet? now I can appreciate the thinking behind packing a payload to avoid detection, but in this case the payload is packed 12 times, and no before you ask I did not manually run each returned statement to find this out. 
 
 Enter Python-Fu:
 
-<a href="http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/05/getbritf.jpg"><img src="http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/05/getbritf-236x300.jpg" alt="" title="getbritf" width="236" height="300" class="aligncenter size-medium wp-image-871" /></a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/05/getbritf.jpg"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/05/getbritf-236x300.jpg" alt="" title="getbritf" width="236" height="300" class="aligncenter size-medium wp-image-871" /></a>
 
 
 [cc lang="python"]
@@ -121,7 +122,7 @@ As such you may want to run it using the following command:
 python ./dissect.py > r57.php
 [/cc]
 
-<a href="http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/05/ggwit.jpg"><img src="http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/05/ggwit-257x300.jpg" alt="" title="ggwit" width="257" height="300" class="aligncenter size-medium wp-image-872" /></a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/05/ggwit.jpg"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/05/ggwit-257x300.jpg" alt="" title="ggwit" width="257" height="300" class="aligncenter size-medium wp-image-872" /></a>
 
 And what you will find after unpacking 12 times in total, the "payload" is the r57shell, this script is an information gathering tool and pseudo shell, meaning it will run any command on the host server that php can, providing in most cases ssh esq access to the exploited host, allowing you to do pretty much anything you wanted at this point, some of the features also include /etc/passwd /etc/shadow dumping, aswell as searching for a tirade of common file *.sql* admin* etc, it's a one stop script for information gathering on a LAMP/WAMP based host.
 

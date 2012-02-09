@@ -3,6 +3,7 @@ layout: post
 title: User cleanup
 tags: []
 
+date: "2008-12-08"
 ---
 Due to the security issues with wordpress pre 2.6.5, I have deleted all registered users.
 

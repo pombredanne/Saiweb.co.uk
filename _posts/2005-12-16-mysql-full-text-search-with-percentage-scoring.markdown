@@ -6,6 +6,7 @@ tags:
 - full text
 - relevance
 - scoring
+date: "2005-12-16"
 ---
 ** Note I am not the "Buzz" from 3dbuzz.com this is just a coincidence **
 

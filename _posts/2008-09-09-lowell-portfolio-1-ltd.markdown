@@ -9,6 +9,7 @@ tags:
 - lowell portfolio 1 ltd
 - scotcall
 - red debt collection
+date: "2008-09-09"
 ---
 UPDATE 26/07/09 -----
 

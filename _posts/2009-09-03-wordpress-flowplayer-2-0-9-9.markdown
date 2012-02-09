@@ -4,6 +4,7 @@ title: Wordpress Flowplayer 2.0.9.9
 tags: 
 - flowplayer
 - wordpress
+date: "2009-09-03"
 ---
 Finaly it is ready and in a state I am happy to release it.
 

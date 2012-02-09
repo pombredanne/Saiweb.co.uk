@@ -7,6 +7,7 @@ tags:
 - gps
 - data
 - mining.
+date: "2010-08-09"
 ---
 Time was when a photo was just a captured moment in time, /end nostalgia
 

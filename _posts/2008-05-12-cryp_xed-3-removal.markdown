@@ -4,6 +4,7 @@ title: CRYP_XED-3 Removal
 tags: 
 - virus
 - cryp_xed-3
+date: "2008-05-12"
 ---
 <p><script type="text/javascript"><!--
 google_ad_client = "pub-5002016982726982";

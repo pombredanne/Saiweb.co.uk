@@ -3,6 +3,7 @@ layout: post
 title: update
 tags: []
 
+date: "2008-04-08"
 ---
 <p>Sorry for the delay in the new articles, seems I've been "snowed" under, metaphoracly and litterally (brrr it's cold!)</p>
 <p>The following are in the works and are to be posted soon:</p>

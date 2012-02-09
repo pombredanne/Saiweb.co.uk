@@ -6,6 +6,7 @@ tags:
 - windows
 - exchnage
 - ipm_subtree
+date: "2008-07-04"
 ---
 Outlook is one of those programs we all love to hate at some point in time, particularly when it does something completely random like say _lose_ that selection of emails you were trying to move to another folder, if you can find these emails i.e. one was flagged and showing up under "flagged for follow up", the "in folder" field displays IPM_SUBTREE.
 

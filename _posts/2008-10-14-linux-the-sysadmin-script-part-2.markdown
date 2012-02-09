@@ -6,6 +6,7 @@ tags:
 - sysadmin
 - bofh
 - mac
+date: "2008-10-14"
 ---
 Part 2 has finally arrived .... don't all cheer at once now ...
 

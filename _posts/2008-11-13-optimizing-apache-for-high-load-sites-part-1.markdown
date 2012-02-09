@@ -5,6 +5,7 @@ tags:
 - apache
 - memory
 - optimize
+date: "2008-11-13"
 ---
 Following on from <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-script-part-3">linux-the-sysadmin-script-part-3</a> I am now going to cover how to reduce the memory footprint of apache.
 

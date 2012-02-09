@@ -4,6 +4,7 @@ title: Wordpress flowplayer (Flowplayer for wordpress) - 2.0.0.67 RELEASED!
 tags: 
 - flowplayer
 - wordpress
+date: "2008-12-17"
 ---
 After much head banging you can now get a tagged release from <a href="http://wordpress.org/extend/plugins/word-press-flow-player/">http://wordpress.org/extend/plugins/word-press-flow-player/</a>
 

@@ -4,6 +4,7 @@ title: Optimizing Apache for high load sites - Part 2
 tags: 
 - apache
 - optimize
+date: "2008-11-13"
 ---
 This is going to be quite an extension from what I had planned, instead of providing just a list of results post optimization I am going to provide a basic list of modules loaded as part of a basic apache install, and provide a description for each, the ones I have disabled are mods I have deemed not required for my purposes, use your own best judgment before switching things off...
 <ul>

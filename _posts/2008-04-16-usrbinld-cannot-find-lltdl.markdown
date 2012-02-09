@@ -4,6 +4,7 @@ title: "/usr/bin/ld: cannot find -lltdl"
 tags: 
 - ltdl
 - libphp5.la
+date: "2008-04-16"
 ---
 <p>Now this one was annoying!</p>
 <p>Whilst adding imap support to a php 5.2.2 installation running from a red hat linux 4 distro, I kept getting the same error, when running my custom config script.</p>

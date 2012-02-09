@@ -3,6 +3,7 @@ layout: post
 title: blocked by spambag.org
 tags: []
 
+date: "2009-07-10"
 ---
 spambag.org domain appears to have not been renewed as such it is sat at a generic 'adverts' placeholder.
 

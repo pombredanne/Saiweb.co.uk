@@ -13,6 +13,7 @@ tags:
 - convert
 - converting
 - mysqldump
+date: "2009-07-14"
 ---
 <ul>
 <strong>The problem</strong></ul>

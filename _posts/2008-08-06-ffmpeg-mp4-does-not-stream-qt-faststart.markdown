@@ -4,6 +4,7 @@ title: ffmpeg MP4 does not stream qt-faststart
 tags: 
 - ffmpeg
 - qt-faststart
+date: "2008-08-06"
 ---
 ffmpeg comes with a tool to re-order the MP4 "atoms" (Seriously don't ask  what are MP4 atoms it's geek for the sake of geek).
 

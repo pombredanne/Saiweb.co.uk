@@ -7,6 +7,7 @@ tags:
 - rate
 - limit
 - b0rk
+date: "2010-09-22"
 ---
 Namely a bug to do with iptables rate limiting,
 

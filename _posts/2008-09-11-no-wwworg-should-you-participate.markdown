@@ -3,6 +3,7 @@ layout: post
 title: no-www.org should you participate?
 tags: 
 - no-www
+date: "2008-09-11"
 ---
 This question has arrived at my feet a few times now.
 

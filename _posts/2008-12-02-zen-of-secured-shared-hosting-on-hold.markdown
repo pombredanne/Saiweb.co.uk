@@ -6,6 +6,7 @@ tags:
 - zen
 - secured
 - chared
+date: "2008-12-02"
 ---
 This series is officially on hold until further notice,
 

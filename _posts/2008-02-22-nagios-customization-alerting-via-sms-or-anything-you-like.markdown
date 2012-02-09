@@ -13,6 +13,7 @@ tags:
 - mobile
 - phone
 - alerting
+date: "2008-02-22"
 ---
 So I find myself needing to tweak my <a href="http://www.nagios.org/" title="Nagios" target="_blank">Nagios</a> installation a little bit, in this case I found the need for "out of hours" SMS alerts.
 

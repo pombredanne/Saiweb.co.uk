@@ -3,6 +3,7 @@ layout: post
 title: Sysadmin Day 25/07/2008
 tags: 
 - sysadmin day
+date: "2008-07-15"
 ---
 <p>Or that would be 07/25/2008 for the US readers.</p>
 <p>It is here again, the last friday of july is <a href="http://en.wikipedia.org/wiki/System_Administrator_Appreciation_Day">System Administrator Appreciation Day</a></p>

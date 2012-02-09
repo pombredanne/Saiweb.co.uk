@@ -5,6 +5,7 @@ tags:
 - symantec
 - backup exec
 - a00084ca
+date: "2008-01-13"
 ---
 This error as of late has been driving me nuts!
 

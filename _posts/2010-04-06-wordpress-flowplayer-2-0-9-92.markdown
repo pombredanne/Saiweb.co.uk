@@ -4,6 +4,7 @@ title: Wordpress Flowplayer 2.0.9.92
 tags: 
 - flowplayer
 - wordpress
+date: "2010-04-06"
 ---
 <strong>Changelog</strong>
 

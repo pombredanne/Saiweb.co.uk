@@ -5,6 +5,7 @@ tags:
 - python
 - python3
 - easy_install
+date: "2011-09-19"
 ---
 easy_install for python3 simple
 

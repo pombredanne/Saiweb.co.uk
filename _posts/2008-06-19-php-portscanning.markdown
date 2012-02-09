@@ -4,6 +4,7 @@ title: PHP Portscanning
 tags: 
 - php
 - portscan
+date: "2008-06-19"
 ---
 This is another _old_ proof of concept I had several years ago, you can infact use PHP to scan ports, bare in mind the legality of this is still somewhat _hazy_ therefore if you must portscan I recomend you only do so on Systems you operate.
 

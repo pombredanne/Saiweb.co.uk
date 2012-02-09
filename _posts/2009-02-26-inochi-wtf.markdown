@@ -4,6 +4,7 @@ title: inochi ... WTF
 tags: 
 - inochi
 - wtf
+date: "2009-02-26"
 ---
 A serious WTF moment coming up granted this was posted in 2006, but I have just been forwarded this ... what I can only describe as a <strong>serious WTF moment</strong>.
 

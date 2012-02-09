@@ -6,6 +6,7 @@ tags:
 - sftp
 - sshd
 - logging
+date: "2010-07-19"
 ---
 This is something I have wanted to get working for some time now, and thanks to James P for passing me a note that as of OpenSSH 4.4 you can infact add command line args for the Subsystem configuration, which when combined with the  (I assume new) logging functionality of the sftp-service allows you to finally log what is occuring during an sftp session.
 

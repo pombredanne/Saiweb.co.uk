@@ -4,6 +4,7 @@ title: Easynet outage
 tags: 
 - easynet
 - outage
+date: "2008-08-15"
 ---
 Oh dear oh dear ...
 

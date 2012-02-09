@@ -4,6 +4,7 @@ title: Telnet - SMTP
 tags: 
 - telnet
 - smtp
+date: "2008-07-17"
 ---
 To test a POP3 connection using telnet open a command window or shell terminal and type the following
 

@@ -6,6 +6,7 @@ tags:
 - get
 - page
 - id
+date: "2009-04-02"
 ---
 An example of getting the current page / post ID, identifying whether the current item is a page or a post, and then appending the results to the content.
 

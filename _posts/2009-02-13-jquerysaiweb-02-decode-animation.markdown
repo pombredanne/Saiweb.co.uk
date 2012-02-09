@@ -6,6 +6,7 @@ tags:
 - jquery.saiweb
 - animation
 - decode
+date: "2009-02-13"
 ---
 So I have decided to add a new animation function to this jQuery plugin and I call this decode, this animation simulates a sentence of text being decoded.
 

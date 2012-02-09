@@ -6,6 +6,7 @@ tags:
 - wordpress
 - update
 - froomi
+date: "2009-06-03"
 ---
 As most have no doubt noticed the plugin is delayed ... _again_
 

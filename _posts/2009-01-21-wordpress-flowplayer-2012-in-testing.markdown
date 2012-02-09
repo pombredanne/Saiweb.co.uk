@@ -5,6 +5,7 @@ tags:
 - flowplayer
 - wordpress
 - 2.0.1.2
+date: "2009-01-21"
 ---
 2.0.1.2 brings a fix for <a href="http://trac.saiweb.co.uk/saiweb/ticket/15">#15</a> allowing users to edit the relative path.
 

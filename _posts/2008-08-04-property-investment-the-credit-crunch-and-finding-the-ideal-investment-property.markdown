@@ -5,6 +5,7 @@ tags:
 - propertysecrets
 - property investment
 - investment property
+date: "2008-08-04"
 ---
 " <i>
 Property Investment is the best investment opportunity thanks to the growth of the World economy.

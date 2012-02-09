@@ -4,6 +4,7 @@ title: Alcatel 4068 - bad tftp1 address
 tags: 
 - voip
 - alcatel 4068
+date: "2008-07-10"
 ---
 Following on from deploying 802.1Q in prep for these VoIP phones, they have been delivered this morning *yey*, that said a nice error message
 

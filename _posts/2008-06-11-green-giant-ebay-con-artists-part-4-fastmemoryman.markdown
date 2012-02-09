@@ -5,6 +5,7 @@ tags:
 - ebay
 - con
 - fastmemoryman
+date: "2008-06-11"
 ---
 Name and shame time!
 

@@ -8,6 +8,7 @@ tags:
 - utf-8
 - init_connect
 - utf8
+date: "2008-11-12"
 ---
 The problem that most people face when setting up a UTF-8 database in mySQL is that without calling 'SET NAMES' in the mySQL client prior to issuing any queries (PHP, C++ etc ...) that the client connection will actually in most cases default to  latin-1.
 

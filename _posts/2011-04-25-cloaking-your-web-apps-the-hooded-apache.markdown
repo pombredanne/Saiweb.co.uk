@@ -6,6 +6,7 @@ tags:
 - linux
 - apache
 - hacking
+date: "2011-04-25"
 ---
 <p>Go ahead and run</p>
 <p><code bash>

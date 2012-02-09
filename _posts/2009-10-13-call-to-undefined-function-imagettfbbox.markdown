@@ -3,6 +3,7 @@ layout: post
 title: Call to undefined function imagettfbbox()
 tags: []
 
+date: "2009-10-13"
 ---
 <strong>Call to undefined function imagettfbbox()</strong>
 

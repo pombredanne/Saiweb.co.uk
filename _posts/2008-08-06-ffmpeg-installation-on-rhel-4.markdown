@@ -13,6 +13,7 @@ tags:
 - libtheora
 - libvorbis
 - xvid
+date: "2008-08-06"
 ---
 Just try to find documentation on this ... absolute nightmare is an understatement, so here are my notes of the steps I took to compile ffmpeg with a selection of codecs:
 

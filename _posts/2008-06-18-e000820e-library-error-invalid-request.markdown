@@ -6,6 +6,7 @@ tags:
 - "0xe000820e"
 - invalid request
 - library error
+date: "2008-06-18"
 ---
 "e000820e Library Error Invalid Request"
 

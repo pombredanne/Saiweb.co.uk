@@ -4,8 +4,9 @@ title: Flowplayer for wordpress splash image patch
 tags: 
 - flowplayer
 - patch
+date: "2010-04-01"
 ---
-A user contributed patch from James Partington can be found <a href='http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/04/Flowplayer-WP-patch.txt'>Here</a>
+A user contributed patch from James Partington can be found <a href='http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/04/Flowplayer-WP-patch.txt'>Here</a>
 
 When applied you can specify a splash image to user and your media by seperating them with a "|"
 

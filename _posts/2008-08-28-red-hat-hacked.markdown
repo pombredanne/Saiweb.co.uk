@@ -3,6 +3,7 @@ layout: post
 title: Red Hat Hacked
 tags: 
 - red hat
+date: "2008-08-28"
 ---
 OK so I'm a little behind here, last friday 22/08/2008, hackers broke into Red Hat.
 

@@ -4,6 +4,7 @@ title: Bash Hello World in 60 seconds
 tags: 
 - bash
 - hello world
+date: "2009-01-19"
 ---
 How to write a bash 'hello world' script in 60 seconds, admitedly it could of been faster ... damn typos
 

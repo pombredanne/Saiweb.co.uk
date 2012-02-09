@@ -4,6 +4,7 @@ title: The end is nigh
 tags: 
 - epoch
 - "1234567890"
+date: "2009-02-13"
 ---
 Ok well maybe not bit it is kinda strange that today Friday the 13th Feb 2009 EPOCH time will become 1234567890.
 

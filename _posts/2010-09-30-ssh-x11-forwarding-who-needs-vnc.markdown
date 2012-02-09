@@ -5,6 +5,7 @@ tags:
 - ssh
 - x11
 - forward
+date: "2010-09-30"
 ---
 This is one of those things I find my jaw dropping at, whilst punching myself for not knowing about it sooner.
 It's true as much as I live in the cli & ssh to do my job I find sometimes I require a VNC connection (i.e. the plethora of system-config-* stuff in RH)

@@ -5,6 +5,7 @@ tags:
 - mysql
 - slow query
 - log rotation
+date: "2009-03-16"
 ---
 One of the issues facing log rotation in mySQL is that mySQL doesn't seem to have the ability to perform a "reload".
 

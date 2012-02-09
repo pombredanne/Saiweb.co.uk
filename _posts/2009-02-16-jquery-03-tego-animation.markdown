@@ -6,6 +6,7 @@ tags:
 - jquery.saiweb
 - animation
 - tego
+date: "2009-02-16"
 ---
 The tego() animation comes as a suggestion from <a href="http://www.sean-barton.co.uk/">Sean</a>, taking a similar animation to <a href="http://www.saiweb.co.uk/jquerysaiweb/decode">decode()</a> and animating only one char at a time, in a console/terminal style decode.
 

@@ -5,6 +5,7 @@ tags:
 - jasager
 - mitm
 - defense
+date: "2011-03-16"
 ---
 With work returning to "normal" levels I began digging through my backlog of seclist updates, errata updates and security related podcasts,
 

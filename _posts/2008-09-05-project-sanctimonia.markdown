@@ -5,6 +5,7 @@ tags:
 - wordpress
 - sanctimonia
 - charity
+date: "2008-09-05"
 ---
 I am in the process of contacting charitable organisations for project "sanctimonia".
 

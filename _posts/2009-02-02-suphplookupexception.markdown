@@ -5,6 +5,7 @@ tags:
 - suphp
 - lookupexception
 - suphp::lookupexception
+date: "2009-02-02"
 ---
 If you are seeing '<b>suPHP::LookupException</b>' in your apache error logs, this is due to the <b>suPHP_UserGroup</b> line in your virtualhost config.
 

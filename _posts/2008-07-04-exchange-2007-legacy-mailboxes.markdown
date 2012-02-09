@@ -7,6 +7,7 @@ tags:
 - "2007"
 - "2003"
 - legacy mailbox
+date: "2008-07-04"
 ---
 This one comes via <a href="http://www.absolutech.co.uk/">Kerm</a>.
 

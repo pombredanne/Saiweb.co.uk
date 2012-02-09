@@ -3,6 +3,7 @@ layout: post
 title: Zen of secured shared hosting, back on track ... kinda
 tags: []
 
+date: "2008-12-03"
 ---
 Well I have managed to plug the security hole, and I am currently working on refining the deployment by using the ability to disable functions in php ...
 

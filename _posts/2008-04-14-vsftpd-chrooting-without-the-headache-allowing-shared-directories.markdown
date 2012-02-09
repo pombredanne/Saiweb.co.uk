@@ -6,6 +6,7 @@ tags:
 - chroot
 - sahred
 - directories
+date: "2008-04-14"
 ---
 <script type="text/javascript">// <![CDATA[
 google_ad_client = "pub-5002016982726982";

@@ -6,6 +6,7 @@ tags:
 - brute
 - ftp
 - psychz
+date: "2010-08-25"
 ---
 For some background you may want to read the <a href="http://www.saiweb.co.uk/hacking/when-fail2ban-fails-to-ban-dissecting-the-hack">Original Story</a> leading to this write up.
 
@@ -32,7 +33,7 @@ grep kernel /var/log/messages | awk '{print $9}' | sed 's/SRC=//' | uniq -c | so
 390 173.224.217.41
 </code>
 
-A complete log can be found here: <a href="http://www.saiweb.co.uk/psychz-260710/iptables.log">iptables.log</a>, and a whois can be found here: <a href="http://www.saiweb.co.ukturbo.paulstamatiou.com/uploads/2010/08/whois.txt">whois.txt</a>
+A complete log can be found here: <a href="http://www.saiweb.co.uk/psychz-260710/iptables.log">iptables.log</a>, and a whois can be found here: <a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/whois.txt">whois.txt</a>
 
 Disclosure steps taken:
 <ol>

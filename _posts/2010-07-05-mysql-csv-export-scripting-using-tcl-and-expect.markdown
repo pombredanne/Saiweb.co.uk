@@ -6,6 +6,7 @@ tags:
 - expect
 - tcl
 - csv
+date: "2010-07-05"
 ---
 I've no idea to this day why my bash script would not work with a CSV export from mysql by simply using mysql -e "SQL COMMAND HERE".
 

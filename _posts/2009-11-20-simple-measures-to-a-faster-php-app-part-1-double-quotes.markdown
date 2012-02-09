@@ -6,6 +6,7 @@ tags:
 - performance.
 - single quotes
 - double quotes
+date: "2009-11-20"
 ---
 In some situations using a double quotes string is required i.e. "this\nstring\nappears\over\nmany\nlines" ...
 

@@ -10,6 +10,7 @@ tags:
 - profiling
 - community
 - 5.0.37
+date: "2010-07-15"
 ---
 Whilst there indeed seems to be a veritable plethora of SQL profiling / benchmarking tools, most of them with insane commercial license fees (&gt;= $400 per annum on most)
 

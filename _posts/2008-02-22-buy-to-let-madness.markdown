@@ -5,6 +5,7 @@ tags:
 - below market value
 - property auctions
 - propertysecrets
+date: "2008-02-22"
 ---
 Working with a company that largely deals in property investment and information relating to it, has left me quite intrested in the whole buy to let market ...
 

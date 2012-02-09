@@ -5,6 +5,7 @@ tags:
 - flowplayer
 - update
 - froomi
+date: "2010-03-01"
 ---
 No I have not faded into cyber oblivion, things have just been way to busy on the work front to post any updates.
 

@@ -3,6 +3,7 @@ layout: post
 title: Name and shame volume 1 82.98.131.66
 tags: []
 
+date: "2011-07-12"
 ---
 So I've decided to start some name and shame posts for "naughty" ip's that trip an ids, turn up in my log audits etc ... and who are woefully ill prepared ...
 

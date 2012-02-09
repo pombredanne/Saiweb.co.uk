@@ -5,6 +5,7 @@ tags:
 - flowplayer
 - wordpress
 - google
+date: "2008-12-29"
 ---
 Version 2.0.1.0 is aimed to close 3 enhancements to the plugin including google analytics support.
 

@@ -4,6 +4,7 @@ title: Wordpress Flowplayer 2.0.1.2
 tags: 
 - flowplayer
 - wordpress
+date: "2009-01-25"
 ---
 Ah yeh so I forgot to blog about this, 2.0.1.2 of my wordpress plugin is now available, as noted development of this plugin is unaffected by recent events.
 

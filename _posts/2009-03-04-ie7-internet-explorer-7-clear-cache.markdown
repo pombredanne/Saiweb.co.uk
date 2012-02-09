@@ -7,6 +7,7 @@ tags:
 - clear
 - cache
 - clear cache
+date: "2009-03-04"
 ---
 Some users apparently do not know how to clear their Internet Explorer cache, so I have taken two minutes to do a screen cast here: <a href="http://screencast.com/t/FGDnc2gjcft">http://screencast.com/t/FGDnc2gjcft</a>
 

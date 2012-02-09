@@ -4,6 +4,7 @@ title: Adding pyinotify to CentOS 5 x64
 tags: 
 - centos
 - pyinotify
+date: "2009-06-16"
 ---
 In order to get pyinotify working on CentOS 5 x64 a few workarounds need to take place.
 

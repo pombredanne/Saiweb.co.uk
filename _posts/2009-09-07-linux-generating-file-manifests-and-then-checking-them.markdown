@@ -3,6 +3,7 @@ layout: post
 title: Linux - Generating file manifests and then checking them
 tags: []
 
+date: "2009-09-07"
 ---
 This issue has come about whilst having to migrate a positively huge number of files, and have to check the integrity of the transfer.
 

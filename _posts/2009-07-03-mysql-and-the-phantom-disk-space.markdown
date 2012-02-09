@@ -3,6 +3,7 @@ layout: post
 title: mySQL and the phantom disk space
 tags: []
 
+date: "2009-07-03"
 ---
 Title for a cheesy sysadmin novel I know.
 

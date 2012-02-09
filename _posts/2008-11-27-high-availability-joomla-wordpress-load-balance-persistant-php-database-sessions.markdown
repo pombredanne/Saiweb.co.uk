@@ -9,6 +9,7 @@ tags:
 - joomla
 - load balance
 - high availability
+date: "2008-11-27"
 ---
 If you've seen the new twitter feed to the right you may of seem some ramblings about 'cura'.
 

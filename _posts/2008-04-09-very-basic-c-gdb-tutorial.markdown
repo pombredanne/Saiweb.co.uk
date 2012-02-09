@@ -5,6 +5,7 @@ tags:
 - linux
 - gdb
 - c
+date: "2008-04-09"
 ---
 a very basic video tutorial covering how to compile with debug information, load your app into gdb, set breakpoints and step through it.
 

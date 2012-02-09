@@ -7,6 +7,7 @@ tags:
 - varnish
 - high
 - performance.
+date: "2010-10-12"
 ---
 <strong>Part 1, what is varnish?</strong>
 

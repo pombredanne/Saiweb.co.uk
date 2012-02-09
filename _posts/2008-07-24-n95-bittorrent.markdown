@@ -5,6 +5,7 @@ tags:
 - n95
 - s60
 - bittorrent
+date: "2008-07-24"
 ---
 Well I'll be damned, someone has actually done it!
 

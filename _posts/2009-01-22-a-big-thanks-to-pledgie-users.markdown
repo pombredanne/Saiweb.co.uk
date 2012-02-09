@@ -3,6 +3,7 @@ layout: post
 title: A big *thanks* to Pledgie users
 tags: []
 
+date: "2009-01-22"
 ---
 Or rather a lack of thanks,
 

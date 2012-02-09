@@ -6,6 +6,7 @@ tags:
 - iphone
 - icluster
 - beowulf
+date: "2008-06-19"
 ---
 No joy so far, and despite my postings to the local freecycle groups my list postings have been rejected as being "too extravagant" ...
 

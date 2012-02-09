@@ -3,6 +3,7 @@ layout: post
 title: The idiocy of "anonymous proxies"
 tags: []
 
+date: "2010-11-10"
 ---
 Or rather the idiocy of your generic "I've just been to pc world/<some other computer retailer> to get on the intarnets", who for the duration of this post we will refer to as Joe Idiot.
 

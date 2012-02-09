@@ -3,6 +3,7 @@ layout: post
 title: Update twitter in a single line
 tags: 
 - twitter
+date: "2009-03-20"
 ---
 As it turns out twitter account can be updated in a single line, this makes writing "bots" just that little bit easier.
 

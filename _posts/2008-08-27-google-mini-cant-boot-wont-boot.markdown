@@ -3,6 +3,7 @@ layout: post
 title: Google Mini - Can't Boot Wont Boot
 tags: 
 - google mini
+date: "2008-08-27"
 ---
 First off let me start by saying if your google mini is still in warranty <strong>APPLY FOR AN IN WARRANTY REPAIR.</strong>
 

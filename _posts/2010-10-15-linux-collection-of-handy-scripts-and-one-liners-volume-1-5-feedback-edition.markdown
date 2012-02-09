@@ -9,6 +9,7 @@ tags:
 - one
 - liners
 - scripts
+date: "2010-10-15"
 ---
 Following reader feedback please see below for an updated version of Volume 1
 

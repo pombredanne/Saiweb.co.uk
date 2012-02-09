@@ -4,6 +4,7 @@ title: Wordpress Flowplayer subject of a study
 tags: 
 - wordpress
 - study
+date: "2010-02-04"
 ---
 I was a bit taken back today after stumbling across this pdf by Dr. Wolf-Fritz Riekert <a href="http://share.ieservices.de/downloads/documents/Wordpress_Flowplayer_Plugin_pash-m_recent_version.pdf">http://share.ieservices.de/downloads/documents/Wordpress_Flowplayer_Plugin_pash-m_recent_version.pdf</a>
 

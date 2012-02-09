@@ -6,6 +6,7 @@ tags:
 - lhol
 - one
 - liners
+date: "2011-09-26"
 ---
 <strong>See if hosts are up using ping in range 60 -> 200</strong>
 

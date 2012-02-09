@@ -4,6 +4,7 @@ title: Wordpress flowplayer (Flowplayer for wordpress) UPDATE
 tags: 
 - flowplayer
 - wordpress
+date: "2008-12-17"
 ---
 With the release of wordpress 2.7 and flowplayer 3.x I thought it was time to update the plugin.
 

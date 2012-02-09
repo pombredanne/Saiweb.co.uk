@@ -5,6 +5,7 @@ tags:
 - flowplayer
 - wordpress
 - 2.1.0.0
+date: "2009-02-04"
 ---
 The following milestone is planned for completion by the end of March.
 

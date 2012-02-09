@@ -3,6 +3,7 @@ layout: post
 title: Update
 tags: []
 
+date: "2008-08-26"
 ---
 Ok now it has all been officialy announced here at work I can finaly update this blog.
 

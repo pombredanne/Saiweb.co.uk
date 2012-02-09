@@ -5,6 +5,7 @@ tags:
 - flowplayer
 - wordpress
 - 2.1.0.0
+date: "2009-03-12"
 ---
 The 2.1.0.0 release is due for the end of this month, you can follow it's progress from the TRAC page here: <a href="http://trac.saiweb.co.uk/saiweb/milestone/wordpress-flowplayer%202.1.0.0">http://trac.saiweb.co.uk/saiweb/milestone/wordpress-flowplayer%202.1.0.0</a>
 

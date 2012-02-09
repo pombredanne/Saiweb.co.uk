@@ -4,6 +4,7 @@ title: php 4.3.10 html_entity_decode() crash
 tags: 
 - php
 - crash
+date: "2009-02-23"
 ---
 Just as a warning and as a poke to say WHY are you not running PHP 5.x yet.
 

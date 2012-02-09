@@ -6,6 +6,7 @@ tags:
 - varnish
 - high
 - performance.
+date: "2011-06-18"
 ---
 Pre-req reading: <a href="http://www.saiweb.co.uk/linux/make-your-webapp-shine-with-varnish-part-1">Part 1</a>
 

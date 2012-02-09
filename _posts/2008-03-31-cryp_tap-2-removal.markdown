@@ -4,6 +4,7 @@ title: Cryp_Tap-2 Removal
 tags: 
 - cryp_tap-2
 - virus
+date: "2008-03-31"
 ---
 <p><script type="text/javascript"><!--
 google_ad_client = "pub-5002016982726982";

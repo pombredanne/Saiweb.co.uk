@@ -5,6 +5,7 @@ tags:
 - ffmpeg
 - h264
 - libx264
+date: "2008-08-06"
 ---
 The information for this is VERY very sparse, so here is a summary of what I have found.
 

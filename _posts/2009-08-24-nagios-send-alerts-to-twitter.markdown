@@ -7,6 +7,7 @@ tags:
 - text
 - twitter
 - alert
+date: "2009-08-24"
 ---
 Pre-req reading:
 

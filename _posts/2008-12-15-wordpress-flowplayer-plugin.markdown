@@ -4,6 +4,7 @@ title: Wordpress Flowplayer plugin
 tags: 
 - flowplayer
 - wordpress
+date: "2008-12-15"
 ---
 After updating to 2.7 I can confirm that Wordpress Flowplayer does not work with 2.7
 

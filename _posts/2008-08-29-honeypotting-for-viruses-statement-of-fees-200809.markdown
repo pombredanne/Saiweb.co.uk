@@ -7,6 +7,7 @@ tags:
 - troj_agent.anid
 - troj_zbot.wb
 - worm_system.aa
+date: "2008-08-29"
 ---
 Getting this email on a regular basis?
 

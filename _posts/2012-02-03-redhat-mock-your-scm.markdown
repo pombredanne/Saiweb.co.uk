@@ -10,6 +10,7 @@ tags:
 - enable-scm
 - scm-option
 - fedora
+date: "2012-02-03"
 ---
 The mock tool can be a wonderful thing, allowing you to produce rpm packages for any rpm based system (assuming your have the written .cfg for it).
 

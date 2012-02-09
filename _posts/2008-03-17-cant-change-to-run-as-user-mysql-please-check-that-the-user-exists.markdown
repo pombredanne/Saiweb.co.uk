@@ -3,6 +3,7 @@ layout: post
 title: Can't change to run as user 'mysql'. Please check that the user exists!
 tags: 
 - mysql
+date: "2008-03-17"
 ---
 So you've recently made a change to your mysql installation and see the following in
 

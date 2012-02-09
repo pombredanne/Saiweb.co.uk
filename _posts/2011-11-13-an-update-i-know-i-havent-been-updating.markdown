@@ -3,6 +3,7 @@ layout: post
 title: An update. I know I haven't been updating...
 tags: []
 
+date: "2011-11-13"
 ---
 I know I haven't been updating a lot lately, esp on my poor blog (<a href="http://saiweb.co.uk/">http://saiweb.co.uk</a>), still I think I have things tied together enough to allow me to update once to everywhere (this post <em>should</em> appear on my blog, twitter, facebook, linkedin etc.
 

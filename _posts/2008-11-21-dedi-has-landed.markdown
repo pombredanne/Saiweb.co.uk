@@ -3,6 +3,7 @@ layout: post
 title: Dedi has landed.
 tags: []
 
+date: "2008-11-21"
 ---
 The dedi server is online, as such saiweb.co.uk will be migrating over this weekend :)
 

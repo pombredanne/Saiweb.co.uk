@@ -65,6 +65,7 @@ module Jekyll
            'layout' => 'post',
            'title' => title.to_s,
            'excerpt' => post[:post_excerpt].to_s,
+           'date' => "%02d-%02d-%02d" % [date.year, date.month, date.day],
 		   'tags' => tags
          }.delete_if { |k,v| v.nil? || v == ''}.to_yaml
 
@@ -82,7 +83,7 @@ module Jekyll
 	# with CloudFront CNAME'd URL turbo.paulstamatiou.com/uploads/
 	def self.transformUrls(domain,content)
 		baseurl = "%s/wp-content/uploads/" % domain
-		return content.gsub(baseurl,"turbo.paulstamatiou.com/uploads/")
+		return content.gsub(baseurl,"cdn.saiweb.co.uk/uploads/")
 	end
 
   end

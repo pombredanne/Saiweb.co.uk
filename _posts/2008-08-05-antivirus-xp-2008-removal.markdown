@@ -3,6 +3,7 @@ layout: post
 title: Antivirus XP 2008 removal
 tags: 
 - antvirus xp 2008
+date: "2008-08-05"
 ---
 Rarely has an adware / spyware given me cause to chuckle, this little sod sets the desktop background with a nice bright blue and yellow warning shouting "You have a virus" ... and places a desktop shortcut to the offending program Antivirus XP 2008.
 

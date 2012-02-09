@@ -5,6 +5,7 @@ tags:
 - flowplayer
 - wordpress
 - 2.0.1.3
+date: "2009-02-01"
 ---
 If you are interested in helping to test release 2.0.1.3, check out the current development version here:
 

@@ -6,6 +6,7 @@ tags:
 - snmp
 - redhat
 - oid
+date: "2010-03-03"
 ---
 Following on from the python bindings post I found myself with a real problem,
 

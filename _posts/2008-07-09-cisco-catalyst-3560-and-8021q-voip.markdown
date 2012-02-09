@@ -7,6 +7,7 @@ tags:
 - cisco
 - "3650"
 - encapsulation
+date: "2008-07-09"
 ---
 Some VoiP devices require the use of 802.1Q, encapsulation protocol, to set this up you are going to have to do this using telnet, and on a per port basis.
 

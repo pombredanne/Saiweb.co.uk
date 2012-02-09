@@ -6,6 +6,7 @@ tags:
 - wordpress
 - 2.1.0.0
 - wordpress flowplayer
+date: "2009-04-14"
 ---
 Tonight I will be pushing to the development SVN a beta preview of the 2.1 release.
 

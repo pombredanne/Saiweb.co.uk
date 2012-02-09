@@ -9,6 +9,7 @@ tags:
 - unrecoverable
 - "255"
 - ghostscript
+date: "2010-07-26"
 ---
 <strong>ESP Ghostscript 815.02: Unrecoverable error, exit code 255</strong>
 

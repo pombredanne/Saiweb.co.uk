@@ -4,6 +4,7 @@ title: Windows 7, just like XP, vista, well just like windows
 tags: 
 - windows
 - bsod
+date: "2009-01-13"
 ---
 So I decided to take Windows 7 for a spin in VMWare fusion, downloaded the shiny new 3.15GB x64 ISO and away I went ...
 

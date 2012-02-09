@@ -5,6 +5,7 @@ tags:
 - flowplayer
 - wordpress
 - 2.0.1.3
+date: "2009-02-01"
 ---
 Wordpress Flowplayer 2.0.1.3 comes with bug fixes and more features.
 

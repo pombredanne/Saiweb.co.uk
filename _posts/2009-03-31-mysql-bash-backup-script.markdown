@@ -6,6 +6,7 @@ tags:
 - bash
 - backup
 - gzip
+date: "2009-03-31"
 ---
 In on of those "oh ffs" moments I found myself writing a BASH script to quickly dump all database on a mySQL server.
 

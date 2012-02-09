@@ -6,6 +6,7 @@ tags:
 - keys
 - ssh key
 - keygen
+date: "2009-03-02"
 ---
 I should of really written about this ages ago.
 

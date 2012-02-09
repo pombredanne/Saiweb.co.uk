@@ -5,6 +5,7 @@ tags:
 - subversion
 - force
 - commit
+date: "2009-08-24"
 ---
 Again this is a late blog post about some code committed several months ago, in this case the code was committed 09/06/2009 
 

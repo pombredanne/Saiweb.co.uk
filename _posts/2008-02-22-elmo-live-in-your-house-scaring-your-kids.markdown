@@ -9,6 +9,7 @@ tags:
 - toy fair 2008
 - toyfair2008
 - video
+date: "2008-02-22"
 ---
 At what point is a toy, no longer a toy ...
 

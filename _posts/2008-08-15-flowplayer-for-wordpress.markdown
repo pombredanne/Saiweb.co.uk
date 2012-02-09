@@ -4,6 +4,7 @@ title: Flowplayer for Wordpress
 tags: 
 - flowplayer
 - wordpress
+date: "2008-08-15"
 ---
 Whilst I wait for a reply here: <a href="http://community.flowplayer.org/node/1051">http://community.flowplayer.org/node/1051</a>
 

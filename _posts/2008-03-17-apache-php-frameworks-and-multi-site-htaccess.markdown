@@ -8,6 +8,7 @@ tags:
 - htaccess
 - multi site
 - accessfilename
+date: "2008-03-17"
 ---
 If like me you have a PHP framework, that runs multiple sites, you no doubt have thought at some point in time ...
 

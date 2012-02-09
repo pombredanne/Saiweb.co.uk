@@ -6,6 +6,7 @@ tags:
 - mysql
 - high availability
 - replication
+date: "2009-06-16"
 ---
 I ment to note this down yesterday but everything is going ten to the dozen at the moment.
 

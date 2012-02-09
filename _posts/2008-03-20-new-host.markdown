@@ -3,6 +3,7 @@ layout: post
 title: New host
 tags: 
 - web hosting
+date: "2008-03-20"
 ---
 Due to latency issues, and the lack of multi site support I have ditched my old web-host.
 

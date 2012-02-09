@@ -4,6 +4,7 @@ title: Trac and subversion now available
 tags: 
 - trac
 - svn
+date: "2008-12-02"
 ---
 I am still in the midst of getting everything made available.
 

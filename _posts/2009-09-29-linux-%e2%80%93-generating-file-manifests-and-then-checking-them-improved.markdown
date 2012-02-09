@@ -11,6 +11,7 @@ tags:
 - indication
 - indicator
 - cli
+date: "2009-09-29"
 ---
 Following on from <a href="http://www.saiweb.co.uk/linux/linux-generating-file-manifests-and-then-checking-them">Linux – Generating file manifests and then checking them</a> I was always getting the same questions ...
 

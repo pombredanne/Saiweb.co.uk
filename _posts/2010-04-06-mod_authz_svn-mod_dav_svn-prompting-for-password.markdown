@@ -10,6 +10,7 @@ tags:
 - broken
 - fubar
 - authzsvnnoauthwhenanonymousallowed
+date: "2010-04-06"
 ---
 Strangely I've had some people reporting issues with being <a href="http://trac.saiweb.co.uk/saiweb/ticket/68">prompted for a username and password when accessing files on svn.saiweb.co.uk 
 </a>

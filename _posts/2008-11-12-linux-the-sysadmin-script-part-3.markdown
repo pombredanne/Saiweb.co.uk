@@ -5,6 +5,7 @@ tags:
 - linux
 - apache
 - sysadmin
+date: "2008-11-12"
 ---
 <strong>PART 3 IS INACCURATE, THE BELOW SCRIPT IS FOR REFERENCE ONLY, IT HAS BEEN REPLACED IN <a href="http://www.saiweb.co.uk/uncategorized/linux-the-sysadmin-script-part-4">PART 4</a></strong>
 

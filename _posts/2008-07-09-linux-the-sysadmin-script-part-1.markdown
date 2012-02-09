@@ -5,6 +5,7 @@ tags:
 - linux
 - sysadmin
 - bofh
+date: "2008-07-09"
 ---
 Prompted by the following remarks today ...
 

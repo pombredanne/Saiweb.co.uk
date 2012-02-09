@@ -6,6 +6,7 @@ tags:
 - php
 - interpreter
 - bad
+date: "2010-02-01"
 ---
 For security newer distros of RHEL and their derivatives an mounting /tmp with the noexec option.
 

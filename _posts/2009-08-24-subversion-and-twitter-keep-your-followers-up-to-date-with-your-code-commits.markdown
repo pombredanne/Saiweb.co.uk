@@ -7,6 +7,7 @@ tags:
 - subversion
 - hooks
 - post-commit
+date: "2009-08-24"
 ---
 Some two months after the fact, I thought it may well be time to post a blog on this little code snippet.
 

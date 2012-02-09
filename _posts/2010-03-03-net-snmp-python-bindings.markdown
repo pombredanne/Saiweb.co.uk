@@ -6,6 +6,7 @@ tags:
 - snmp
 - net-snmp
 - bindings
+date: "2010-03-03"
 ---
 <strong>UPDATE 28/06/10:</strong> added --libdir=/usr/lib64 --enable-shared otherwise shared libs are not built at all!
 

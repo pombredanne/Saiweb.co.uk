@@ -5,6 +5,7 @@ tags:
 - mysql
 - mount
 - bind
+date: "2008-07-28"
 ---
 The downside of a development server is ... it's for development.
 

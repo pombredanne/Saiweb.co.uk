@@ -3,6 +3,7 @@ layout: post
 title: "php mail() sh: -t command not found"
 tags: []
 
+date: "2009-07-03"
 ---
 PHP mail() not working?
 

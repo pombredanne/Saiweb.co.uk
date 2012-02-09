@@ -3,6 +3,7 @@ layout: post
 title: Red Hat "Spam" Network
 tags: 
 - red hat
+date: "2008-08-28"
 ---
 In the last 24 hours I have received one email every 30-40 minutes from the red hat network alerting me to a "bug" fix ...
 

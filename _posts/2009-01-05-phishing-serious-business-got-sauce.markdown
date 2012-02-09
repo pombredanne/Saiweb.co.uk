@@ -4,6 +4,7 @@ title: Phishing, serious business ... got sauce?
 tags: 
 - idiot
 - script kid
+date: "2009-01-05"
 ---
 Whilst I refrain from swearing and throwing my arms in the air shouting questions of how many generations of inbreeding does it take to produce this idiot: <a href="http://answers.yahoo.com/question/index?qid=20090105032418AAa6Gwd">http://answers.yahoo.com/question/index?qid=20090105032418AAa6Gwd</a>
 

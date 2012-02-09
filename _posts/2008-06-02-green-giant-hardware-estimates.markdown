@@ -5,6 +5,7 @@ tags:
 - green giant
 - cluster
 - cost
+date: "2008-06-02"
 ---
 <div style=''>Ok so I have begun to work out the cost implications of doing this ...</p>
 <p>On the upshot the concept I have in mind will allow for nodes to be added dynamically.</p>

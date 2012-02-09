@@ -6,6 +6,7 @@ tags:
 - mysql
 - sql
 - injection
+date: "2008-03-20"
 ---
 To often I get passed code to review that quite frankly is so full of holes it wouldn't make an adequate sieve...
 

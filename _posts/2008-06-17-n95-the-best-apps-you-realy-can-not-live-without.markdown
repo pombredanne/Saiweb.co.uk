@@ -7,6 +7,7 @@ tags:
 - s60
 - accelerometer
 - mobi
+date: "2008-06-17"
 ---
 <p>Want iPhone style functionality on your n95?</p>
 <p>Well one thing that didn't make it into the tech spec sheets is the fact the n95 has an accelerometer!</p>

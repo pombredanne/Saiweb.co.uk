@@ -6,6 +6,7 @@ tags:
 - libx264
 - libfaac
 - hd
+date: "2008-08-14"
 ---
 Well the intrest in this subject seems to be picking up!
 

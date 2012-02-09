@@ -4,6 +4,7 @@ title: Green Giant - eBay Con artists
 tags: 
 - ebay
 - con
+date: "2008-05-20"
 ---
 <div style=''>So I got my "adjusted" postage ... the seller has increased the
 combined postage to £64 and then applied a £48 discount, yeh you

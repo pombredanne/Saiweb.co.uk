@@ -5,6 +5,7 @@ tags:
 - xp
 - sp3
 - windows
+date: "2008-05-12"
 ---
 <p>Oh dear oh dear, MS at it again.</p>
 <p>Accoding to this story: <a href="http://www.theregister.co.uk/2008/05/09/windows_xp_sp3_reboots_crashes/">here</a></p>

@@ -4,6 +4,7 @@ title: Acies update
 tags: 
 - php
 - acies
+date: "2008-06-16"
 ---
 <p>Well the XML rendering API has been giving me no end of head ache during the development ... the end is in sight however.</p>
 <p>Acies is moving along nicely, I am debating the use of globals over extended classes.</p>

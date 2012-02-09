@@ -3,6 +3,7 @@ layout: post
 title: 2011 ...
 tags: []
 
+date: "2011-01-03"
 ---
 So it's here the big 2 0 1 1,
 

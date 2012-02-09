@@ -6,6 +6,7 @@ tags:
 - diskencryption
 - encryption
 - security
+date: "2008-02-22"
 ---
 As the old adage goes, any security measure is pretty pointless if the attacker has physical access to the machine.
 
