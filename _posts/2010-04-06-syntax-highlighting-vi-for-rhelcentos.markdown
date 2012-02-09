@@ -23,4 +23,4 @@ alias vi='/usr/bin/vim'
 
 And you're done:
 
-<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/04/2010-04-06_1649.png"><img class="alignnone size-full wp-image-849" title="vi-syntaxt-highlight" src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/04/2010-04-06_1649.png" alt="" width="201" height="92" /></a>
+<a href="http://cdn.saiweb.co.uk/uploads/2010/04/2010-04-06_1649.png"><img class="alignnone size-full wp-image-849" title="vi-syntaxt-highlight" src="http://cdn.saiweb.co.uk/uploads/2010/04/2010-04-06_1649.png" alt="" width="201" height="92" /></a>

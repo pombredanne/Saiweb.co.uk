@@ -63,7 +63,7 @@ Percentage of the requests served within a certain time (ms)
   99%     51
  100%     53 (longest request)
 
-<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/08/Out.png"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/08/Out.png" alt="ab -c 100 -n 500 -g ./saiweb-nocache-nogzip.bpl http://www.saiweb.co.uk/" title="ab -c 100 -n 500 -g ./saiweb-nocache-nogzip.bpl http://www.saiweb.co.uk/" width="640" height="480" class="aligncenter size-full wp-image-1070" /></a>
+<a href="http://cdn.saiweb.co.uk/uploads/2011/08/Out.png"><img src="http://cdn.saiweb.co.uk/uploads/2011/08/Out.png" alt="ab -c 100 -n 500 -g ./saiweb-nocache-nogzip.bpl http://www.saiweb.co.uk/" title="ab -c 100 -n 500 -g ./saiweb-nocache-nogzip.bpl http://www.saiweb.co.uk/" width="640" height="480" class="aligncenter size-full wp-image-1070" /></a>
 
 
 2716.92 requests per second with a server load average of 0.1, and in this case varnish is serving cache from disk.

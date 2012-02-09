@@ -6,7 +6,7 @@ tags:
 - "2009"
 date: "2009-03-12"
 ---
-<img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2009/03/2009-03-12_1238.png" alt="2009-03-12_1238" title="2009-03-12_1238" width="120" height="121" class="alignleft size-full wp-image-610" /> I should of put something up sooner but here goes, for red nose day 2009 I am running the following 'competition' "Sysadmin for the day".
+<img src="http://cdn.saiweb.co.uk/uploads/2009/03/2009-03-12_1238.png" alt="2009-03-12_1238" title="2009-03-12_1238" width="120" height="121" class="alignleft size-full wp-image-610" /> I should of put something up sooner but here goes, for red nose day 2009 I am running the following 'competition' "Sysadmin for the day".
 
 The largest single donation will get my services in a technical aspect free for 24 hours, all proceeds go to red nose day (<strong>SO MAKE SURE YOU CHECK THAT GIFT AID BOX!</strong>).
 

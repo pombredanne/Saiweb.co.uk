@@ -14,12 +14,12 @@ date: "2008-05-27"
 <p>Hopefully they will also see it this way, that does mean I can not "name and shame" at the moment, as it will not help my case.</p>
 <p>Check back soon for the photos of the "£16" postage and packing ...</p>
 
-<a href='http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008086.jpg'><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008086-150x150.jpg" alt="4 x 1gb CF £3.96, POstage and packing £16, warm glowy I\&#039;ve been conned feeling PRICELESS" title="27052008086" width="150" height="150" class="alignnone size-thumbnail wp-image-56" /></a>
+<a href='http://cdn.saiweb.co.uk/uploads/2008/05/27052008086.jpg'><img src="http://cdn.saiweb.co.uk/uploads/2008/05/27052008086-150x150.jpg" alt="4 x 1gb CF £3.96, POstage and packing £16, warm glowy I\&#039;ve been conned feeling PRICELESS" title="27052008086" width="150" height="150" class="alignnone size-thumbnail wp-image-56" /></a>
 
-<a href='http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008082.jpg'><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008082-150x150.jpg" alt="" title="27052008082" width="150" height="150" class="alignnone size-thumbnail wp-image-57" /></a>
+<a href='http://cdn.saiweb.co.uk/uploads/2008/05/27052008082.jpg'><img src="http://cdn.saiweb.co.uk/uploads/2008/05/27052008082-150x150.jpg" alt="" title="27052008082" width="150" height="150" class="alignnone size-thumbnail wp-image-57" /></a>
 
-<a href='http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008083.jpg'><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008083-150x150.jpg" alt="" title="27052008083" width="150" height="150" class="alignnone size-thumbnail wp-image-58" /></a>
+<a href='http://cdn.saiweb.co.uk/uploads/2008/05/27052008083.jpg'><img src="http://cdn.saiweb.co.uk/uploads/2008/05/27052008083-150x150.jpg" alt="" title="27052008083" width="150" height="150" class="alignnone size-thumbnail wp-image-58" /></a>
 
-<a href='http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008084.jpg'><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008084-150x150.jpg" alt="a £16 stamp, take a good look it\&#039;s rare" title="27052008084" width="150" height="150" class="alignnone size-thumbnail wp-image-59" /></a>
+<a href='http://cdn.saiweb.co.uk/uploads/2008/05/27052008084.jpg'><img src="http://cdn.saiweb.co.uk/uploads/2008/05/27052008084-150x150.jpg" alt="a £16 stamp, take a good look it\&#039;s rare" title="27052008084" width="150" height="150" class="alignnone size-thumbnail wp-image-59" /></a>
 
-<a href='http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008085.jpg'><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/05/27052008085-150x150.jpg" alt="Wow Bubblewrap is SO EXPENSIVE!" title="27052008085" width="150" height="150" class="alignnone size-thumbnail wp-image-60" /></a>
+<a href='http://cdn.saiweb.co.uk/uploads/2008/05/27052008085.jpg'><img src="http://cdn.saiweb.co.uk/uploads/2008/05/27052008085-150x150.jpg" alt="Wow Bubblewrap is SO EXPENSIVE!" title="27052008085" width="150" height="150" class="alignnone size-thumbnail wp-image-60" /></a>

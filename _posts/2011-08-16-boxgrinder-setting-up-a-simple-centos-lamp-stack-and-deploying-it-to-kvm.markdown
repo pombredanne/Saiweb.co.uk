@@ -9,7 +9,7 @@ tags:
 - qemu
 date: "2011-08-16"
 ---
-<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/08/boxgrinder_logo_450px.gif"><img class="aligncenter size-full wp-image-1093" title="boxgrinder_logo_450px" src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/08/boxgrinder_logo_450px.gif" alt="" width="450" height="110" /></a> If you haven't tried <a href="http://boxgrinder.org">boxgrinder</a> then you are missing out, it makes it extremely easy to script the generation of a virtual machine for output to Rackspace (<a href="http://www.saiweb.co.uk/linux/boxgrinder-setting-up-a-simple-centos-lamp-stack-and-deploying-it-to-kvm/comment-page-1#comment-49065">Well not yet</a>), ec2, vmware, virtualbox, KVM etc.
+<a href="http://cdn.saiweb.co.uk/uploads/2011/08/boxgrinder_logo_450px.gif"><img class="aligncenter size-full wp-image-1093" title="boxgrinder_logo_450px" src="http://cdn.saiweb.co.uk/uploads/2011/08/boxgrinder_logo_450px.gif" alt="" width="450" height="110" /></a> If you haven't tried <a href="http://boxgrinder.org">boxgrinder</a> then you are missing out, it makes it extremely easy to script the generation of a virtual machine for output to Rackspace (<a href="http://www.saiweb.co.uk/linux/boxgrinder-setting-up-a-simple-centos-lamp-stack-and-deploying-it-to-kvm/comment-page-1#comment-49065">Well not yet</a>), ec2, vmware, virtualbox, KVM etc.
 
 In this post I will cover the basic generation of a LAMP (Linux Apache MySQL PHP) stack CentOS appliance, nothing to complicated I assure you, and no magic like auto deployment spin up etc ... that's for later ... no skipping ahead!
 

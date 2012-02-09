@@ -7,7 +7,7 @@ tags:
 - prompting
 date: "2008-12-08"
 ---
-<img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/12/chibi_angry_small.jpg" alt="So ... angry ... *rage*" title="chibi_angry_small" width="90" height="115" class="size-full wp-image-343" />
+<img src="http://cdn.saiweb.co.uk/uploads/2008/12/chibi_angry_small.jpg" alt="So ... angry ... *rage*" title="chibi_angry_small" width="90" height="115" class="size-full wp-image-343" />
 
 Another annoyance caused I suppose in an attempt to stop new linux users obliterating their installations within 5 minutes of install ...
 

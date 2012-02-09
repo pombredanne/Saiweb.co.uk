@@ -144,7 +144,7 @@ Doing a frame cap.
 Capturing 802.11 frames on en1.
 </code>
 
-You will see your airport icon changes to <a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
+You will see your airport icon changes to <a href="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
 
 <code>
 ^CSession saved to /tmp/airportSniff813ZrA.cap.
