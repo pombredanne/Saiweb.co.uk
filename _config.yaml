@@ -1,0 +1,16 @@
+source: .
+destination: ./_site
+includes: ./_includes
+
+pygments: true
+markdown: rdiscount
+permalink: /:title.html
+
+base_url: http://saiweb.co.uk
+description: ""
+root_desc: "Saiweb.co.uk - Ramblings of a sysadmin"
+
+rdiscount:
+    extensions: []
+
+exclude: ['Rakefile', 'README.md', 'config.rb']
