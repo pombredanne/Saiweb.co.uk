@@ -33,6 +33,15 @@ module Jekyll
 				  inner join wp_terms tm on tm.term_id=tt.term_id  
 				  where tr.object_id=%d and tt.taxonomy = 'post_tag'";
 
+    CATEGORY_QUERY = "select p.post_title, wpr.object_id, wp_terms.name
+                        from wp_terms
+                        inner join wp_term_taxonomy on wp_terms.term_id =
+                        wp_term_taxonomy.term_id
+                        inner join wp_term_relationships wpr on wpr.term_taxonomy_id =
+                        wp_term_taxonomy.term_taxonomy_id
+                        inner join wp_posts p on p.ID = wpr.object_id
+                        where taxonomy= 'category' and p.post_type = 'post' and p.ID=%d
+                        order by object_id"
     def self.process(dbname = '', user='', pass='', host = 'localhost', domain = '')
       db = Sequel.mysql(dbname, :user => user, :password => pass, :host => host)
 
@@ -53,20 +62,29 @@ module Jekyll
 		db[TAGS_QUERY % post[:ID]].each do |tag|
 			tags << tag[:name].to_s.gsub('+','').downcase
 		end
+        
+        cats = []
+        db[CATEGORY_QUERY % post[:ID]].each do |cat|
+            cats << cat[:name].downcase
+        end
 
+        #/%category%/%postname%
+        plink = cats[0] + "/" + slug
 		# Process content to rewrite some URLs
 		if domain
 		        content = self.transformUrls(domain,content)
 		end
-
+        content = self.replaceCC(content)
+        content = self.replaceCODE(content)
         # Get the relevant fields as a hash, delete empty fields and convert
         # to YAML for the header
         data = {
            'layout' => 'post',
            'title' => title.to_s,
            'excerpt' => post[:post_excerpt].to_s,
-           'date' => "%02d-%02d-%02d" % [date.year, date.month, date.day],
-		   'tags' => tags
+		   'tags' => tags,
+           'date' => date,
+           'wordpress_url' => plink
          }.delete_if { |k,v| v.nil? || v == ''}.to_yaml
 
         # Write out the data and content to file
@@ -85,6 +103,17 @@ module Jekyll
 		baseurl = "%s/wp-content/uploads/" % domain
 		return content.gsub(baseurl,"cdn.saiweb.co.uk/uploads/")
 	end
+
+    #process to replace the colour code plugin [CC][/CC] shortcodes
+    def self.replaceCC(content)
+        content = content.gsub('[CC]','{% highlight %}')
+        return content.gsub('[/CC]','{% endhighlight %}')
+    end
+
+    def self.replaceCODE(content)
+        content = content.gsub('<code>','{% highlight %}')
+        return content.gsub('</code>','{% endhighlight %}')
+    end
 
   end
 end
