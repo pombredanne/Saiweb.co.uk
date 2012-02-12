@@ -32,7 +32,7 @@ Subversion server
 REPOS="$1"
 REV="$2"{% endhighlight %}
 
-{% highlight bash %}
+{% highlight bash %} {% endhighlight %}
 
 {% highlight bash %}/usr/bin/python /usr/bin/svn_tweeter -u twitterusername -p twitterpassword -r $REV -s $REPOS
 {% endhighlight %}

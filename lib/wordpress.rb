@@ -112,8 +112,8 @@ module Jekyll
 
     def self.replaceCODE(content)
         content = content.gsub(/<code>|<code bash>/,'{% highlight bash %}')
-        content = content.gsub(/<code code="([^"]+)".*>/,'{% highlight \1 %}')
-        content = content.gsub(/<code lang="([^"]+)".*>/,'{% highlight \1 %}')
+        content = content.gsub(/<code code="([^"]+)"([^>]+)?>/,'{% highlight \1 %}')
+        content = content.gsub(/<code lang="([^"]+)"([^>]+)?>/,'{% highlight \1 %}')
         return content.gsub('</code>','{% endhighlight %}')
     end
 
