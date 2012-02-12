@@ -13,3 +13,8 @@ This is currently a w.i.p
 Notes
 -----
 Permalink: /%category%/%postname%
+
+Jekyll patches applied
+----------------------
+
+1. mojombo/jekyll@3c2519f07d660472705cc98477abbce4aca4a25c
