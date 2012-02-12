@@ -1,10 +1,14 @@
 --- 
+wordpress_id: 178
 layout: post
 title: Red Hat Hacked
 date: 2008-08-28 15:28:17 +01:00
 tags: 
 - red hat
-wordpress_url: hacking/red-hat-hacked
+categories: 
+- hacking
+- linux
+wordpress_url: http://saiweb.co.uk/hacking/red-hat-hacked
 ---
 OK so I'm a little behind here, last friday 22/08/2008, hackers broke into Red Hat.
 

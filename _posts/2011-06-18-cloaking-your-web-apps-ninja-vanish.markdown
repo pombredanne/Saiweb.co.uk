@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 1033
 layout: post
 title: Cloaking your web apps - Ninja vanish
 date: 2011-06-18 11:34:43 +01:00
@@ -9,7 +10,9 @@ tags:
 - apps
 - cloak
 - hide
-wordpress_url: security/cloaking-your-web-apps-ninja-vanish
+categories: 
+- security
+wordpress_url: http://saiweb.co.uk/security/cloaking-your-web-apps-ninja-vanish
 ---
 Bad <a href="http://lmgtfy.com/?q=tmnt">TMNT</a> reference I know but with a reboot coming what do you expect realy?
 

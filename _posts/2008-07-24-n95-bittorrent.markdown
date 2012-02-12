@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 97
 layout: post
 title: N95 Bittorrent
 date: 2008-07-24 14:56:13 +01:00
@@ -6,7 +7,9 @@ tags:
 - n95
 - s60
 - bittorrent
-wordpress_url: n95/n95-bittorrent
+categories: 
+- n95
+wordpress_url: http://saiweb.co.uk/n95/n95-bittorrent
 ---
 Well I'll be damned, someone has actually done it!
 

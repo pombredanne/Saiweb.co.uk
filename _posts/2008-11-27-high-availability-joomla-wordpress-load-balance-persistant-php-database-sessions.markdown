@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 312
 layout: post
 title: High Availability Joomla, Wordpress - Load balance persistant PHP database sessions
 date: 2008-11-27 16:27:09 +00:00
@@ -10,7 +11,10 @@ tags:
 - joomla
 - load balance
 - high availability
-wordpress_url: mysql/high-availability-joomla-wordpress-load-balance-persistant-php-database-sessions
+categories: 
+- mysql
+- php
+wordpress_url: http://saiweb.co.uk/mysql/high-availability-joomla-wordpress-load-balance-persistant-php-database-sessions
 ---
 If you've seen the new twitter feed to the right you may of seem some ramblings about 'cura'.
 

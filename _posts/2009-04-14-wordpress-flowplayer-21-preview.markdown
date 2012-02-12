@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 637
 layout: post
 title: Wordpress Flowplayer 2.1 Preview
 date: 2009-04-14 16:00:45 +01:00
@@ -7,7 +8,10 @@ tags:
 - wordpress
 - 2.1.0.0
 - wordpress flowplayer
-wordpress_url: php/wordpress-flowplayer-21-preview
+categories: 
+- php
+- flowplayer
+wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-21-preview
 ---
 Tonight I will be pushing to the development SVN a beta preview of the 2.1 release.
 

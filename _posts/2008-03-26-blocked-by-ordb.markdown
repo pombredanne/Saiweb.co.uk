@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 22
 layout: post
 title: blocked by ORDB
 date: 2008-03-26 10:18:25 +00:00
@@ -6,7 +7,10 @@ tags:
 - ordb
 - exchange
 - blocked
-wordpress_url: windows/blocked-by-ordb
+categories: 
+- windows
+- ordb
+wordpress_url: http://saiweb.co.uk/windows/blocked-by-ordb
 ---
 <p>{% highlight bash %}</p>
 <p>Well this is a barrel of laughs...</p>
@@ -22,6 +26,6 @@ wordpress_url: windows/blocked-by-ordb
 <p><a href="http://www.msexchange.org/tutorials/Blacklist_Support_Exchange_2003.html">http://www.msexchange.org/tutorials/Blacklist_Support_Exchange_2003.html </a></p>
 <p>Remove ORDB! (see below)</p>
 <p>(UPDATE: OR remove wirehub: see new post)</p>
-<p><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/03/ordb.JPG" alt="ordb.JPG" /></p>
+<p><img src="http://cdn.saiweb.co.uk/uploads/2008/03/ordb.JPG" alt="ordb.JPG" /></p>
 
 <a href="http://it.slashdot.org/article.pl?sid=08/03/25/2124224">Slashdot article</a>

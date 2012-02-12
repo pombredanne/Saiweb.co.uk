@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 35
 layout: post
 title: Very basic C++ GDB tutorial
 date: 2008-04-09 20:13:36 +01:00
@@ -6,7 +7,9 @@ tags:
 - linux
 - gdb
 - c
-wordpress_url: linux/very-basic-c-gdb-tutorial
+categories: 
+- linux
+wordpress_url: http://saiweb.co.uk/linux/very-basic-c-gdb-tutorial
 ---
 a very basic video tutorial covering how to compile with debug information, load your app into gdb, set breakpoints and step through it.
 

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 62
 layout: post
 title: Green Giant - Hardware Estimates
 date: 2008-06-02 14:02:06 +01:00
@@ -6,7 +7,10 @@ tags:
 - green giant
 - cluster
 - cost
-wordpress_url: linux/green-giant-hardware-estimates
+categories: 
+- linux
+- green giant
+wordpress_url: http://saiweb.co.uk/linux/green-giant-hardware-estimates
 ---
 <div style=''>Ok so I have begun to work out the cost implications of doing this ...</p>
 <p>On the upshot the concept I have in mind will allow for nodes to be added dynamically.</p>

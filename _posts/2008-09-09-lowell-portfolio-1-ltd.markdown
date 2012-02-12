@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 195
 layout: post
 title: Lowell Portfolio 1 Ltd
 date: 2008-09-09 10:48:20 +01:00
@@ -10,7 +11,9 @@ tags:
 - lowell portfolio 1 ltd
 - scotcall
 - red debt collection
-wordpress_url: uncategorized/lowell-portfolio-1-ltd
+categories: 
+- uncategorized
+wordpress_url: http://saiweb.co.uk/uncategorized/lowell-portfolio-1-ltd
 ---
 UPDATE 26/07/09 -----
 

@@ -1,10 +1,14 @@
 --- 
+wordpress_id: 305
 layout: post
 title: Dedi has landed.
 date: 2008-11-21 15:34:39 +00:00
 tags: []
 
-wordpress_url: general/dedi-has-landed
+categories: 
+- general
+- linux
+wordpress_url: http://saiweb.co.uk/general/dedi-has-landed
 ---
 The dedi server is online, as such saiweb.co.uk will be migrating over this weekend :)
 

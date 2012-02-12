@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 908
 layout: post
 title: "ESP Ghostscript 815.02: Unrecoverable error, exit code 255"
 date: 2010-07-26 11:46:16 +01:00
@@ -10,7 +11,9 @@ tags:
 - unrecoverable
 - "255"
 - ghostscript
-wordpress_url: linux/esp-ghostscript-815-02-unrecoverable-error-exit-code-255
+categories: 
+- linux
+wordpress_url: http://saiweb.co.uk/linux/esp-ghostscript-815-02-unrecoverable-error-exit-code-255
 ---
 <strong>ESP Ghostscript 815.02: Unrecoverable error, exit code 255</strong>
 

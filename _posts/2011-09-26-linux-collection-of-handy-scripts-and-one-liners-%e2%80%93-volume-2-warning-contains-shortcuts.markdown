@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 1129
 layout: post
 title: "Linux collection of handy scripts and one liners \xE2\x80\x93 Volume 2 (Warning: contains shortcuts)"
 date: 2011-09-26 15:43:34 +01:00
@@ -7,7 +8,9 @@ tags:
 - lhol
 - one
 - liners
-wordpress_url: linux/linux-collection-of-handy-scripts-and-one-liners-%e2%80%93-volume-2-warning-contains-shortcuts
+categories: 
+- linux
+wordpress_url: http://saiweb.co.uk/linux/linux-collection-of-handy-scripts-and-one-liners-%e2%80%93-volume-2-warning-contains-shortcuts
 ---
 <strong>See if hosts are up using ping in range 60 -> 200</strong>
 

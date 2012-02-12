@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 970
 layout: post
 title: The idiocy of "anonymous proxies"
 date: 2010-11-10 14:28:48 +00:00
 tags: []
 
-wordpress_url: rant/the-idiocy-of-anonymous-proxies
+categories: 
+- rant
+wordpress_url: http://saiweb.co.uk/rant/the-idiocy-of-anonymous-proxies
 ---
 Or rather the idiocy of your generic "I've just been to pc world/<some other computer retailer> to get on the intarnets", who for the duration of this post we will refer to as Joe Idiot.
 

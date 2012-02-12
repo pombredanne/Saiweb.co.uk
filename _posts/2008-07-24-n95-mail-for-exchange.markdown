@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 93
 layout: post
 title: N95 Mail For Exchange
 date: 2008-07-24 14:46:36 +01:00
@@ -6,7 +7,9 @@ tags:
 - exchange
 - n95
 - email
-wordpress_url: n95/n95-mail-for-exchange
+categories: 
+- n95
+wordpress_url: http://saiweb.co.uk/n95/n95-mail-for-exchange
 ---
 The page here: <a href="http://blog.totalcomputing.co.uk/2007/06/installing-mail-for-exchange-on-nokia.html">http://blog.totalcomputing.co.uk/2007/06/installing-mail-for-exchange-on-nokia.html</a>
 

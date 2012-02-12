@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 681
 layout: post
 title: mySQL and the phantom disk space
 date: 2009-07-03 09:04:35 +01:00
 tags: []
 
-wordpress_url: mysql/mysql-and-the-phantom-disk-space
+categories: 
+- mysql
+wordpress_url: http://saiweb.co.uk/mysql/mysql-and-the-phantom-disk-space
 ---
 Title for a cheesy sysadmin novel I know.
 

@@ -1,10 +1,14 @@
 --- 
+wordpress_id: 326
 layout: post
 title: User cleanup
 date: 2008-12-08 18:34:53 +00:00
 tags: []
 
-wordpress_url: general/user-cleanup
+categories: 
+- general
+- security
+wordpress_url: http://saiweb.co.uk/general/user-cleanup
 ---
 Due to the security issues with wordpress pre 2.6.5, I have deleted all registered users.
 

@@ -1,11 +1,15 @@
 --- 
+wordpress_id: 762
 layout: post
 title: Wordpress Flowplayer 2.0.9.9
 date: 2009-09-03 16:33:24 +01:00
 tags: 
 - flowplayer
 - wordpress
-wordpress_url: php/wordpress-flowplayer-2-0-9-9
+categories: 
+- php
+- flowplayer
+wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2-0-9-9
 ---
 Finaly it is ready and in a state I am happy to release it.
 

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 816
 layout: post
 title: "/bin/sh: bad interpreter"
 date: 2010-02-01 11:41:58 +00:00
@@ -7,7 +8,9 @@ tags:
 - php
 - interpreter
 - bad
-wordpress_url: uncategorized/bin-sh-bad-interpreter
+categories: 
+- uncategorized
+wordpress_url: http://saiweb.co.uk/uncategorized/bin-sh-bad-interpreter
 ---
 For security newer distros of RHEL and their derivatives an mounting /tmp with the noexec option.
 

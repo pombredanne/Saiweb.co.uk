@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 892
 layout: post
 title: Linux collection of handy scripts and one liners - Volume 1
 date: 2010-07-15 20:15:15 +01:00
@@ -10,7 +11,9 @@ tags:
 - one
 - liners
 - scripts
-wordpress_url: linux/linux-collection-of-handy-scripts-and-one-liners-volume-1
+categories: 
+- linux
+wordpress_url: http://saiweb.co.uk/linux/linux-collection-of-handy-scripts-and-one-liners-volume-1
 ---
 <strong>Ever wanted / needed HTTPD or another service to run with a raised thread priority?</strong>
 

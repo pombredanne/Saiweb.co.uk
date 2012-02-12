@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 666
 layout: post
 title: High Availability mySQL binlog position comparrison woes
 date: 2009-06-16 14:10:19 +01:00
@@ -7,7 +8,10 @@ tags:
 - mysql
 - high availability
 - replication
-wordpress_url: nagios/high-availability-mysql-binlog-position-comparrison-woes
+categories: 
+- nagios
+- mysql
+wordpress_url: http://saiweb.co.uk/nagios/high-availability-mysql-binlog-position-comparrison-woes
 ---
 I ment to note this down yesterday but everything is going ten to the dozen at the moment.
 

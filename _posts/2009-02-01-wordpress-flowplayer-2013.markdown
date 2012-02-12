@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 493
 layout: post
 title: Wordpress Flowplayer 2.0.1.3
 date: 2009-02-01 18:08:53 +00:00
@@ -6,7 +7,9 @@ tags:
 - flowplayer
 - wordpress
 - 2.0.1.3
-wordpress_url: php/wordpress-flowplayer-2013
+categories: 
+- php
+wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2013
 ---
 Wordpress Flowplayer 2.0.1.3 comes with bug fixes and more features.
 

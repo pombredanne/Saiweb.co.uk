@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 694
 layout: post
 title: blocked by spambag.org
 date: 2009-07-10 15:45:40 +01:00
 tags: []
 
-wordpress_url: uncategorized/blocked-by-spambag-org
+categories: 
+- uncategorized
+wordpress_url: http://saiweb.co.uk/uncategorized/blocked-by-spambag-org
 ---
 spambag.org domain appears to have not been renewed as such it is sat at a generic 'adverts' placeholder.
 

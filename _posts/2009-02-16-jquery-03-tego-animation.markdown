@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 551
 layout: post
 title: jQuery 0.3 tego animation
 date: 2009-02-16 19:33:09 +00:00
@@ -7,7 +8,9 @@ tags:
 - jquery.saiweb
 - animation
 - tego
-wordpress_url: jquery/jquery-03-tego-animation
+categories: 
+- jquery
+wordpress_url: http://saiweb.co.uk/jquery/jquery-03-tego-animation
 ---
 The tego() animation comes as a suggestion from <a href="http://www.sean-barton.co.uk/">Sean</a>, taking a similar animation to <a href="http://www.saiweb.co.uk/jquerysaiweb/decode">decode()</a> and animating only one char at a time, in a console/terminal style decode.
 

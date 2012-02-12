@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 1039
 layout: post
 title: "Make your webapp shine with varnish \xE2\x80\x93 Part 2 backends"
 date: 2011-06-18 12:09:39 +01:00
@@ -7,7 +8,10 @@ tags:
 - varnish
 - high
 - performance.
-wordpress_url: linux/make-your-webapp-shine-with-varnish-%e2%80%93-part-2-backends
+categories: 
+- linux
+- hosting
+wordpress_url: http://saiweb.co.uk/linux/make-your-webapp-shine-with-varnish-%e2%80%93-part-2-backends
 ---
 Pre-req reading: <a href="http://www.saiweb.co.uk/linux/make-your-webapp-shine-with-varnish-part-1">Part 1</a>
 

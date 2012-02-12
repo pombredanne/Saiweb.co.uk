@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 885
 layout: post
 title: mySQL >= 5.0.37 community profiling SQL queries.
 date: 2010-07-15 19:30:06 +01:00
@@ -11,7 +12,9 @@ tags:
 - profiling
 - community
 - 5.0.37
-wordpress_url: mysql/mysql-5-0-37-community-profiling-sql-queries
+categories: 
+- mysql
+wordpress_url: http://saiweb.co.uk/mysql/mysql-5-0-37-community-profiling-sql-queries
 ---
 Whilst there indeed seems to be a veritable plethora of SQL profiling / benchmarking tools, most of them with insane commercial license fees (&gt;= $400 per annum on most)
 

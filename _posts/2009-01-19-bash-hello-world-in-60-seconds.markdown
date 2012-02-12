@@ -1,11 +1,15 @@
 --- 
+wordpress_id: 438
 layout: post
 title: Bash Hello World in 60 seconds
 date: 2009-01-19 11:49:08 +00:00
 tags: 
 - bash
 - hello world
-wordpress_url: linux/bash-hello-world-in-60-seconds
+categories: 
+- linux
+- bash script
+wordpress_url: http://saiweb.co.uk/linux/bash-hello-world-in-60-seconds
 ---
 How to write a bash 'hello world' script in 60 seconds, admitedly it could of been faster ... damn typos
 

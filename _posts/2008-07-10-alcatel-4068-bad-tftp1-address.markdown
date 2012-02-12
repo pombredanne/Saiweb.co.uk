@@ -1,11 +1,14 @@
 --- 
+wordpress_id: 77
 layout: post
 title: Alcatel 4068 - bad tftp1 address
 date: 2008-07-10 11:05:13 +01:00
 tags: 
 - voip
 - alcatel 4068
-wordpress_url: voip/alcatel-4068-bad-tftp1-address
+categories: 
+- voip
+wordpress_url: http://saiweb.co.uk/voip/alcatel-4068-bad-tftp1-address
 ---
 Following on from deploying 802.1Q in prep for these VoIP phones, they have been delivered this morning *yey*, that said a nice error message
 

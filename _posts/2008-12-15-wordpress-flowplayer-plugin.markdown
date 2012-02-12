@@ -1,11 +1,14 @@
 --- 
+wordpress_id: 347
 layout: post
 title: Wordpress Flowplayer plugin
 date: 2008-12-15 12:04:00 +00:00
 tags: 
 - flowplayer
 - wordpress
-wordpress_url: php/wordpress-flowplayer-plugin
+categories: 
+- php
+wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-plugin
 ---
 After updating to 2.7 I can confirm that Wordpress Flowplayer does not work with 2.7
 

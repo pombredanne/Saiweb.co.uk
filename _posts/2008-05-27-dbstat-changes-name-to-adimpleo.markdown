@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 55
 layout: post
 title: dbStat changes name to "adimpleo"
 date: 2008-05-27 13:26:27 +01:00
@@ -8,7 +9,10 @@ tags:
 - adimpleo
 - rrdtool
 - lamp
-wordpress_url: dbstat/dbstat-changes-name-to-adimpleo
+categories: 
+- dbstat
+- adimpleo
+wordpress_url: http://saiweb.co.uk/dbstat/dbstat-changes-name-to-adimpleo
 ---
 <div style=''>"adimpleo" Latin for "to perform", seemed a fitting name for dbStat.
 

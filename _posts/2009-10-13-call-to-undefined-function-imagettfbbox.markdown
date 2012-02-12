@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 791
 layout: post
 title: Call to undefined function imagettfbbox()
 date: 2009-10-13 13:19:20 +01:00
 tags: []
 
-wordpress_url: php/call-to-undefined-function-imagettfbbox
+categories: 
+- php
+wordpress_url: http://saiweb.co.uk/php/call-to-undefined-function-imagettfbbox
 ---
 <strong>Call to undefined function imagettfbbox()</strong>
 

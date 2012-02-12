@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 15
 layout: post
 title: Property investment UK Is the BTL market facing Armageddon?
 date: 2008-03-14 12:18:25 +00:00
 tags: []
 
-wordpress_url: property investment/property-investment-uk-is-the-btl-market-facing-armageddon
+categories: 
+- property investment
+wordpress_url: http://saiweb.co.uk/property investment/property-investment-uk-is-the-btl-market-facing-armageddon
 ---
 We don't have the official figures yet, but numbers appeared to most veteran show goers to be well down on previous years. Not surprising really given the amount of gloom in the UK market at least.
 

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 68
 layout: post
 title: Blocked by Wirehub
 date: 2008-06-17 10:00:28 +01:00
@@ -6,7 +7,10 @@ tags:
 - blocked
 - wirehub
 - down
-wordpress_url: windows/blocked-by-wirehub
+categories: 
+- windows
+- wirehub
+wordpress_url: http://saiweb.co.uk/windows/blocked-by-wirehub
 ---
 The wirehub.net domain has not been renewed meaning the registra has taken over the DNS and it is now pointed at a "placeholder" page running adverts ... meaning for anyone who was using the wirehub RBL, the lookups are now returning false positives and blocking everything. This is the 2nd open RBL to go down, with <a href="http://www.saiweb.co.uk/tag/ordb">ORDB</a> going offline previously
 

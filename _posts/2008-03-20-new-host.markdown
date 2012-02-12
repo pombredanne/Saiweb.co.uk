@@ -1,10 +1,18 @@
 --- 
+wordpress_id: 20
 layout: post
 title: New host
 date: 2008-03-20 14:35:56 +00:00
 tags: 
 - web hosting
-wordpress_url: general/new-host
+categories: 
+- general
+- linux
+- mysql
+- php
+- apache
+- hosting
+wordpress_url: http://saiweb.co.uk/general/new-host
 ---
 Due to latency issues, and the lack of multi site support I have ditched my old web-host.
 

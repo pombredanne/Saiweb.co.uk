@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 1008
 layout: post
 title: Cloaking your web apps - The hooded Apache
 date: 2011-04-25 19:54:06 +01:00
@@ -7,7 +8,11 @@ tags:
 - linux
 - apache
 - hacking
-wordpress_url: hacking/cloaking-your-web-apps-the-hooded-apache
+categories: 
+- hacking
+- linux
+- security
+wordpress_url: http://saiweb.co.uk/hacking/cloaking-your-web-apps-the-hooded-apache
 ---
 <p>Go ahead and run</p>
 <p>{% highlight bash %}

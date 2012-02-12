@@ -1,11 +1,14 @@
 --- 
+wordpress_id: 83
 layout: post
 title: Telnet - SMTP
 date: 2008-07-17 15:20:26 +01:00
 tags: 
 - telnet
 - smtp
-wordpress_url: networking/telnet-smtp
+categories: 
+- networking
+wordpress_url: http://saiweb.co.uk/networking/telnet-smtp
 ---
 To test a POP3 connection using telnet open a command window or shell terminal and type the following
 

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 19
 layout: post
 title: PHP Security considerations, a quick reference for the newbies.
 date: 2008-03-20 09:57:17 +00:00
@@ -7,7 +8,11 @@ tags:
 - mysql
 - sql
 - injection
-wordpress_url: mysql/php-security-considerations
+categories: 
+- mysql
+- php
+- security
+wordpress_url: http://saiweb.co.uk/mysql/php-security-considerations
 ---
 To often I get passed code to review that quite frankly is so full of holes it wouldn't make an adequate sieve...
 

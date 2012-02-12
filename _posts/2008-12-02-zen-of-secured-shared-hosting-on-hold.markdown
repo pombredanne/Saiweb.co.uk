@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 320
 layout: post
 title: Zen of secured shared hosting On hold
 date: 2008-12-02 16:41:09 +00:00
@@ -7,7 +8,9 @@ tags:
 - zen
 - secured
 - chared
-wordpress_url: general/zen-of-secured-shared-hosting-on-hold
+categories: 
+- general
+wordpress_url: http://saiweb.co.uk/general/zen-of-secured-shared-hosting-on-hold
 ---
 This series is officially on hold until further notice,
 

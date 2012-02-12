@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 660
 layout: post
 title: Python urllib2, basic http authentication
 date: 2009-06-03 11:43:27 +01:00
@@ -8,7 +9,9 @@ tags:
 - http
 - basic
 - auth
-wordpress_url: python/python-urllib2-basic-http-authentication
+categories: 
+- python
+wordpress_url: http://saiweb.co.uk/python/python-urllib2-basic-http-authentication
 ---
 I meant to write this up over a week ago now, basically the need arose for one of my Python scripts to use HTTP Basic authentication when grabbing the output from a URL.
 

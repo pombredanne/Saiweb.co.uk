@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 338
 layout: post
 title: cp -f prompting
 date: 2008-12-08 22:34:43 +00:00
@@ -6,9 +7,11 @@ tags:
 - alias
 - cp
 - prompting
-wordpress_url: linux/cp-f-prompting
+categories: 
+- linux
+wordpress_url: http://saiweb.co.uk/linux/cp-f-prompting
 ---
-<img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/12/chibi_angry_small.jpg" alt="So ... angry ... *rage*" title="chibi_angry_small" width="90" height="115" class="size-full wp-image-343" />
+<img src="http://cdn.saiweb.co.uk/uploads/2008/12/chibi_angry_small.jpg" alt="So ... angry ... *rage*" title="chibi_angry_small" width="90" height="115" class="size-full wp-image-343" />
 
 Another annoyance caused I suppose in an attempt to stop new linux users obliterating their installations within 5 minutes of install ...
 

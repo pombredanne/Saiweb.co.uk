@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 913
 layout: post
 title: dissecting the hack - psychz.net
 date: 2010-08-25 19:12:39 +01:00
@@ -7,7 +8,9 @@ tags:
 - brute
 - ftp
 - psychz
-wordpress_url: hacking/dissecting-the-hack-psychz-net
+categories: 
+- hacking
+wordpress_url: http://saiweb.co.uk/hacking/dissecting-the-hack-psychz-net
 ---
 For some background you may want to read the <a href="http://www.saiweb.co.uk/hacking/when-fail2ban-fails-to-ban-dissecting-the-hack">Original Story</a> leading to this write up.
 
@@ -34,7 +37,7 @@ grep kernel /var/log/messages | awk '{print $9}' | sed 's/SRC=//' | uniq -c | so
 390 173.224.217.41
 {% endhighlight %}
 
-A complete log can be found here: <a href="http://www.saiweb.co.uk/psychz-260710/iptables.log">iptables.log</a>, and a whois can be found here: <a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/whois.txt">whois.txt</a>
+A complete log can be found here: <a href="http://www.saiweb.co.uk/psychz-260710/iptables.log">iptables.log</a>, and a whois can be found here: <a href="http://cdn.saiweb.co.uk/uploads/2010/08/whois.txt">whois.txt</a>
 
 Disclosure steps taken:
 <ol>

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 4
 layout: post
 title: Backup Exec 9.1 a00084ca - The data being read from the media is inconsistent
 date: 2008-01-13 15:04:26 +00:00
@@ -6,7 +7,9 @@ tags:
 - symantec
 - backup exec
 - a00084ca
-wordpress_url: windows/backup-exec-91-a00084ca-the-data-being-read-from-the-media-is-inconsistent
+categories: 
+- windows
+wordpress_url: http://saiweb.co.uk/windows/backup-exec-91-a00084ca-the-data-being-read-from-the-media-is-inconsistent
 ---
 This error as of late has been driving me nuts!
 

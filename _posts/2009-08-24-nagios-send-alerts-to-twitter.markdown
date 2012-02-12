@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 740
 layout: post
 title: Nagios - Send alerts to twitter
 date: 2009-08-24 12:37:18 +01:00
@@ -8,7 +9,10 @@ tags:
 - text
 - twitter
 - alert
-wordpress_url: nagios/nagios-send-alerts-to-twitter
+categories: 
+- nagios
+- twitter
+wordpress_url: http://saiweb.co.uk/nagios/nagios-send-alerts-to-twitter
 ---
 Pre-req reading:
 

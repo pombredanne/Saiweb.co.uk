@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 18
 layout: post
 title: Burying Heads In The Sand
 date: 2008-03-19 14:46:56 +00:00
 tags: []
 
-wordpress_url: general/burying-heads-in-the-sand
+categories: 
+- general
+wordpress_url: http://saiweb.co.uk/general/burying-heads-in-the-sand
 ---
 Here in the UK there appears to be a major shift in mentality as the country looks set to slide into a major slowdown. Far from accepting the reality of the situation, all sense of reality seems to have gone out of the window with both Alastair Darling and The Bank of England downplaying the effects of the banking crisis on the economy.
 As we have discovered on P45now job losses both here in the UK are threatening to reach epidemic proportions with banks, shops and the civil service all facing major cutbacks. Surely this institution is aware of a crisis looming?

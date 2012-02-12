@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 1122
 layout: post
 title: WiFi recon using OSX native tools
 date: 2011-09-23 10:13:12 +01:00
@@ -8,7 +9,10 @@ tags:
 - pentesting
 - pcap
 - airport
-wordpress_url: hacking/wifi-recon-using-osx-native-tools
+categories: 
+- hacking
+- mac
+wordpress_url: http://saiweb.co.uk/hacking/wifi-recon-using-osx-native-tools
 ---
 So you wanted to get your aircrak suite on under OSX, getting airodump etc to work I can tell you will be a nightmare (infact just dont use a VM with a USB wifi for that, however there is an alternative ...), after a lot of searching there is a native tool under OSX that will let you cap packets, list networks etc.
 
@@ -145,7 +149,7 @@ Doing a frame cap.
 Capturing 802.11 frames on en1.
 {% endhighlight %}
 
-You will see your airport icon changes to <a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
+You will see your airport icon changes to <a href="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
 
 {% highlight bash %}
 ^CSession saved to /tmp/airportSniff813ZrA.cap.

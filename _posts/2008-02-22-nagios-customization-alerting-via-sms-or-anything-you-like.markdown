@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 6
 layout: post
 title: "Nagios customization: Alerting via SMS, or anything you like!"
 date: 2008-02-22 13:28:13 +00:00
@@ -14,7 +15,11 @@ tags:
 - mobile
 - phone
 - alerting
-wordpress_url: nagios/nagios-customization-alerting-via-sms-or-anything-you-like
+categories: 
+- nagios
+- networking
+- linux
+wordpress_url: http://saiweb.co.uk/nagios/nagios-customization-alerting-via-sms-or-anything-you-like
 ---
 So I find myself needing to tweak my <a href="http://www.nagios.org/" title="Nagios" target="_blank">Nagios</a> installation a little bit, in this case I found the need for "out of hours" SMS alerts.
 

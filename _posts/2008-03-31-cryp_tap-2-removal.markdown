@@ -1,11 +1,14 @@
 --- 
+wordpress_id: 27
 layout: post
 title: Cryp_Tap-2 Removal
 date: 2008-03-31 08:45:05 +01:00
 tags: 
 - cryp_tap-2
 - virus
-wordpress_url: windows/cryp_tap-2-removal
+categories: 
+- windows
+wordpress_url: http://saiweb.co.uk/windows/cryp_tap-2-removal
 ---
 <p><script type="text/javascript"><!--
 google_ad_client = "pub-5002016982726982";

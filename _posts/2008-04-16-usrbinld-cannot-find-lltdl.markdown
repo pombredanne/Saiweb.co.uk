@@ -1,11 +1,16 @@
 --- 
+wordpress_id: 38
 layout: post
 title: "/usr/bin/ld: cannot find -lltdl"
 date: 2008-04-16 11:40:08 +01:00
 tags: 
 - ltdl
 - libphp5.la
-wordpress_url: hacking/usrbinld-cannot-find-lltdl
+categories: 
+- hacking
+- linux
+- php
+wordpress_url: http://saiweb.co.uk/hacking/usrbinld-cannot-find-lltdl
 ---
 <p>Now this one was annoying!</p>
 <p>Whilst adding imap support to a php 5.2.2 installation running from a red hat linux 4 distro, I kept getting the same error, when running my custom config script.</p>

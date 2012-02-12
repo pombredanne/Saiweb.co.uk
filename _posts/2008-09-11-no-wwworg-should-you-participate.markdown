@@ -1,10 +1,14 @@
 --- 
+wordpress_id: 220
 layout: post
 title: no-www.org should you participate?
 date: 2008-09-11 15:27:57 +01:00
 tags: 
 - no-www
-wordpress_url: general/no-wwworg-should-you-participate
+categories: 
+- general
+- apache
+wordpress_url: http://saiweb.co.uk/general/no-wwworg-should-you-participate
 ---
 This question has arrived at my feet a few times now.
 

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 36
 layout: post
 title: vsftpd chrooting without the headache, allowing shared directories
 date: 2008-04-14 10:35:26 +01:00
@@ -7,7 +8,10 @@ tags:
 - chroot
 - sahred
 - directories
-wordpress_url: linux/vsftpd-chrooting-without-the-headache-allowing-shared-directories
+categories: 
+- linux
+- security
+wordpress_url: http://saiweb.co.uk/linux/vsftpd-chrooting-without-the-headache-allowing-shared-directories
 ---
 <script type="text/javascript">// <![CDATA[
 google_ad_client = "pub-5002016982726982";

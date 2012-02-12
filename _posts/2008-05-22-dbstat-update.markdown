@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 52
 layout: post
 title: Dbstat update
 date: 2008-05-22 10:52:02 +01:00
@@ -6,7 +7,14 @@ tags:
 - php
 - mysql
 - dbstat
-wordpress_url: general/dbstat-update
+categories: 
+- general
+- networking
+- linux
+- mysql
+- php
+- dbstat
+wordpress_url: http://saiweb.co.uk/general/dbstat-update
 ---
 <p>So I thought maybe it's time for an update.</p>
 <p>The project is moving, albeit slowly, and I realy do not like the current PHP implementation, I want to move towards a C++ version, and I will do so as soon as I figure out how to do CLI "update/refresh" ...</p>

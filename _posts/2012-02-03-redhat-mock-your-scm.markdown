@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 1169
 layout: post
 title: RedHat mock your SCM
 date: 2012-02-03 16:33:19 +00:00
@@ -11,7 +12,9 @@ tags:
 - enable-scm
 - scm-option
 - fedora
-wordpress_url: linux/redhat-mock-your-scm
+categories: 
+- linux
+wordpress_url: http://saiweb.co.uk/linux/redhat-mock-your-scm
 ---
 The mock tool can be a wonderful thing, allowing you to produce rpm packages for any rpm based system (assuming your have the written .cfg for it).
 
@@ -26,7 +29,7 @@ Yes yes yes ... obvious I know ...
 
 So with no futher ado here is the syntax:
 
-{% highlight %}
+{% highlight bash %}
 mock -r your_target --scm-enable --scm-option method=git --scm-option package=git_project --scm-option git_get='git clone git@git_ip_address:SCM_PKG.git SCM_PKG' --scm-option spec='SCM_PKG.spec' --scm-option branch=1-2 --scm-option write_tar=True -v
 {% endhighlight %}
 

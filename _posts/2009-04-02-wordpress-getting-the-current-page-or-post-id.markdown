@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 626
 layout: post
 title: Wordpress getting the current Page or Post ID
 date: 2009-04-02 14:50:01 +01:00
@@ -7,7 +8,9 @@ tags:
 - get
 - page
 - id
-wordpress_url: php/wordpress-getting-the-current-page-or-post-id
+categories: 
+- php
+wordpress_url: http://saiweb.co.uk/php/wordpress-getting-the-current-page-or-post-id
 ---
 An example of getting the current page / post ID, identifying whether the current item is a page or a post, and then appending the results to the content.
 

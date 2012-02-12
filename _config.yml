@@ -4,7 +4,7 @@ includes: ./_includes
 
 pygments: true
 markdown: rdiscount
-permalink: /:title.html
+permalink: /:categories/:title
 
 base_url: http://saiweb.co.uk
 description: ""

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 74
 layout: post
 title: Windows Killing A Process Without Taskmanager
 date: 2008-07-04 10:45:08 +01:00
@@ -7,7 +8,9 @@ tags:
 - windows
 - taskkill
 - tasklist
-wordpress_url: windows/windows-killing-a-process-without-taskmanager
+categories: 
+- windows
+wordpress_url: http://saiweb.co.uk/windows/windows-killing-a-process-without-taskmanager
 ---
 So you have domain admin rights, but that server just wont play with remote desktop ... you suspect a hung process what do you do?
 

@@ -69,7 +69,7 @@ module Jekyll
         end
 
         #/%category%/%postname%
-        plink = cats[0] + "/" + slug
+        plink = 'http://saiweb.co.uk/' + cats[0] + "/" + slug
 		# Process content to rewrite some URLs
 		if domain
 		        content = self.transformUrls(domain,content)
@@ -83,7 +83,9 @@ module Jekyll
            'title' => title.to_s,
            'excerpt' => post[:post_excerpt].to_s,
 		   'tags' => tags,
+           'categories' => cats,
            'date' => date,
+           'wordpress_id' => post[:ID],
            'wordpress_url' => plink
          }.delete_if { |k,v| v.nil? || v == ''}.to_yaml
 
@@ -101,12 +103,12 @@ module Jekyll
 	# with CloudFront CNAME'd URL turbo.paulstamatiou.com/uploads/
 	def self.transformUrls(domain,content)
 		baseurl = "%s/wp-content/uploads/" % domain
-		return content.gsub(baseurl,"cdn.saiweb.co.uk/uploads/")
+		return content.gsub("www.saiweb.co.uk/wp-content/uploads","cdn.saiweb.co.uk/uploads")
 	end
 
     #process to replace the colour code plugin [CC][/CC] shortcodes
     def self.replaceCC(content)
-        content = content.gsub('[CC]','{% highlight %}')
+        content = content.gsub('[CC]','{% highlight bash %}')
         return content.gsub('[/CC]','{% endhighlight %}')
     end
 

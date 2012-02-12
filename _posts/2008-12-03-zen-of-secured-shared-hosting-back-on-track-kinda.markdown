@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 322
 layout: post
 title: Zen of secured shared hosting, back on track ... kinda
 date: 2008-12-03 12:11:54 +00:00
 tags: []
 
-wordpress_url: general/zen-of-secured-shared-hosting-back-on-track-kinda
+categories: 
+- general
+wordpress_url: http://saiweb.co.uk/general/zen-of-secured-shared-hosting-back-on-track-kinda
 ---
 Well I have managed to plug the security hole, and I am currently working on refining the deployment by using the ability to disable functions in php ...
 

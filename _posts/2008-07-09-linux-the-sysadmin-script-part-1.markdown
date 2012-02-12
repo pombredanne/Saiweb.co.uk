@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 76
 layout: post
 title: Linux - The sysadmin script - Part 1
 date: 2008-07-09 16:10:47 +01:00
@@ -6,7 +7,10 @@ tags:
 - linux
 - sysadmin
 - bofh
-wordpress_url: linux/linux-the-sysadmin-script-part-1
+categories: 
+- linux
+- bash script
+wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-1
 ---
 Prompted by the following remarks today ...
 

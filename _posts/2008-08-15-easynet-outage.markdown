@@ -1,11 +1,14 @@
 --- 
+wordpress_id: 153
 layout: post
 title: Easynet outage
 date: 2008-08-15 10:06:44 +01:00
 tags: 
 - easynet
 - outage
-wordpress_url: networking/easynet-outage
+categories: 
+- networking
+wordpress_url: http://saiweb.co.uk/networking/easynet-outage
 ---
 Oh dear oh dear ...
 

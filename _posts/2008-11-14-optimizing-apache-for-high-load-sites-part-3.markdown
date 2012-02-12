@@ -1,11 +1,15 @@
 --- 
+wordpress_id: 298
 layout: post
 title: Optimizing Apache for high load sites - Part 3
 date: 2008-11-14 11:11:03 +00:00
 tags: 
 - apache
 - optimize
-wordpress_url: linux/optimizing-apache-for-high-load-sites-part-3
+categories: 
+- linux
+- apache
+wordpress_url: http://saiweb.co.uk/linux/optimizing-apache-for-high-load-sites-part-3
 ---
 <b>Pulling it all together.</b>
 

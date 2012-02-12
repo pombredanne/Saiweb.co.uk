@@ -1,11 +1,14 @@
 --- 
+wordpress_id: 318
 layout: post
 title: Trac and subversion now available
 date: 2008-12-02 15:49:01 +00:00
 tags: 
 - trac
 - svn
-wordpress_url: general/trac-and-subversion-now-available
+categories: 
+- general
+wordpress_url: http://saiweb.co.uk/general/trac-and-subversion-now-available
 ---
 I am still in the midst of getting everything made available.
 

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 5
 layout: post
 title: Don't underestimate the power of the air duster!
 date: 2008-02-22 12:26:53 +00:00
@@ -7,7 +8,9 @@ tags:
 - diskencryption
 - encryption
 - security
-wordpress_url: hacking/dont-underestimate-the-power-of-the-air-duster
+categories: 
+- hacking
+wordpress_url: http://saiweb.co.uk/hacking/dont-underestimate-the-power-of-the-air-duster
 ---
 As the old adage goes, any security measure is pretty pointless if the attacker has physical access to the machine.
 

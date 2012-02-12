@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 443
 layout: post
 title: Wordpress Flowplayer 2.0.1.2 in testing
 date: 2009-01-21 13:30:09 +00:00
@@ -6,7 +7,9 @@ tags:
 - flowplayer
 - wordpress
 - 2.0.1.2
-wordpress_url: php/wordpress-flowplayer-2012-in-testing
+categories: 
+- php
+wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2012-in-testing
 ---
 2.0.1.2 brings a fix for <a href="http://trac.saiweb.co.uk/saiweb/ticket/15">#15</a> allowing users to edit the relative path.
 

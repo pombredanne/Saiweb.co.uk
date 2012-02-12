@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 743
 layout: post
 title: Subversion - Force commit message
 date: 2009-08-24 14:21:35 +01:00
@@ -6,7 +7,9 @@ tags:
 - subversion
 - force
 - commit
-wordpress_url: python/subversion-force-commit-message
+categories: 
+- python
+wordpress_url: http://saiweb.co.uk/python/subversion-force-commit-message
 ---
 Again this is a late blog post about some code committed several months ago, in this case the code was committed 09/06/2009 
 

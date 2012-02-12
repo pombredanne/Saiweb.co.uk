@@ -1,11 +1,15 @@
 --- 
+wordpress_id: 274
 layout: post
 title: Optimizing Apache for high load sites - Part 2
 date: 2008-11-13 15:38:45 +00:00
 tags: 
 - apache
 - optimize
-wordpress_url: linux/optimizing-apache-for-high-load-sites-part-2
+categories: 
+- linux
+- apache
+wordpress_url: http://saiweb.co.uk/linux/optimizing-apache-for-high-load-sites-part-2
 ---
 This is going to be quite an extension from what I had planned, instead of providing just a list of results post optimization I am going to provide a basic list of modules loaded as part of a basic apache install, and provide a description for each, the ones I have disabled are mods I have deemed not required for my purposes, use your own best judgment before switching things off...
 <ul>

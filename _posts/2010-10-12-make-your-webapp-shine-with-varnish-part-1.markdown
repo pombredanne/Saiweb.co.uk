@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 957
 layout: post
 title: Make your webapp shine with varnish - Part 1
 date: 2010-10-12 12:56:55 +01:00
@@ -8,7 +9,11 @@ tags:
 - varnish
 - high
 - performance.
-wordpress_url: linux/make-your-webapp-shine-with-varnish-part-1
+categories: 
+- linux
+- technology
+- hosting
+wordpress_url: http://saiweb.co.uk/linux/make-your-webapp-shine-with-varnish-part-1
 ---
 <strong>Part 1, what is varnish?</strong>
 

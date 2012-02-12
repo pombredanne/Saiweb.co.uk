@@ -1,10 +1,13 @@
 --- 
+wordpress_id: 447
 layout: post
 title: A big *thanks* to Pledgie users
 date: 2009-01-22 15:02:04 +00:00
 tags: []
 
-wordpress_url: general/a-big-thanks-to-pledgie-users
+categories: 
+- general
+wordpress_url: http://saiweb.co.uk/general/a-big-thanks-to-pledgie-users
 ---
 Or rather a lack of thanks,
 

@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 949
 layout: post
 title: iptables instanity
 date: 2010-09-22 17:57:27 +01:00
@@ -8,7 +9,9 @@ tags:
 - rate
 - limit
 - b0rk
-wordpress_url: linux/iptables-instanity
+categories: 
+- linux
+wordpress_url: http://saiweb.co.uk/linux/iptables-instanity
 ---
 Namely a bug to do with iptables rate limiting,
 

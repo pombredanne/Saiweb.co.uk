@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 1118
 layout: post
 title: php mail() - Making it not suck using sendmail
 date: 2011-09-18 12:22:46 +01:00
@@ -6,7 +7,10 @@ tags:
 - php
 - mail
 - sendmail
-wordpress_url: linux/php-mail-making-it-not-suck-using-sendmail
+categories: 
+- linux
+- php
+wordpress_url: http://saiweb.co.uk/linux/php-mail-making-it-not-suck-using-sendmail
 ---
 Ok ok ... as some of the people work with are aware, I did this months ago fro one project, ment to blog and document it then in fact I have a draft post last modified 06/05/2011 covering full spam score reduction, and half finished instructions on setting up a mail relay ... so in the interim of finishing that post I'm going to cover improving user experience through proper php configuration.
 

@@ -1,11 +1,15 @@
 --- 
+wordpress_id: 70
 layout: post
 title: PHP Portscanning
 date: 2008-06-19 07:55:00 +01:00
 tags: 
 - php
 - portscan
-wordpress_url: hacking/php-portscanning
+categories: 
+- hacking
+- php
+wordpress_url: http://saiweb.co.uk/hacking/php-portscanning
 ---
 This is another _old_ proof of concept I had several years ago, you can infact use PHP to scan ports, bare in mind the legality of this is still somewhat _hazy_ therefore if you must portscan I recomend you only do so on Systems you operate.
 

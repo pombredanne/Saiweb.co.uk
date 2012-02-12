@@ -1,4 +1,5 @@
 --- 
+wordpress_id: 213
 layout: post
 title: i-portfoliotracker
 date: 2008-09-11 14:25:32 +01:00
@@ -10,7 +11,9 @@ tags:
 - property management
 - property management software
 - iportfoliotracker
-wordpress_url: property investment/i-portfoliotracker
+categories: 
+- property investment
+wordpress_url: http://saiweb.co.uk/property investment/i-portfoliotracker
 ---
 Property secrets have released a free online property management web application, at least for the time being it is free during development and testing!
 

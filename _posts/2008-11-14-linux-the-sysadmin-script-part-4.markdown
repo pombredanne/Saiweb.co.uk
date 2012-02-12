@@ -1,11 +1,15 @@
 --- 
+wordpress_id: 289
 layout: post
 title: Linux - The Sysadmin Script - Part 4
 date: 2008-11-14 09:31:23 +00:00
 tags: 
 - linux
 - sysadmin
-wordpress_url: linux/linux-the-sysadmin-script-part-4
+categories: 
+- linux
+- bash script
+wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-4
 ---
 In part 4, I am going to cover more of an improvement than anything else to <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-script-part-3">part 3</a>
 

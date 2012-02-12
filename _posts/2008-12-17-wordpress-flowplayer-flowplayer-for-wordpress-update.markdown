@@ -1,11 +1,14 @@
 --- 
+wordpress_id: 355
 layout: post
 title: Wordpress flowplayer (Flowplayer for wordpress) UPDATE
 date: 2008-12-17 09:20:52 +00:00
 tags: 
 - flowplayer
 - wordpress
-wordpress_url: php/wordpress-flowplayer-flowplayer-for-wordpress-update
+categories: 
+- php
+wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-flowplayer-for-wordpress-update
 ---
 With the release of wordpress 2.7 and flowplayer 3.x I thought it was time to update the plugin.
 
