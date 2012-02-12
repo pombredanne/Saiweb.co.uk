@@ -15,7 +15,7 @@ wordpress_url: http://saiweb.co.uk/mysql/mysql-bash-backup-script
 ---
 In on of those "oh ffs" moments I found myself writing a BASH script to quickly dump all database on a mySQL server.
 
-[cc lang="bash" line="1"]
+{% highlight bash %}
 #!/bin/bash
 MYSQL=`which mysql`;
 MYSQLDUMP=`which mysqldump`;
@@ -32,7 +32,7 @@ do
         `$MYSQLDUMP --default-character-set=utf8 --set-charset -u $USER -p$PWD $db | $GZIP -9 > $DEST/$db.sql.gz`
         echo "$db - DONE";
 done;
-[/cc]
+{% endhighlight %}
 
 This script gets a list of all databases, dumps them out with UTF8 encoding, and gzip compresses the SQL file into the given "DEST" folder.
 
@@ -40,20 +40,20 @@ If you want to skip over certain databases i.e. "mysql"
 
 Change this line:
 
-[cc lang="bash" line="10"]
+{% highlight bash %}
 DBS=(`$MYSQL  -u $USER -p$PWD  -Bse 'show databases'`);
-[/cc]
+{% endhighlight %}
 
 To:
-[cc lang="bash" line="10"]
+{% highlight bash %}
 DBS=(`$MYSQL  -u $USER -p$PWD  -Bse 'show databases' | grep -v "database_to_exclude"`);
-[/cc]
+{% endhighlight %}
 
 Or for multiple exclusions
 
-[cc lang="bash" line="10"]
+{% highlight bash %}
 DBS=(`$MYSQL  -u $USER -p$PWD  -Bse 'show databases' | grep -v "database_to_exclude" | grep -v "another_database_to_exclude" | grep -v "etc"`);
-[/cc]
+{% endhighlight %}
 
 
 I may re-write this in Python, if I get time.

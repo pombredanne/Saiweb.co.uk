@@ -29,11 +29,11 @@ Looks simple enough right? I just need to free up some space?
 
 Afraid not.
 
-[cc lang="bash"]
+{% highlight bash %}
 du -mcs /
 2264 /
 2264 Total
-[/cc]
+{% endhighlight %}
 
 Just for some clarification this small partition is in use for the operating system only, the mysql instance itself is infact mounted on a much larger partition using the same method as detailed in <a href="http://www.saiweb.co.uk/hacking/mysql-moving-varlibmysql-and-error-121">mysql moving /var/lib/mysql and error121</a>
 
@@ -47,7 +47,7 @@ After talking with Matthew Ife of ukfast he suggests there must be a an unclosed
 
 After some searching around I find the command <strong>lsof</strong> this command will list the open file descriptors for a process including their current size ...
 
-[cc lang="bash"]
+{% highlight bash %}
 psa ux | grep mysqld
 mysql     8131  2.8  1.5 304088 63668 ?        Sl   09:37   0:36 /usr/libexec/mysqld --basedir=/usr --datadir=/var/lib/mysql --user=mysql --pid-file=/var/run/mysqld/mysqld.pid --skip-external-locking --socket=/var/lib/mysql/mysql.sock
 
@@ -56,7 +56,7 @@ lsof -p 8131
 ...
 mysqld  27878 mysql    3w   REG                8,2 14930490713   3290408 /var/log/mysql-slow.log.1 (deleted)
 ...
-[/cc]
+{% endhighlight %}
 
 As you can see above the open file descriptor flagged as (deleted) was increasing in size until the diskspace ran out, for the time being I have since disabled mysql slow query logging whilst I sort out the log rolling as described in <a href="http://www.saiweb.co.uk/mysql/mysql-slow-query-log-rotation">Mysql slow query log rotation</a>
 

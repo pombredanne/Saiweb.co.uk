@@ -29,9 +29,9 @@ These provide a PTR but no A/CNAME record, as such fail2ban can not resolve an I
 
 The only way therefor to gain the attacking ip was to match the ftp connection times to those of the reported login failures using iptables to log all accesses to ftp, quickly get a count of connecting ip's using:
 
-[cc lang="bash"]
+{% highlight bash %}
 grep kernel /var/log/messages | awk '{print $9}' | sed 's/SRC=//' | uniq -c | sort
-[/cc]
+{% endhighlight %}
 
 {% highlight bash %}
 390 173.224.217.41
@@ -44,7 +44,7 @@ Disclosure steps taken:
 	<li>26/07/10 psychz support informed given deadline of 09/08/10 for resolution</li>
 	<li>Same day standard reply of "thanks for contacting support we are looking into this" ...</li>
 	<li>27/07/0 Attacks continue 173.224.208.0/20 network black holed as a result
-[cc lang="bash"]iptables -A INPUT -s 173.224.208.0/20 -j DROP[/cc]
+{% highlight bash %}iptables -A INPUT -s 173.224.208.0/20 -j DROP{% endhighlight %}
 </li>
 	<li>09/08/10 deadline passes without update</li>
 	<li>25/08/10 this blog post published</li>

@@ -31,7 +31,7 @@ And add the two following commands.
 
 <strong>UPDATE 24/03/2011</strong> Twitter no longer supports basic auth, use my oAuth updater <a href="https://github.com/Oneiroi/nagios_addons/blob/master/twitter/nagios_bot.py">here</a>
 
-[cc lang="bash"]
+{% highlight bash %}
 define command {
         command_name    notify-by-twitter
         command_line    /usr/bin/curl --basic --user "twitteruser:twitterpassword" --data-ascii "status=[Nagios] $NOTIFICATIONTYPE$ $HOSTALIAS$/$SERVICEDESC$ is $SERVICESTATE$" http://twitter.com/statuses/update.json
@@ -41,13 +41,13 @@ define command {
         command_name    host-notify-by-twitter
         command_line    /usr/bin/curl --basic --user "twitteruser:twitterpassword" --data-ascii "status=[Nagios] $HOSTSTATE$ alert for $HOSTNAME$" http://twitter.com/statuses/update.json
 }
-[/cc]
+{% endhighlight %}
 
 Now define a contact for this twitter service
 
 /usr/local/nagios/etc/objects/contacts.cfg
 
-[cc lang="bash"]
+{% highlight bash %}
 define contact{
         contact_name                    twitter
         service_notification_commands   notify-by-twitter
@@ -57,20 +57,20 @@ define contact{
         service_notification_options a
         host_notification_options a
 }
-[/cc]
+{% endhighlight %}
 
 Choose your own notification options, for my feed I only choose alerts, I also have this send updated to a 'private feed' which I then follow.
 
 Add this contact into your existing contact groups, i.e.
 
 
-[cc lang="bash"]
+{% highlight bash %}
 define contactgroup{
         contactgroup_name       admins
         alias                   Nagios Administrators
         members                 nagiosadmin,sms_alert,twitter
         }
-[/cc]
+{% endhighlight %}
 
 Then run a nagios-verify to ensure you have no syntax errors, and restart nagios.
 

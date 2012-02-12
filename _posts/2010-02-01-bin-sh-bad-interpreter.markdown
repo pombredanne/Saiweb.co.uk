@@ -22,9 +22,9 @@ However there are legitimate reasons for using /tmp to compile, well I say legit
 
 workaround:
 
-[cc lang="bash"]
+{% highlight bash %}
 export TMPDIR='/a/paTh/your/user/can/write/to'
-[/cc]
+{% endhighlight %}
 
 Failing that:
 
@@ -32,11 +32,11 @@ Failing that:
 
 <strong>DO NOT ALLOW ANY WEBAPP ACCESS WHILE NOEXEC IS IN USE!</strong>
 
-[cc lang="bash"]
+{% highlight bash %}
 mount -o,remount,rw,exec /tmp
 pecl install apc
 mount -o,remount,rw,noexec /tmp
-[/cc]
+{% endhighlight %}
 
 
 <strong>DO NOT REMOVE THE NOEXEC OPTION IN /ETC/FSTAB PERMANENTLY YOU WILL REGRET DOING SO</strong>

@@ -23,10 +23,10 @@ Well you have a couple of options, add additional lines to the /etc/init.d scrip
 
 Much cleaner script here again thanks to Matthew Ife.
 
-[cc lang="bash"]
+{% highlight bash %}
 #!/bin/bash
 pgrep httpd | while read pid; do renice -20 $pid; done
-[/cc]
+{% endhighlight %}
 
 You can renice between -20 and +20, depending on your requirements you can use this script in a cron job  to raise/lower priorities, change httpd for whatever service you want to change the thread priority for.
 
@@ -34,9 +34,9 @@ You can renice between -20 and +20, depending on your requirements you can use t
 
 For this one you're going to need the <a href="http://wiki.github.com/rvoicilas/inotify-tools">inotify-tools</a> package, specifically the inotifywait binary.
 
-[cc lang="bash"]
+{% highlight bash %}
 inotifywait -m --timefmt "[%a %b %d %H:%M:%S %Y]" --format "%T [%e] %f" -r /folder/to/watch
-[/cc]
+{% endhighlight %}
 
 An example usage is to ensure that caching is working correctly and that cache files are being used in place of processing PHP files, simply change "/folder/to/watch" to be your cache folder, and refresh a few pages.
 
@@ -82,9 +82,9 @@ Watches established.
 
 Alternatively you can use the following approach contributed by Matthew Ife:
 
-[cc lang="bash"]
+{% highlight bash %}
 auditctl -w /some/path -p w
-[/cc]
+{% endhighlight %}
 
 This will persist for the duration of your ssh session and relevant log entries will appear in /var/log/audit/audit.log, admittedly with far more useful information than inotifywait, and does not require you to install additional packages.
 
@@ -101,7 +101,7 @@ You have two options for this a single line
 
 or a bash function you can place in your ~/.bashrc
 
-[cc lang="bash"]
+{% highlight bash %}
 function appmem(){
 	if [ -z "$1" ]; then
 		echo "appmem <string to filter>"
@@ -110,7 +110,7 @@ function appmem(){
 		ps -Ao rsz,comm,pid | grep $1
 	fi
 }
-[/cc]
+{% endhighlight %}
 
 You can then call this (after logging back in again to load the .bashrc up) using
 
@@ -156,11 +156,11 @@ Self explanatory that one, pipes the output from mysqldump through bzip2 (which 
 
 Using a slightly modified line originally provided by Matthew Ife,
 
-[cc lang="bash"]
+{% highlight bash %}
 function pwgen(){
         dd if=/dev/urandom bs=2048 count=1 | tr -cd ‘a-zA-Z0-9+@\!\$\(\)’ | cut -b1-15
 }
-[/cc]
+{% endhighlight %}
 
 Plant this in your ~/.basrc for a callable function that will generate a selection of 10 secure passwords, handy when you're fed up of 1337'ifying everything
 
@@ -174,10 +174,10 @@ If you want runtime variable length you could change to cut -1-$1 and then call 
 
 <strong>Check mySQL myISAM fragmentation</strong>
 
-[cc lang="sql"]
+{% highlight sql %}
 use information_schema;
 SELECT CONCAT(TABLE_SCHEMA,'.',TABLE_NAME) AS TABLE_NAME, ENGINE, (DATA_LENGTH/1024/1024) AS DATA_LENGTH, (INDEX_LENGTH/1024/1024) AS INDEX_LENGTH, ((DATA_LENGTH + INDEX_LENGTH)/1024/1204) AS TOTAL_LENGTH,TABLE_ROWS, UPDATE_TIME, ((INDEX_LENGTH/(DATA_LENGTH + INDEX_LENGTH))*100) AS INDEX_PER,((DATA_LENGTH/(DATA_LENGTH + INDEX_LENGTH))*100) AS DATA_PER, (DATA_FREE/DATA_LENGTH) AS FRAG_RATIO FROM TABLES WHERE ENGINE IS NOT NULL AND DATA_LENGTH >=(1024*1024) AND (DATA_FREE/DATA_LENGTH) >=0.02 ORDER BY FRAG_RATIO DESC;
-[/cc]
+{% endhighlight %}
 
 Gives you a very quick overview of make up of your myISAM tables and their fragmentation (Data free vs data length).
 

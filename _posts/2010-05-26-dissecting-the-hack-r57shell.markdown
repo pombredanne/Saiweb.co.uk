@@ -29,15 +29,15 @@ sha1: 9c64fecea5620d70a716bbd74f6e89612a4a79c7
 
 The bit we are interested in is the last line of the file:
 
-[cc lang="php"]
+{% highlight php %}
 eval(gzinflate(base64_decode('DATA')));
-[/cc]
+{% endhighlight %}
 
 Were you to run this line you would get
 
-[cc lang="php"]
+{% highlight php %}
 eval(gzinflate(base64_decode('DATA2')));
-[/cc]
+{% endhighlight %}
 
 <a href="http://cdn.saiweb.co.uk/uploads/2010/05/sense-this-picture-makes-none.jpg"><img src="http://cdn.saiweb.co.uk/uploads/2010/05/sense-this-picture-makes-none-240x300.jpg" alt="" title="sense-this-picture-makes-none" width="240" height="300" class="aligncenter size-medium wp-image-870" /></a>
 
@@ -48,7 +48,7 @@ Enter Python-Fu:
 <a href="http://cdn.saiweb.co.uk/uploads/2010/05/getbritf.jpg"><img src="http://cdn.saiweb.co.uk/uploads/2010/05/getbritf-236x300.jpg" alt="" title="getbritf" width="236" height="300" class="aligncenter size-medium wp-image-871" /></a>
 
 
-[cc lang="python"]
+{% highlight python %}
 #!/usr/bin/env python
 # saiweb.co.uk payload unpack script 26/05/2010
 # copy the eval(gzinflate()) line to payload.raw, place in same directory as this file.
@@ -97,13 +97,13 @@ def main():
 	print php
 if __name__ == '__main__':
 	main()
-[/cc]
+{% endhighlight %}
 
 Copy the first payload lines into a file named payload.raw, take the above code and copy it into a file named dissect.py.
 
 When dissect.py is run you will get the following output:
 
-[cc lang="bash"]
+{% highlight bash %}
 python ./dissect.py
 Running ...
 Iteration: 1
@@ -120,13 +120,13 @@ Iteration: 11
 Iteration: 12
 <?php
 ...
-[/cc] 
+{% endhighlight %} 
 
 As such you may want to run it using the following command:
 
-[cc lang="bash"]
+{% highlight bash %}
 python ./dissect.py > r57.php
-[/cc]
+{% endhighlight %}
 
 <a href="http://cdn.saiweb.co.uk/uploads/2010/05/ggwit.jpg"><img src="http://cdn.saiweb.co.uk/uploads/2010/05/ggwit-257x300.jpg" alt="" title="ggwit" width="257" height="300" class="aligncenter size-medium wp-image-872" /></a>
 

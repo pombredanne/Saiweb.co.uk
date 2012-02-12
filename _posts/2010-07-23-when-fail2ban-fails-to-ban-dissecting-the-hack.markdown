@@ -32,9 +32,9 @@ I am still reading into how to counter this and will update this post as I figur
 <strong>Update 1:</strong>
 One method I am trialing is the "log target" feature of iptables, in an attempt to match login failure times to the iptables log, I'll post back with results.
 
-[cc lang="bash"]
+{% highlight bash %}
 iptables -A INPUT -p tcp --dport ftp -j LOG
-[/cc]
+{% endhighlight %}
 
 Outputs
 
@@ -53,9 +53,9 @@ Jul 23 11:46:07 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=
 
 Now granted this would be a lot worse had the attacking IP been dynamic, fortunatly in this case it's not
 
-[cc lang="bash"]
+{% highlight bash %}
 grep kernel /var/log/messages | awk '{print $9}' | sed 's/SRC=//' | uniq -c | sort
-[/cc]
+{% endhighlight %}
 
 {% highlight bash %}
 390   173.XXX.XXX.XXX

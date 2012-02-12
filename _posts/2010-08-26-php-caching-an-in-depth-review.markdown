@@ -37,11 +37,11 @@ Another turn of phrase is "The slashdot effect", there are many options for outp
 
 For end user transparency couple this with some mod_rewrite voodoo
 
-[cc]
+{% highlight bash %}
 RewriteCond %{HTTP:Accept-Encoding} gzip
 RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_FILENAME}.gz -f
 RewriteRule ^(.*) "/cache/%{HTTP_HOST}/%{REQUEST_FILENAME}.gz" [L]
-[/cc]
+{% endhighlight %}
 
 1: If gzip is supported
 2: and the cache file exists
@@ -53,11 +53,11 @@ Apache -&gt; readfile
 
 To serve non gziped content:
 
-[cc]
+{% highlight bash %}
 RewriteCond %{HTTP:Accept-Encoding} !gzip
 RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_FILENAME} -f
 RewriteRule ^(.*) "/cache/%{HTTP_HOST}/%{REQUEST_FILENAME}" [L]
-[/cc]
+{% endhighlight %}
 
 Now to clarify a point you should not be caching images,css,js etc, we're only covering dynamic content here, and the above are only examples to get you started, you should write rules to exclude certain content specific to your needs.
 

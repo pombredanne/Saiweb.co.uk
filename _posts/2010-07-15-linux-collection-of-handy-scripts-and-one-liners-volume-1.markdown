@@ -19,14 +19,14 @@ wordpress_url: http://saiweb.co.uk/linux/linux-collection-of-handy-scripts-and-o
 
 Well you have a couple of options, add additional lines to the /etc/init.d script to change the <a href="http://linux.about.com/library/cmd/blcmdl1_nice.htm">nice</a> level by adding additional lines on startup, or if you only need to do this on a temporary basis without restarting the service but need every thread to have a raised priority you can use a bash script 
 
-[cc lang="bash"]
+{% highlight bash %}
 #!/bin/bash
 PIDS=`ps aux | grep httpd | grep -v 'grep' | awk '{print $2}'`;
 for PID in ${PIDS[@]}
 do 
         renice 20 -p $PID
 done
-[/cc]
+{% endhighlight %}
 
 You can renice between -20 and +20, depending on your requirements you can use this script in a cron job  to raise/lower priorities, change httpd for whatever service you want to change the thread priority for.
 
@@ -34,9 +34,9 @@ You can renice between -20 and +20, depending on your requirements you can use t
 
 For this one you're going to need the <a href="http://wiki.github.com/rvoicilas/inotify-tools">inotify-tools</a> package, specifically the inotifywait binary.
 
-[cc lang="bash"]
+{% highlight bash %}
 inotifywait -m --timefmt "[%a %b %d %H:%M:%S %Y]" --format "%T [%e] %f" -r /folder/to/watch
-[/cc]
+{% endhighlight %}
 
 An example usage is to ensure that caching is working correctly and that cache files are being used in place of processing PHP files, simply change "/folder/to/watch" to be your cache folder, and refresh a few pages.
 
@@ -92,7 +92,7 @@ You have two options for this a single line
 
 or a bash function you can place in your ~/.bashrc
 
-[cc lang="bash"]
+{% highlight bash %}
 function appmem(){
 	if [ -z "$1" ]; then
 		echo "appmem <string to filter>"
@@ -101,7 +101,7 @@ function appmem(){
 		ps -Ao rsz,comm,pid | grep $1
 	fi
 }
-[/cc]
+{% endhighlight %}
 
 You can then call this (after logging back in again to load the .bashrc up) using
 
@@ -147,11 +147,11 @@ Self explanatory that one, pipes the output from mysqldump through bzip2 (which 
 
 For this one you can use the <a href="http://linux.die.net/man/1/secpwgen">secpwgen</a>
 
-[cc lang="bash"]
+{% highlight bash %}
 function pwgen(){
         for (( i=0; i<=10; i++ )) do pwd=`secpwgen -Aadhs 10 2>&1 | grep ENTROPY | awk '{print $1}';`; echo "$i: $pwd"; done;   
 }
-[/cc]
+{% endhighlight %}
 
 Plant this in your ~/.basrc for a callable function that will genrate a selection of 10 secure passwords, handy when you're fed up of 1337'ifying everything
 

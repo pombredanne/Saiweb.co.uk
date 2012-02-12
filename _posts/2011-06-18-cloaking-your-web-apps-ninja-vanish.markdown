@@ -28,10 +28,10 @@ Learn this, I mean seriously not only can it help cloak your server side languag
 
 <strong>BUT</strong> be careful if you think you're being cleaver by having mod_rewrite change the extension alone ...
 
-[cc]
+{% highlight bash %}
 RewriteEngine On
 RewriteRule (.*)\.inc$ $1.php [L]
-[/cc]
+{% endhighlight %}
 
 it will be easy to enumerate the back end language this way ... the first 404 that an attacker gets when enumerating your file names will reveal this rule i.e. 
 
@@ -43,15 +43,15 @@ Security through obscurity? you bet your ass, just add your new extension onto y
 
 how about .wtf
 
-[cc]
+{% highlight bash %}
 AddType application/x-httpd-php .php .phtml .wtf
-[/cc]
+{% endhighlight %}
 
 Now just name your files .wtf instead of .php
 
 <strong>So your using subversion</strong> good for you! you can use subversion as part of PCI 11.5 (iirc) to enforce file integrity assuming of course you have your subversion deploy setup securely just one tiny problem ...
 
-[cc]
+{% highlight bash %}
 curl -s http://domain.com/.svn/entries
 
 10
@@ -74,7 +74,7 @@ ddde986004c962d5827ca851403f96d5
 2011-05-25T08:13:14.961921Z
 1234
 joe.blogs
-[/cc]
+{% endhighlight %}
 <strong>
 Seemingly innocent right? oh how wrong you are ...</strong>
 
@@ -99,18 +99,18 @@ Seemingly innocent right? oh how wrong you are ...</strong>
 
 <strong>You can prevent this by ...</strong>
 
-[cc]
+{% highlight bash %}
 <Directory ~ "\.svn">
 Order allow,deny
 Deny from all
 </Directory>
-[/cc]
+{% endhighlight %}
 
 <strong>Or using mod_security</strong>
 
-[cc]
+{% highlight bash %}
 SecRule REQUEST_URI "\.svn" phase:1,deny
-[/cc]
+{% endhighlight %}
 
 Ensure you use an <strong>ENCRYPTED</strong> protocol for your version control https:// / ssh+svn:// for example with subversion.
 

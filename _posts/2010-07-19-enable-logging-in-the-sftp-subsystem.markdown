@@ -18,15 +18,15 @@ Note: Requires OpenSSH >= 4.4
 
 Replace the susbsystem line in your /etc/ssh/sshd_config with
 
-[cc lang="bash"]
+{% highlight bash %}
 Subsystem	sftp	/usr/libexec/openssh/sftp-server -f LOCAL5 -l INFO
-[/cc]
+{% endhighlight %}
 
 Add the following to /etc/syslog.conf
 
-[cc lang="bash"]
+{% highlight bash %}
 #sftp logging
 local5.*						/var/log/sftpd.log
-[/cc]
+{% endhighlight %}
 
 Restart the sshd and syslog services, try an sftp upload and review the logs @ /var/log/sftpd.log

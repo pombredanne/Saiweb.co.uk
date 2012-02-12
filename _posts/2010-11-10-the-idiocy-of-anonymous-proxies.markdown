@@ -17,9 +17,9 @@ But this is where things go wrong, this is when Joe finds his Bank account his e
 
 First some clarification as to what a proxy service is.
 
-[cc]
+{% highlight bash %}
 You ----> Your proxy service ---> The web page you want
-[/cc]
+{% endhighlight %}
 
 In the simplest of terms when using an anonymous proxy Joe is no longer connecting to the servers upon which Joe's precious facebook / whatever account resides, Joe is connecting to the proxy service servers, and by extension <strong>Joe is sending all his data to the proxy servers</strong>.
 

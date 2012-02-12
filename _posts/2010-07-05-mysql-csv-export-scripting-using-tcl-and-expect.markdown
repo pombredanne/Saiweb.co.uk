@@ -19,7 +19,7 @@ So I had to come up with a workaround quickly.
 
 This lead to using <a href="http://linux.die.net/man/1/expect">expect</a>, scripting in this method can be used for numerous purposes, I am currently in the process of writing a few test scripts using tcl and this package for pop,imap,smtp testing.
 
-[cc lang="tcl"]
+{% highlight tcl %}
 #!/usr/bin/expect -f
 set DB "<database>"
 set USER "<user>"
@@ -36,7 +36,7 @@ expect -exact "mysql> "
 send -- "$SQL;\r"
 expect -exact "mysql> "
 sent -- "exit;/r"
-[/cc]
+{% endhighlight %}
 
 Pretty simple realy once you have the hang of it, you tell it what to expect and what to reply with, there are more advanced methods going on from here, including conditional sends based on response.
 

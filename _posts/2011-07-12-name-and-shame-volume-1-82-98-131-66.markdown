@@ -20,7 +20,7 @@ And for anyone else reading this, I usually end up ignoring the standard user en
 
 <strong>Your ISP's whois</strong>
 
-[cc]
+{% highlight bash %}
 inetnum:        82.98.128.0 - 82.98.143.255
 netname:        DINA-HOSTING1
 descr:          PROVIDER Local Registry
@@ -64,11 +64,11 @@ mnt-by:          DINAHOSTING-MNT
 mnt-lower:       DINAHOSTING-MNT
 mnt-routes:      DINAHOSTING-MNT
 source:          RIPE # Filtered
-[/cc]
+{% endhighlight %}
 
 <strong>Log of you attempting to get access to ftp</strong>
 
-[cc]
+{% highlight bash %}
 Jun 12 20:02:45 132 kernel: IN=eth0 OUT= MAC=**:**:**:**:**:**:00:13:5f:94:18:00:08:00 SRC=82.98.131.66 DST=81.201.132.43 LEN=60 TOS=0x00 PREC=0x00 TTL=56 ID=15007 DF PROTO=TCP SPT=58291 DPT=21 WINDOW=5840 RES=0x00 SYN URGP=0 
 Jun 12 20:02:45 132 kernel: IN=eth0 OUT= MAC=**:**:**:**:**:**:00:13:5f:94:18:00:08:00 SRC=82.98.131.66 DST=81.201.132.43 LEN=52 TOS=0x00 PREC=0x00 TTL=56 ID=15008 DF PROTO=TCP SPT=58291 DPT=21 WINDOW=92 RES=0x00 ACK URGP=0 
 Jun 12 20:02:45 132 kernel: IN=eth0 OUT= MAC=**:**:**:**:**:**:00:13:5f:94:18:00:08:00 SRC=82.98.131.66 DST=81.201.132.43 LEN=52 TOS=0x00 PREC=0x00 TTL=56 ID=15009 DF PROTO=TCP SPT=58291 DPT=21 WINDOW=92 RES=0x00 ACK URGP=0 
@@ -97,11 +97,11 @@ Jun 12 20:02:46 132 vsftpd: pam_unix(vsftpd:auth): authentication failure; logna
 Jun 12 20:02:48 132 vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty=ftp ruser=saiweb rhost=hl45.dinaserver.com  user=saiweb
 Jun 12 20:02:51 132 vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty=ftp ruser=saiwebcouk rhost=hl45.dinaserver.com 
 ...
-[/cc]
+{% endhighlight %}
 
 <strong>Can anyone say firewall?</strong>
 
-[cc]
+{% highlight bash %}
 21/tcp   open  ftp
 22/tcp   open  ssh
 25/tcp   open  smtp
@@ -112,28 +112,28 @@ Jun 12 20:02:51 132 vsftpd: pam_unix(vsftpd:auth): authentication failure; logna
 443/tcp  open  https
 587/tcp  open  submission
 3306/tcp open  mysql
-[/cc]
+{% endhighlight %}
 
 <strong>You need to read <a href="http://www.saiweb.co.uk/security/cloaking-your-web-apps-the-hooded-apache">this</a> NOW!</strong>
 
-[cc]
+{% highlight bash %}
 Server: Apache/2.2.0 (Fedora) PHP/5.2.9 with Suhosin-Patch
 Content-Length: 226
 Connection: close
 Content-Type: text/html; charset=iso-8859-1
-[/cc]
+{% endhighlight %}
 
 <strong>Debian? seriously?</strong>
 
-[cc]
+{% highlight bash %}
 SSH-2.0-OpenSSH_5.1p1 Debian-5
-[/cc]
+{% endhighlight %}
 
 <strong>mySQL seems recent at least</strong>
 
-[cc]
+{% highlight bash %}
 5.1.32-log?yV!>VvoI?^~"(D\$::QjC^C
-[/cc]
+{% endhighlight %}
 
 
 For the moment I am assuming a compromised box quiet why you wanted to come after this blog is beyond me.

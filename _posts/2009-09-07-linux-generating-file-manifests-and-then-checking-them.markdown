@@ -14,9 +14,9 @@ This issue has come about whilst having to migrate a positively huge number of f
 
 <strong>Build the manifest</strong>
 
-[cc lang="bash"]
+{% highlight bash %}
 find /path/to/folder -type f -print0 | xargs --null md5sum > /path/to/manifest
-[/cc]
+{% endhighlight %}
 <ul>
 	<li>-type f : This flag tells find to only return files</li>
 	<li>-print0: This flag tells find to null terminate strings, this allows us to take files with spaces</li>
@@ -25,9 +25,9 @@ find /path/to/folder -type f -print0 | xargs --null md5sum > /path/to/manifest
 </ul>
 <strong>Checking the manifest</strong>
 
-[cc lang="bash"]
+{% highlight bash %}
 md5sum --check /path/to/manifest | grep FAILED
-[/cc]
+{% endhighlight %}
 
 The above will return all failed checks, if you want a simple count (maybe for automated reporting) just add  | wc -l
 

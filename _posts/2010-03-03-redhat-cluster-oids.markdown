@@ -20,7 +20,7 @@ At any rate here is a subset of OID's for polling the redhat cluster service usi
 
 Python code:
 
-[cc lang="python"]
+{% highlight python %}
 rhc_oid = '.1.3.6.1.4.1.2312.8'
         data_oids = {
                                 'rhcMIBVersion':'.1.1',
@@ -48,4 +48,4 @@ rhc_oid = '.1.3.6.1.4.1.2312.8'
         for item in data_oids:
                 oid = '%s%s' % (rhc_oid,data_oids[item])
                 print item,oid
-[/cc]
+{% endhighlight %}

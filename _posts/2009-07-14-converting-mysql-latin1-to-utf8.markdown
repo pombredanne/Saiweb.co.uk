@@ -54,39 +54,39 @@ This assumes the database is currently using latin1, in theory this could be any
 
 Get a dump of the database:
 
-[cc lang="bash"]
+{% highlight bash %}
 mysqldump --set-character-set=latin-1 --set-charset -u user -pPASSWORD databasename > databasename-latin1.sql
-[/cc]
+{% endhighlight %}
 
 Now you have to be aware of what you need to replace using SED, you can't just replace all instances of 'latin1' as <a href="http://en.wikipedia.org/wiki/Murphy%27s_law">Murphy's law</a> being as it is means that somewhere there will be 'latin1' in the physical content, especially for instance if I was using a mysql dump from this blog.
 
 As such you need to replace the following:
 
-[cc lang="bash"]
+{% highlight bash %}
 /*!40101 SET NAMES latin1 */;
-[/cc]
+{% endhighlight %}
 
 If your database dump is small enough (sub 100mb) you can edit this line directly in your text editor, alternatively you can do the following.
 
-[cc lang="bash"]
+{% highlight bash %}
 cat ./databasename-latin1.sql | sed 's/SET NAMES latin1/SET NAMES utf8/g' > tmp
 cat ./tmp > ./databasename-latin1.sql
 rm -f ./tmp
-[/cc]
+{% endhighlight %}
 
 Now you need to replace all instances of 'CHARSET=latin1'
 
-[cc lang="bash"]
+{% highlight bash %}
 cat ./databasename-latin1.sql | sed 's/CHARSET=latin1/CHARSET=utf8/g' > tmp
 cat ./tmp > ./databasename-latin1.sql
 rm -f ./tmp
-[/cc]
+{% endhighlight %}
 
 Now we have to run the file through the charset converter
 
-[cc lang="bash"]
+{% highlight bash %}
 sysadmin -c iconv -d ./databasename-latin1.sql,latin-1,utf-8
-[/cc]
+{% endhighlight %}
 
 If your sql dump is over 30mb, you will be prompted to confirm you wish to proceed, please remember that this will load the entire file into memory, so ensure you have enough available system memory before proceeding, I also suggest not running this on a production server.
 

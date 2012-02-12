@@ -39,26 +39,26 @@ In this case the shared resource will be /home/shared
 
 First of all for security and chrooting purposes make the following changes to /etc/vsftpd/vsftpd.conf
 
-[cc lang="bash"]
+{% highlight bash %}
 anonymous_enable=NO
 chroot_local_user=YES
-[/cc]
+{% endhighlight %}
 
 Now reload vsftpd: /etc/init.d/vsftpd
 
 Create a test user (in this case buzz):
 
-[cc lang="bash"]
+{% highlight bash %}
 useradd buzz -d /home/buzz
 passwd buzz
-[/cc]
+{% endhighlight %}
 
 Remove the user's shell access (and subsequently sftp/scp) by editing /etc/pass wd (remove the space between pass wd, wordpress is breaking when I try to post it properly)
 
 replace {% highlight bash %}buzz:x:123:123::/home/buzz:/bin/bash{% endhighlight %} with {% highlight bash %}buzz:x:123:123::/home/buzz:/sbin/nologin{% endhighlight %}
 
 Test the FTP session:
-[cc lang="bash"]
+{% highlight bash %}
 [root@buzz ~]ftp xxx.xxx.xxx.xxx
 Connected to xxx.xxx.xxx.xxx.
 220 (vsFTPd 2.0.1)
@@ -81,16 +81,16 @@ ftp> cd /home/shared
 ftp> cd ./www
 550 Failed to change directory.
 ftp> quit
-221 Goodbye.[/cc]
+221 Goodbye.{% endhighlight %}
 
 In the example above <strong>www</strong> is a symlink to <strong>/home/shared</strong>, as can be seen symlinking does not bypass the chroot settings.
 
 What you need to do is use the "bind" option of the mount command (as root or a sudo'er):
 
-[cc lang="bash"]
+{% highlight bash %}
 mkdir /home/buzz/shared
 mount --bind /home/shared /home/buzz/shared
-[/cc]
+{% endhighlight %}
 
 <strong>NOTE: --bind is double dash bind</strong>
 <strong>NOTE: to reverse the bind (i.e. if you bind the wrong folder) umount /path/to/binded/folder</strong>
@@ -98,7 +98,7 @@ mount --bind /home/shared /home/buzz/shared
 
 Now re-test the ftp session:
 
-[cc lang="bash"]
+{% highlight bash %}
 ftp xxx.xxx.xxx.xxx
 Connected to xxx.xxx.xxx.xxx.
 220 (vsFTPd 2.0.1)
@@ -125,7 +125,7 @@ ftp> cd ./shared
 250 Directory successfully changed.
 ftp> quit
 221 Goodbye.
-[/cc]
+{% endhighlight %}
 
 The user now is in a chroot'ed environment, but can still access the share resources you specify, by binding them.
 

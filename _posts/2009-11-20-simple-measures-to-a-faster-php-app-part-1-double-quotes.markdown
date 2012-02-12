@@ -18,7 +18,7 @@ However in 99% of cases it is used without even thing about in implications of d
 
 Take for example this code:
 
-[cc lang="php"]
+{% highlight php %}
 <?PHP
 /**
  * double-quotes-are-bad.php ~ D.Busby (Saiweb.co.uk)
@@ -49,7 +49,7 @@ $speed = round((1 - $res2/$res) * 100,2);
 echo 'Single quotes are '.$speed.'% faster'."\n";
 
 ?>
-[/cc]
+{% endhighlight %}
 
 
 Now I am running this on a live server, that is serving in excess of 100 pages a second, take a look at the output:

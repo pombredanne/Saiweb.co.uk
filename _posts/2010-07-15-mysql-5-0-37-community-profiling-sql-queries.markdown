@@ -26,26 +26,26 @@ So lets work on the basis that we have a known slow SQL query we'd like profilin
 
 check to see if profiling is enabled:
 
-[cc lang="sql"]
+{% highlight sql %}
 select  @@profiling;
-[/cc]
+{% endhighlight %}
 
 The returned value is generally 0 so lets enable it.
 
-[cc lang="sql"]
+{% highlight sql %}
 set profiling_history_size=100;
 set profiling=1;
-[/cc]
+{% endhighlight %}
 
 This tells mySQL to retain the profile of 100 queries in memory, and to enable profiling.
 
 Now at this point this can also be used to diagnose slow loading datases, simply
 
-[cc lang="sql"]
+{% highlight sql %}
 use <dbname>;
 show profiles;
 show profile for 1;
-[/cc]
+{% endhighlight %}
 
 Upon running the above you will now be using your database and will see an output similar to
 
@@ -81,10 +81,10 @@ Followed by
 {% endhighlight %}
 In my case here nothing really eventful, lets assume for the moment you are using a wordpress database, and you have numerous posts
 
-[cc lang="sql"]
+{% highlight sql %}
 select count(*) from wp_posts where ID > 100
 select count(ID) from wp_posts where ID > 100
-[/cc]
+{% endhighlight %}
 
 in my case I got the following results:
 
@@ -95,10 +95,10 @@ in my case I got the following results:
 
 a simple demonstration showing the difference between a count() on an indexed field vs *, in this case the saving is ~4%.
 
-[cc lang="sql"]
+{% highlight sql %}
 show profiles;
 show profile for query <n>;
-[/cc]
+{% endhighlight %}
 
 Will give you an output similar to:
 

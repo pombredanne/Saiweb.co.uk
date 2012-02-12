@@ -25,7 +25,7 @@ Subversion:<a href="http://svn.saiweb.co.uk/branches/python/urllib2_httpbasic_au
 
 Highlighted source (at the time of writing)
 
-[cc lang="python"]
+{% highlight python %}
 #!/usr/bin/env python
 """
     Author: David Busby (http://saiweb.co.uk)
@@ -83,6 +83,6 @@ def main():
                         
 if __name__ == "__main__":
     main()
-[/cc]
+{% endhighlight %}
 
 <strong>NOTES:</strong> This script does not check the authentication type, it always assumes it is HTTP BASIC, HTTP DIGEST for example is not compatible with this script, though there is no reason why you can not get the Auth type form the headers returned by the server and write in a Digest auth method.

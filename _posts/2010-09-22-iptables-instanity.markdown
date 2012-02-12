@@ -15,15 +15,15 @@ wordpress_url: http://saiweb.co.uk/linux/iptables-instanity
 ---
 Namely a bug to do with iptables rate limiting,
 
-[cc lang="bash"]
+{% highlight bash %}
 iptables -I INPUT 2 -p tcp --dport http -m state --state NEW -m recent --update --seconds 60 --hitcount 20 -j LOG --log-level=7
-[/cc]
+{% endhighlight %}
 works!
 
-[cc lang="bash"]
+{% highlight bash %}
 iptables -I INPUT 2 -p tcp --dport http -m state --state NEW -m recent --update --seconds 60 --hitcount 60 -j LOG --log-level=7
 iptables: Unknown error 18446744073709551615
-[/cc]
+{% endhighlight %}
 
 -j REJECT also produces the same.
 

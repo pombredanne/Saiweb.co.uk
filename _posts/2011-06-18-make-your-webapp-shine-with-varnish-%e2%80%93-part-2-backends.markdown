@@ -18,12 +18,12 @@ Pre-req reading: <a href="http://www.saiweb.co.uk/linux/make-your-webapp-shine-w
 In this part we will cover setting up a backend. A backend is your application server, whether this be apache / nginx / iis (IIS - <strong>I</strong>s <strong>I</strong>nherently <strong>S</strong>tupid) you are telling varnish where it should sends it's requests to.
 <strong>
 Very basic configuration</strong>
-[cc]
+{% highlight bash %}
 .backend app1 {
     .host = "127.0.0.1";
     .port = "8080;"
 }
-[/cc]
+{% endhighlight %}
 
 For a quick start that's it really you tell varnish a backend and the port to connect to it on ... just make sure you use it in vcl_recv, but you're not here for simple and quick start are you? lets add the following.
 
@@ -37,7 +37,7 @@ For a quick start that's it really you tell varnish a backend and the port to co
 
 Your timeout settings deinf how long varnish should wait for a response from your backend 
 
-[cc]
+{% highlight bash %}
 .backend app1 {
     .host = "127.0.0.1";
     .port = "8080;"
@@ -45,7 +45,7 @@ Your timeout settings deinf how long varnish should wait for a response from you
     .first_byte_timeout = 2s;
     .between_bytes_timeout = 2s;
 }
-[/cc]
+{% endhighlight %}
 
 <ul>
 	<li><strong>connect_timeout</strong> wait 50ms for a tcp connection to take place</li>
@@ -57,7 +57,7 @@ Timeouts are a basic way of determining if a backend is down / miss behaving if 
 
 <strong>probe settings - Trust me I'm a doctor</strong>
 
-[cc]
+{% highlight bash %}
 
 .backend app1 {
     .host = "127.0.0.1";
@@ -73,7 +73,7 @@ Timeouts are a basic way of determining if a backend is down / miss behaving if 
 	.interval = 2s;	#how often to run the checks
     }
 }
-[/cc]
+{% endhighlight %}
 
 <ul>
 	<li><strong>url</strong> the URL to to query this must return a 200 OK response, you could use a php script to return a 500 on say a mySQL outage</li>

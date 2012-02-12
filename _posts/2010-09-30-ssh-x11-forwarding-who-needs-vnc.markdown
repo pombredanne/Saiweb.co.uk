@@ -16,15 +16,15 @@ It's true as much as I live in the cli & ssh to do my job I find sometimes I req
 
 Now however there is an alternative (so long as your client machine has x11 installed)
 
-[cc lang="bash"]
+{% highlight bash %}
 SSH -X <server ip> -l <user>
-[/cc]
+{% endhighlight %}
 
 That's it simple as that, now use a cli command to launch your normal gui tool i..e
 
-[cc lang="bash"]
+{% highlight bash %}
 kate ~/.bashrc
-[/cc]
+{% endhighlight %}
 
 And x11 will launch on the machine you are working from, now don't think the gui is running form your machine it's not!
 

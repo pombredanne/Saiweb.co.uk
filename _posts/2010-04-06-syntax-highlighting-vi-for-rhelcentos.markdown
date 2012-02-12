@@ -18,12 +18,12 @@ The default install of VI is very basic, and being as I spend a lot of my time i
 
 So run the following to install this package and setup an alias for vi.
 
-[cc lang="bash"]
+{% highlight bash %}
 yum install vim-enhanced
 echo "alias vi='/usr/bin/vim'" >> ~/.bashrc
 echo "syntax on" >> ~/.vimrc
 alias vi='/usr/bin/vim'
-[/cc]
+{% endhighlight %}
 
 And you're done:
 

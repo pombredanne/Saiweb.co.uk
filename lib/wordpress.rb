@@ -108,8 +108,9 @@ module Jekyll
 
     #process to replace the colour code plugin [CC][/CC] shortcodes
     def self.replaceCC(content)
-        content = content.gsub('[CC]','{% highlight bash %}')
-        return content.gsub('[/CC]','{% endhighlight %}')
+        content = content.gsub(/\[CC\]/i,'{% highlight bash %}')
+        content = content.gsub(/\[CC lang="([^"]+)"([^\]]+)?\]/i,'{% highlight \1 %}')
+        return content.gsub(/\[\/CC\]/i,'{% endhighlight %}')
     end
 
     def self.replaceCODE(content)

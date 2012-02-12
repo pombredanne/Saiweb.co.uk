@@ -19,7 +19,7 @@ First off you are going to need the python-ctypes RPM, available from DAG here: 
 Once installed you are going to need the Fedora 8 python-inotify SOURCE rpm available from here: <a href="ftp://ftp.pbone.net/mirror/archive.fedoraproject.org/fedora/linux/updates/8/SRPMS.newkey/python-inotify-0.8.0-3.r.fc8.src.rpm">python-inotify-0.8.0-3.r.fc8.src.rpm</a>
 
 The easiest way I found to extract the required packages was using the following:
-[cc lang="bash"]
+{% highlight bash %}
 mkdir ./python-inotify
 cd ./python-inotify
 wget ftp://ftp.pbone.net/mirror/archive.fedoraproject.org/fedora/linux/updates/8/SRPMS.newkey/python-inotify-0.8.0-3.r.fc8.src.rpm
@@ -27,7 +27,7 @@ rpm2cpio ./python-inotify-0.8.0-3.r.fc8.src.rpm | cpio -idv
 tar -zxvf ./pyinotify-0.8.0r.tar.gz
 cd ./pyinotify
 ./setup.py install
-[/cc]
+{% endhighlight %}
 
 
 
