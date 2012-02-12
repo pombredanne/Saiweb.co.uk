@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Saiweb Update - What do you want to see?
+date: 2008-11-17 10:08:20 +00:00
 tags: 
 - update
 - saiweb
-date: "2008-11-17"
+wordpress_url: general/saiweb-update-what-do-you-want-to-see
 ---
 Well the giant banner at the top of the blog can't of escaped your attention, and I still need your votes! so please check out the blog entry for <a href="http://www.saiweb.co.uk/general/vote-buzz-for-it-superhero-2008">IT Super Hero 2008</a>
 

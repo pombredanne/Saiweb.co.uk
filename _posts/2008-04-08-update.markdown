@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: update
+date: 2008-04-08 08:18:05 +01:00
 tags: []
 
-date: "2008-04-08"
+wordpress_url: general/update
 ---
 <p>Sorry for the delay in the new articles, seems I've been "snowed" under, metaphoracly and litterally (brrr it's cold!)</p>
 <p>The following are in the works and are to be posted soon:</p>

@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Linux - The Sysadmin script - Part 3
+date: 2008-11-12 12:25:22 +00:00
 tags: 
 - linux
 - apache
 - sysadmin
-date: "2008-11-12"
+wordpress_url: linux/linux-the-sysadmin-script-part-3
 ---
 <strong>PART 3 IS INACCURATE, THE BELOW SCRIPT IS FOR REFERENCE ONLY, IT HAS BEEN REPLACED IN <a href="http://www.saiweb.co.uk/uncategorized/linux-the-sysadmin-script-part-4">PART 4</a></strong>
 
@@ -13,7 +14,7 @@ In part 3, I am going to cover a bash function that will allow you to profile th
 
 By adding the function below into your script you can execute a command such as: sysadmin appmem apache
 
-<code>
+{% highlight bash %}
 function appmem {
 if [ -z "$1" ]; then
 echo "Usage: sysadmin appmem app_name i.e. (sysadmin appmem apache)";
@@ -41,17 +42,17 @@ exit;
 fi
 fi
 }
-</code>
+{% endhighlight %}
 Sample output:
 
-<code>
+{% highlight bash %}
 <span style="color: #ffcc00;">----- MEMORY USAGE REPORT FOR 'apache' -----</span>
 PID Count: 6
 Mem usage: 1134 MB
 Mem/PID: 189 MB
 <span style="color: #ff0000;">
 For more information run: pmap -x 123456</span>
-</code>
+{% endhighlight %}
 
 You can of course replace 'apache' with the application or daemon name you want to profile the memory usage of.
 

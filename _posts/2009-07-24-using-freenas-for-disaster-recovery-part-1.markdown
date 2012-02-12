@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Using freeNAS for Disaster Recovery - Part 1
+date: 2009-07-24 15:45:43 +01:00
 tags: 
 - nas
 - freenas
 - disaster recovery
 - build
-date: "2009-07-24"
+wordpress_url: freenas/using-freenas-for-disaster-recovery-part-1
 ---
 As the company I am working for (<a href="http://www.psycle.com">Psycle Interactive Ltd</a>) grow there became an increasing need to store and share large files between machines, granted we are all on MACs here, but the "drop box" becomes inconvenient when you want to share that file with multiple people.
 

@@ -1,16 +1,17 @@
 --- 
 layout: post
 title: Telnet - SMTP
+date: 2008-07-17 15:20:26 +01:00
 tags: 
 - telnet
 - smtp
-date: "2008-07-17"
+wordpress_url: networking/telnet-smtp
 ---
 To test a POP3 connection using telnet open a command window or shell terminal and type the following
 
-<code>
+{% highlight bash %}
 telnet smtp.domain.com 25
-</code>
+{% endhighlight %}
 
 Where smtp.domain.com is the FQDN (Fully Qualified Domain Name) or IP address of the server you wish to test.
 
@@ -18,23 +19,23 @@ Where smtp.domain.com is the FQDN (Fully Qualified Domain Name) or IP address of
 
 You will be greeted with something similar to:
 
-<code>
+{% highlight bash %}
 Escape character is '^]'.
 220 smtp.domain.com
-</code>
+{% endhighlight %}
 
 Now you need to enter the HELO command, followed by an idenfication of the server you ar esending from.
 
-<code>
+{% highlight bash %}
 HELO buzz.domain.com
 250 smtp.domain.com
-</code>
+{% endhighlight %}
 
 Anything other than "250" indicates a problem.
 
 You can now proceed with the test email transaction.
 
-<code>
+{% highlight bash %}
 MAIL FROM: buzz@buzz.domain.com
 250 Ok
 RCPT TO: buzz@smtp.domain.com
@@ -49,4 +50,4 @@ This is where the data goes, you finish the input by placeing a dot (.) on a sin
 QUIT
 221 Bye
 Connection closed by foreign host.
-</code>
+{% endhighlight %}

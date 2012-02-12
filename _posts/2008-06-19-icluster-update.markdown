@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: iCluster update
+date: 2008-06-19 15:19:09 +01:00
 tags: 
 - cluster
 - iphone
 - icluster
 - beowulf
-date: "2008-06-19"
+wordpress_url: icluster/icluster-update
 ---
 No joy so far, and despite my postings to the local freecycle groups my list postings have been rejected as being "too extravagant" ...
 

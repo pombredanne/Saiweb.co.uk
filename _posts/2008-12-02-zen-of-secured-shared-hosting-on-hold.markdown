@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Zen of secured shared hosting On hold
+date: 2008-12-02 16:41:09 +00:00
 tags: 
 - hosting
 - zen
 - secured
 - chared
-date: "2008-12-02"
+wordpress_url: general/zen-of-secured-shared-hosting-on-hold
 ---
 This series is officially on hold until further notice,
 

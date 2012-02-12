@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: High Availability Joomla, Wordpress - Load balance persistant PHP database sessions
+date: 2008-11-27 16:27:09 +00:00
 tags: 
 - php
 - mysql
@@ -9,7 +10,7 @@ tags:
 - joomla
 - load balance
 - high availability
-date: "2008-11-27"
+wordpress_url: mysql/high-availability-joomla-wordpress-load-balance-persistant-php-database-sessions
 ---
 If you've seen the new twitter feed to the right you may of seem some ramblings about 'cura'.
 
@@ -44,19 +45,19 @@ Because everything is in a database whenever your web application is run (web1, 
 
 The source files are available from: <a href="http://svn.saiweb.co.uk/branches/cura-php/trunk">http://svn.saiweb.co.uk/branches/cura-php/trunk/</a>
 
-<code>
+{% highlight bash %}
 svn co http://svn.saiweb.co.uk/branches/cura-php/trunk/
-</code>
+{% endhighlight %}
 
 To deploy this solution simply add the following lines to any file that calls session_start();
 
-<code>
+{% highlight bash %}
 require_once('/path/to/cura.class.php');
 $cura = new cura($db, $user, $password, $host);
 session_start();
 ...
 the rest of your file...
-</code>
+{% endhighlight %}
 Ensure that you have created a 'sessions' table as per the provided sessions.sql file in your database.
 
 I will be adding simplified support for wordpress and joomla shortly these will become available from: <a href="http://svn.saiweb.co.uk/branches/cura-php/trunk/">http://svn.saiweb.co.uk/branches/cura-php/trunk/</a>

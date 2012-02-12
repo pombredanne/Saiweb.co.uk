@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Elmo Live, in your house scaring your kids.
+date: 2008-02-22 12:33:22 +00:00
 tags: 
 - elmo
 - elmo live
@@ -9,7 +10,7 @@ tags:
 - toy fair 2008
 - toyfair2008
 - video
-date: "2008-02-22"
+wordpress_url: technology/elmo-live-in-your-house-scaring-your-kids
 ---
 At what point is a toy, no longer a toy ...
 

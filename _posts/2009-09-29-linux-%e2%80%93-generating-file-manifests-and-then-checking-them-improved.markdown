@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Linux \xE2\x80\x93 Generating file manifests and then checking them - Improved"
+date: 2009-09-29 14:14:06 +01:00
 tags: 
 - linux
 - sysadmin
@@ -11,7 +12,7 @@ tags:
 - indication
 - indicator
 - cli
-date: "2009-09-29"
+wordpress_url: linux/linux-%e2%80%93-generating-file-manifests-and-then-checking-them-improved
 ---
 Following on from <a href="http://www.saiweb.co.uk/linux/linux-generating-file-manifests-and-then-checking-them">Linux – Generating file manifests and then checking them</a> I was always getting the same questions ...
 

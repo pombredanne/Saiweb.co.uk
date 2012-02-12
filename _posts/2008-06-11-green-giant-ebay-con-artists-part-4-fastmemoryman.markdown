@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: "\"Green Giant\" Ebay Con Artists part 4 - fastmemoryman"
+date: 2008-06-11 10:26:01 +01:00
 tags: 
 - ebay
 - con
 - fastmemoryman
-date: "2008-06-11"
+wordpress_url: green giant/green-giant-ebay-con-artists-part-4-fastmemoryman
 ---
 Name and shame time!
 

@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: macFUSE
+date: 2008-09-23 14:17:00 +01:00
 tags: 
 - macfuse
 - mac
 - fuse
-date: "2008-09-23"
+wordpress_url: mac/macfuse
 ---
 <img class="aligncenter" title="macFUSE" src="http://macfuse.googlecode.com/svn/trunk/meta/images/MacFUSE_Banner.jpg" alt="" width="474" height="128" />
 

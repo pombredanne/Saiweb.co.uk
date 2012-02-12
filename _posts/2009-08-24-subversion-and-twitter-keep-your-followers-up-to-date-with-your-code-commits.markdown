@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: Subversion and twitter - Keep your followers up to date with your code commits
+date: 2009-08-24 12:23:46 +01:00
 tags: 
 - svn
 - twitter
 - subversion
 - hooks
 - post-commit
-date: "2009-08-24"
+wordpress_url: python/subversion-and-twitter-keep-your-followers-up-to-date-with-your-code-commits
 ---
 Some two months after the fact, I thought it may well be time to post a blog on this little code snippet.
 
@@ -27,14 +28,14 @@ Subversion server
 	<li>cd /path/to/svn/hooks</li>
 	<li>Edit post-commit with your favorite text editor</li>
 </ul>
-<code lang="bash">
+{% highlight bash %}
 REPOS="$1"
-REV="$2"</code>
+REV="$2"{% endhighlight %}
 
-<code lang="bash"> </code>
+{% highlight bash %}
 
-<code lang="bash">/usr/bin/python /usr/bin/svn_tweeter -u twitterusername -p twitterpassword -r $REV -s $REPOS
-</code>
+{% highlight bash %}/usr/bin/python /usr/bin/svn_tweeter -u twitterusername -p twitterpassword -r $REV -s $REPOS
+{% endhighlight %}
 
 Now try a commit, and check your syslog for entries from the script.
 

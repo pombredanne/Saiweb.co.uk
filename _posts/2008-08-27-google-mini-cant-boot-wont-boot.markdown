@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Google Mini - Can't Boot Wont Boot
+date: 2008-08-27 15:22:03 +01:00
 tags: 
 - google mini
-date: "2008-08-27"
+wordpress_url: general/google-mini-cant-boot-wont-boot
 ---
 First off let me start by saying if your google mini is still in warranty <strong>APPLY FOR AN IN WARRANTY REPAIR.</strong>
 
@@ -41,10 +42,10 @@ The "tamper proof" chasis screws are made of soft aluminium, well it's not as if
 
 Upon cracking open the case this model in question has a SuperMicro motherboard
 
-<code>
+{% highlight bash %}
 Model: P8SCT
 PCB Revision: 1.01
-</code>
+{% endhighlight %}
 
 I check the "usual suspects", swap out the CPU (p4) with a known working CPU same problem no VGA output ... at this point I'm getting annoyed and in what can only be described as a case of irony, I use Google to search for the motherboard manual, hoping a CMOS reset might shed some light as this thing isn't even starting the BIOS from what I can tell ...
 

@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: ffmpeg install with libx264 (h264)
+date: 2008-08-06 09:04:12 +01:00
 tags: 
 - ffmpeg
 - h264
 - libx264
-date: "2008-08-06"
+wordpress_url: linux/ffmpeg-install-with-libx264-h264
 ---
 The information for this is VERY very sparse, so here is a summary of what I have found.
 
@@ -15,27 +16,27 @@ Get the libx264 package from here: <a href="http://www.videolan.org/developers/x
 
 Extracts the bz2 file 
 
-<code>
+{% highlight bash %}
 tar -xjvf /path/to/x264-snapshot-20080805-2245.tar.bz2
-</code>
+{% endhighlight %}
 
 And now the useual
 
-<code>
+{% highlight bash %}
 cd /path/to/x264-dir
 ./configure --enable-shared
 make
 make install
 ldconfig
-</code>
+{% endhighlight %}
 
 Get a nice error message:
 
-<code>
+{% highlight bash %}
 [root@dev01 x264-snapshot-20080805-2245]# ./configure
 No suitable assembler found.  Install 'yasm' to get MMX/SSE optimized code.
 If you really want to compile without asm, configure with --disable-asm.
-</code>
+{% endhighlight %}
 
 You do want MMX/SSE at somepoint for the time being I am disabling this though (lack of time to find a valid RHEL source). so I added the disable asm line.
 
@@ -43,14 +44,14 @@ You do want MMX/SSE at somepoint for the time being I am disabling this though (
 
 For this I use subversion.
 
-<code>
+{% highlight bash %}
 cd /path/to/where/I/want/sources
 svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
 cd /path/to/where/I/want/sources/ffmpeg
 ./configure --enable-libx264 --enable-gpl --enable-shared
 make
 make install
-</code>
+{% endhighlight %}
 
 et voila ffmpeg is now installed with libx264 (h264).
 
@@ -60,9 +61,9 @@ et voila ffmpeg is now installed with libx264 (h264).
 
 To fix this:
 
-<code>
+{% highlight bash %}
 vi /etc/ld.so.conf.d/custom-libs.conf
-</code>
+{% endhighlight %}
 
 Add the line : /usr/local/lib
 

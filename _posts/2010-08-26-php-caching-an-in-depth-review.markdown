@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: PHP & Caching an in depth review.
+date: 2010-08-26 18:11:59 +01:00
 tags: 
 - php
 - cache
 - caching
 - faster
-date: "2010-08-26"
+wordpress_url: hosting/php-caching-an-in-depth-review
 ---
 Sounds simple enough, right?
 
@@ -100,7 +101,7 @@ Percentage of the requests served within a certain time (ms)
 99%  101497
 100%  115421 (longest request)
 
-<a href="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-nocache-nogzip.png"><img class="aligncenter size-full wp-image-939" title="saiweb-nocache-nogzip" src="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-nocache-nogzip.png" alt="" width="640" height="480" /></a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-nocache-nogzip.png"><img class="aligncenter size-full wp-image-939" title="saiweb-nocache-nogzip" src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-nocache-nogzip.png" alt="" width="640" height="480" /></a>
 
 As can be seen as the number of requests grew the response time began to increase sharply and the overall performace of the site degrade, bare in mind these benchmarks are being made on my home DSL for the time being.
 
@@ -143,7 +144,7 @@ Percentage of the requests served within a certain time (ms)
   99%  29972
  100%  36897 (longest request)
 
-<a href="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-cached1.png"><img src="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-cached1.png" alt="" title="saiweb-cached" width="640" height="480" class="aligncenter size-full wp-image-941" /></a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-cached1.png"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-cached1.png" alt="" title="saiweb-cached" width="640" height="480" class="aligncenter size-full wp-image-941" /></a>
 
 A much more consistent line here, however as you can clearly see response times are roughly equal this is due to my DSL connection, so lets run these tests from somewhere with a little more bandwidth say the webserver itself using a loop back connection.
 
@@ -186,7 +187,7 @@ Percentage of the requests served within a certain time (ms)
   99%     61
  100%     64 (longest request)
 
-<a href="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-cached21.png"><img src="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-cached21.png" alt="" title="saiweb-cached2" width="640" height="480" class="aligncenter size-full wp-image-943" /></a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-cached21.png"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-cached21.png" alt="" title="saiweb-cached2" width="640" height="480" class="aligncenter size-full wp-image-943" /></a>
 
 In this case the response times rise and then plateau, no after which no further degradation occurs. 
 
@@ -230,7 +231,7 @@ Percentage of the requests served within a certain time (ms)
   99%   3638
  100%   6735 (longest request)
 
-<a href="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-cached3.png"><img src="http://cdn.saiweb.co.uk/uploads/2010/08/saiweb-cached3.png" alt="" title="saiweb-cached3" width="640" height="480" class="aligncenter size-full wp-image-944" /></a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-cached3.png"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2010/08/saiweb-cached3.png" alt="" title="saiweb-cached3" width="640" height="480" class="aligncenter size-full wp-image-944" /></a>
 
 Oh dear of dear lets cut to the hard facts shall we?
 

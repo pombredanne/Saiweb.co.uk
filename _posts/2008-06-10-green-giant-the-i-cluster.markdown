@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: "\"Green Giant\" the i-cluster?"
+date: 2008-06-10 12:01:19 +01:00
 tags: 
 - green giant
 - accelerometer
 - iphone
 - icluster
 - recycle
-date: "2008-06-10"
+wordpress_url: hacking/green-giant-the-i-cluster
 ---
 <p>So the 3g iPhone is out, and a _lot_ of 1st gen iPhone people are looking to grab this new phone as a replacement due to the new features, 3g, gps etc ...</p>
 <p>That leaves a _LOT_ of 1st gen iPhones that potentially are going to end up on your local dump (landfill) ...</p>

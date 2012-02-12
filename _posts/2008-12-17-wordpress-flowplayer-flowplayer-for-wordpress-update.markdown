@@ -1,18 +1,19 @@
 --- 
 layout: post
 title: Wordpress flowplayer (Flowplayer for wordpress) UPDATE
+date: 2008-12-17 09:20:52 +00:00
 tags: 
 - flowplayer
 - wordpress
-date: "2008-12-17"
+wordpress_url: php/wordpress-flowplayer-flowplayer-for-wordpress-update
 ---
 With the release of wordpress 2.7 and flowplayer 3.x I thought it was time to update the plugin.
 
 A development copy as always can be obtained from:
 
-<code>
+{% highlight bash %}
 svn co http://svn.saiweb.co.uk/branches/wordpress-flowplayer/trunk
-</code>
+{% endhighlight %}
 
 However please remember that it is development and most like will not work.
 

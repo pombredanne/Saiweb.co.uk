@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: n95 the best apps you realy can not live without
+date: 2008-06-17 08:42:38 +01:00
 tags: 
 - n95
 - symbian
 - s60
 - accelerometer
 - mobi
-date: "2008-06-17"
+wordpress_url: hacking/n95-the-best-apps-you-realy-can-not-live-without
 ---
 <p>Want iPhone style functionality on your n95?</p>
 <p>Well one thing that didn't make it into the tech spec sheets is the fact the n95 has an accelerometer!</p>

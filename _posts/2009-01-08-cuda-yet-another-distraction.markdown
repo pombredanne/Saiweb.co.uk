@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: CUDA, yet another distraction
+date: 2009-01-08 15:33:07 +00:00
 tags: 
 - cuda
 - nvidia
 - eclipse
 - md5
-date: "2009-01-08"
+wordpress_url: hacking/cuda-yet-another-distraction
 ---
 oooooooo SHINY .... I mean erm ... yeh ... *whistles*
 
@@ -20,4 +21,4 @@ If I have the time I will be getting a could of cuda shell projects out the door
 <strong>
 UPDATE:</strong> Despite a quick playing during my lunch I can't get CUDA example compiling ... 
 
-[FLOWPLAYER=http://cdn.saiweb.co.uk/uploads/2009/01/cuda_not_working.mp4,534,633]
+[FLOWPLAYER=http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2009/01/cuda_not_working.mp4,534,633]

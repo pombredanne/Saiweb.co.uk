@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Optimizing Apache for high load sites - Part 3
+date: 2008-11-14 11:11:03 +00:00
 tags: 
 - apache
 - optimize
-date: "2008-11-14"
+wordpress_url: linux/optimizing-apache-for-high-load-sites-part-3
 ---
 <b>Pulling it all together.</b>
 
@@ -26,7 +27,7 @@ However you also need to be aware of your CGI programs such as PHP, if you are t
 
 Your httpd.conf should have the following entries (or similar).
 
-<code>
+{% highlight bash %}
 # prefork MPM
 # StartServers: number of server processes to start
 # MinSpareServers: minimum number of server processes which are kept spare
@@ -57,23 +58,23 @@ MaxSpareThreads     75
 ThreadsPerChild     25
 MaxRequestsPerChild  0
 </IfModule>
-</code>
+{% endhighlight %}
 
-<code>
+{% highlight bash %}
 [buzz@buzz_srv ~]httpd -l
 Compiled in modules:
   core.c
   prefork.c
   http_core.c
   mod_so.c
-</code>
+{% endhighlight %}
 
 As can be seen above in my installation the part of the config I am interested in is prefork.c.
 
 
 Now with my theorehtical max clients in part 3 hitting 800.5, lets first go for a safer figure, say 60% 
 
-<code>
+{% highlight bash %}
 <IfModule prefork.c>
 StartServers       8
 MinSpareServers    5
@@ -82,7 +83,7 @@ ServerLimit      480
 MaxClients       480
 MaxRequestsPerChild  4000
 </IfModule>
-</code>
+{% endhighlight %}
 
 From here use the script in <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-script-part-1">part 1 of the Linux sysadmin script</a>, to monitor your active http connections, and 'tweak' your configuration accordingly.
 

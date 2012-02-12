@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: High Availability mySQL binlog position comparrison woes
+date: 2009-06-16 14:10:19 +01:00
 tags: 
 - nagios
 - mysql
 - high availability
 - replication
-date: "2009-06-16"
+wordpress_url: nagios/high-availability-mysql-binlog-position-comparrison-woes
 ---
 I ment to note this down yesterday but everything is going ten to the dozen at the moment.
 

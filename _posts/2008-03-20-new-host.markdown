@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: New host
+date: 2008-03-20 14:35:56 +00:00
 tags: 
 - web hosting
-date: "2008-03-20"
+wordpress_url: general/new-host
 ---
 Due to latency issues, and the lack of multi site support I have ditched my old web-host.
 

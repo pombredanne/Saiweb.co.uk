@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Updates, Froomi, Flowplayer for wordpress
+date: 2009-06-03 09:24:49 +01:00
 tags: 
 - flowplayer
 - wordpress
 - update
 - froomi
-date: "2009-06-03"
+wordpress_url: general/updates-froomi-flowplayer-for-wordpress
 ---
 As most have no doubt noticed the plugin is delayed ... _again_
 

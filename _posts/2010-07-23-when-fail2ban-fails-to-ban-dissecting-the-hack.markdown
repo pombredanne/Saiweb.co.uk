@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: When fail2ban fails to ban - Dissecting the hack
+date: 2010-07-23 10:23:52 +01:00
 tags: 
 - force
 - dissecting
 - hack
 - fail2ban
 - brute
-date: "2010-07-23"
+wordpress_url: hacking/when-fail2ban-fails-to-ban-dissecting-the-hack
 ---
 Most of the time when I review our log watches each morning I become enraged at the number of automated attacks,
 
@@ -33,7 +34,7 @@ iptables -A INPUT -p tcp --dport ftp -j LOG
 
 Outputs
 
-<code>
+{% highlight bash %}
 Jul 23 11:45:57 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=<server ip> LEN=64 TOS=0x00 PREC=0x00 TTL=55 ID=47423 DF PROTO=TCP SPT=3865 DPT=21 WINDOW=65535 RES=0x00 SYN URGP=0 
 Jul 23 11:45:57 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=<server ip> LEN=52 TOS=0x00 PREC=0x00 TTL=55 ID=45370 DF PROTO=TCP SPT=3865 DPT=21 WINDOW=65535 RES=0x00 ACK URGP=0 
 Jul 23 11:45:57 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=<server ip> LEN=52 TOS=0x00 PREC=0x00 TTL=55 ID=46896 DF PROTO=TCP SPT=3865 DPT=21 WINDOW=65535 RES=0x00 ACK URGP=0 
@@ -42,7 +43,7 @@ Jul 23 11:46:02 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=
 Jul 23 11:46:02 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=<server ip> LEN=52 TOS=0x00 PREC=0x00 TTL=55 ID=59735 DF PROTO=TCP SPT=3865 DPT=21 WINDOW=65535 RES=0x00 ACK URGP=0 
 Jul 23 11:46:04 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=<server ip> LEN=66 TOS=0x00 PREC=0x00 TTL=55 ID=23116 DF PROTO=TCP SPT=3865 DPT=21 WINDOW=65535 RES=0x00 ACK PSH URGP=0 
 Jul 23 11:46:07 132 kernel: IN=eth0 OUT= MAC=<mac addr> SRC=<connecitng ip> DST=<server ip> LEN=52 TOS=0x00 PREC=0x00 TTL=55 ID=40246 DF PROTO=TCP SPT=3865 DPT=21 WINDOW=65535 RES=0x00 ACK URGP=0 
-</code>
+{% endhighlight %}
 
 <strong>Update 2: Defeating the hack</strong>
 
@@ -52,10 +53,10 @@ Now granted this would be a lot worse had the attacking IP been dynamic, fortuna
 grep kernel /var/log/messages | awk '{print $9}' | sed 's/SRC=//' | uniq -c | sort
 [/cc]
 
-<code>
+{% highlight bash %}
 390   173.XXX.XXX.XXX
       4 195.XXX.XXX.XXX
-</code>
+{% endhighlight %}
 
 Ip's have been masked to prevent anyone complaining or threatening legal action (again) for inferring you should block their ip / network range ... and me firing off the obligatory "Well if you policed your own network I wouldn't have to post this no would I" email, 
 

@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Apache, PHP Frameworks, and multi site .htaccess
+date: 2008-03-17 11:26:09 +00:00
 tags: 
 - php
 - apache
@@ -8,7 +9,7 @@ tags:
 - htaccess
 - multi site
 - accessfilename
-date: "2008-03-17"
+wordpress_url: linux/apache-php-frameworks-and-multi-site-htaccess
 ---
 If like me you have a PHP framework, that runs multiple sites, you no doubt have thought at some point in time ...
 
@@ -18,11 +19,11 @@ Well fear not, after much head scratching, AccessFileName directive to the rescu
 
  Using the above method you can specify bespoke htaccess files on a per VirtualHost basis.
 
-<code>&lt;VirtualHost xxx.xxx.xxx.xxx:80&gt;
+{% highlight bash %}&lt;VirtualHost xxx.xxx.xxx.xxx:80&gt;
         DocumentRoot /path/to/framework
         ServerName buzz.saiweb.co.uk
         <strong>AccessFileName .buzz_htaccess</strong>
         CustomLog logs/buzz_access_log combined
         ErrorLog logs/buzz_error_log
-&lt;/VirtualHost&gt;</code>
+&lt;/VirtualHost&gt;{% endhighlight %}
  Enjoy!

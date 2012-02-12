@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Linux - Generating file manifests and then checking them
+date: 2009-09-07 10:50:26 +01:00
 tags: []
 
-date: "2009-09-07"
+wordpress_url: linux/linux-generating-file-manifests-and-then-checking-them
 ---
 This issue has come about whilst having to migrate a positively huge number of files, and have to check the integrity of the transfer.
 

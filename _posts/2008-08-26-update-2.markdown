@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Update
+date: 2008-08-26 12:54:58 +01:00
 tags: []
 
-date: "2008-08-26"
+wordpress_url: general/update-2
 ---
 Ok now it has all been officialy announced here at work I can finaly update this blog.
 

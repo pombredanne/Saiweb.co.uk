@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Lowell Portfolio 1 Ltd
+date: 2008-09-09 10:48:20 +01:00
 tags: 
 - scam
 - lowell portfolio
@@ -9,7 +10,7 @@ tags:
 - lowell portfolio 1 ltd
 - scotcall
 - red debt collection
-date: "2008-09-09"
+wordpress_url: uncategorized/lowell-portfolio-1-ltd
 ---
 UPDATE 26/07/09 -----
 

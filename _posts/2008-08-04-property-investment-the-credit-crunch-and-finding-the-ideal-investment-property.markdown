@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Property Investment, the credit crunch and finding the ideal Investment Property
+date: 2008-08-04 14:24:49 +01:00
 tags: 
 - propertysecrets
 - property investment
 - investment property
-date: "2008-08-04"
+wordpress_url: property investment/property-investment-the-credit-crunch-and-finding-the-ideal-investment-property
 ---
 " <i>
 Property Investment is the best investment opportunity thanks to the growth of the World economy.

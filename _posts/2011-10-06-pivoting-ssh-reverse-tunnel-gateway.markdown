@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Pivoting ssh reverse tunnel gateway
+date: 2011-10-06 14:43:02 +01:00
 tags: 
 - ssh
 - pivot
@@ -9,7 +10,7 @@ tags:
 - tunnel
 - epic
 - win
-date: "2011-10-06"
+wordpress_url: linux/pivoting-ssh-reverse-tunnel-gateway
 ---
 They say necessity is the mother of invention, if this is true then surely the mother of all fuck ups is shoddy customer service, say an isp that will randomly shut down a port because it has high bandwidth usage without asking the customer about it first, and flat out refusing to do anything for 24hrs ...
 
@@ -29,7 +30,7 @@ Using 3 linux devices I would create the following.
 
 On the gateway device sshd_config needs to be updated with:
 
-[CC]GatewayPorts yes[/CC]
+{% highlight %}GatewayPorts yes{% endhighlight %}
 
 And sshd reloaded.
 
@@ -41,9 +42,9 @@ Generate rsa ssh keys and deploy your id_rsa.pub to the gateway device, (update 
 
 The tunnel.
 
-[CC]
+{% highlight %}
 ssh <Gateway Device> -l root -g -N -R 0.0.0.0:<Service Port>:10.0.0.1:<Service Port>  -vvv
-[/CC]
+{% endhighlight %}
 
 Now you only really need to use root if the port you need to gateway is a  privileged port (<1024).
 

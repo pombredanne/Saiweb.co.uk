@@ -1,19 +1,20 @@
 --- 
 layout: post
 title: Content purging changes in Varnish 3.0
+date: 2011-08-12 08:25:45 +01:00
 tags: 
 - varnish
 - purge
 - 3.x
 - 2.x
 - changes
-date: "2011-08-12"
+wordpress_url: linux/content-purging-changes-in-varnish-3-0
 ---
 If you tie in your web application to automatically PURGE content when you modify it, thus keeping the content "fresh" while using Varnish you may notice if you made the jump from 2.x to 3.x that your PURGE VCL is no longer working, I refer you to: <a href="https://www.varnish-software.com/blog/bans-and-purges-varnish-30">https://www.varnish-software.com/blog/bans-and-purges-varnish-30</a>
 
 In short replace your usual
 
-<code>
+{% highlight bash %}
 sub vcl_hit {
         if (req.request == "PURGE") {
                 set obj.ttl = 0s;
@@ -25,12 +26,12 @@ sub vcl_miss {
                 error 404 "Not in cache."; #request to purge none existant item
         }
 }
-</code>
+{% endhighlight %}
 
 
 with
 
-<code>
+{% highlight bash %}
 sub vcl_recv {
         if (req.request == "PURGE") {
                 if (!client.ip ~ purge) {
@@ -40,7 +41,7 @@ sub vcl_recv {
                 error 200 "Purged.";
         }
 ...
-</code>
+{% endhighlight %}
 
 Substituting "~ purge" with your ACL name, the above implement wild card purging aswell, if you do not want this and only want PURGE for the exact passed URL replace 
 

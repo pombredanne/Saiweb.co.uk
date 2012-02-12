@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Wordpress Flowplayer 2.1.0.0
+date: 2009-02-04 21:35:50 +00:00
 tags: 
 - flowplayer
 - wordpress
 - 2.1.0.0
-date: "2009-02-04"
+wordpress_url: flowplayer/wordpress-flowplayer-2100
 ---
 The following milestone is planned for completion by the end of March.
 

@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Announcing Project Acies
+date: 2008-03-22 23:29:12 +00:00
 tags: 
 - php
 - framework
 - acies
 - rapid development
-date: "2008-03-22"
+wordpress_url: technology/announcing-project-acies
 ---
 <img border="0" align="middle" width="280" src="http://acies.saiweb.co.uk/www/acies/images/logo.jpg" alt="Acies" height="162" /> 
 

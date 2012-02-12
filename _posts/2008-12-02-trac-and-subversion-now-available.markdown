@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Trac and subversion now available
+date: 2008-12-02 15:49:01 +00:00
 tags: 
 - trac
 - svn
-date: "2008-12-02"
+wordpress_url: general/trac-and-subversion-now-available
 ---
 I am still in the midst of getting everything made available.
 

@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Very basic C++ GDB tutorial
+date: 2008-04-09 20:13:36 +01:00
 tags: 
 - linux
 - gdb
 - c
-date: "2008-04-09"
+wordpress_url: linux/very-basic-c-gdb-tutorial
 ---
 a very basic video tutorial covering how to compile with debug information, load your app into gdb, set breakpoints and step through it.
 

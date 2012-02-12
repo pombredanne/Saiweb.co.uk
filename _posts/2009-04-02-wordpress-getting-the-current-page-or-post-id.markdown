@@ -1,19 +1,20 @@
 --- 
 layout: post
 title: Wordpress getting the current Page or Post ID
+date: 2009-04-02 14:50:01 +01:00
 tags: 
 - wordpress
 - get
 - page
 - id
-date: "2009-04-02"
+wordpress_url: php/wordpress-getting-the-current-page-or-post-id
 ---
 An example of getting the current page / post ID, identifying whether the current item is a page or a post, and then appending the results to the content.
 
 All from within a plugin.
 
 
-<code lang="php" line="1">
+{% highlight php %}
 <?PHP
 /*
 Plugin Name: Get Page / Post ID using a plugin by D.Busby Saiweb.co.uk
@@ -38,7 +39,7 @@ function post_page($content){
     return $content;
 }
 ?>
-</code>
+{% endhighlight %}
 
 Install the above as a plugin i.e. in wp-content/plugins/test/test.php
 
@@ -46,10 +47,10 @@ Head over to your admin menu and enable the plugin, now each page and post will 
 
 There is a lot available in the $post object for a list add
 
-<code lang="php">
+{% highlight php %}
 ob_start();
 var_dump($post);
 $content .= ob_get_contents();
 ob_end_clean();
-</code>
+{% endhighlight %}
 

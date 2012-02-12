@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Call to undefined function imagettfbbox()
+date: 2009-10-13 13:19:20 +01:00
 tags: []
 
-date: "2009-10-13"
+wordpress_url: php/call-to-undefined-function-imagettfbbox
 ---
 <strong>Call to undefined function imagettfbbox()</strong>
 

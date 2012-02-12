@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Linux collection of handy scripts and one liners - Volume 1.5 (Feedback edition)
+date: 2010-10-15 10:08:12 +01:00
 tags: 
 - linux
 - bash
@@ -9,7 +10,7 @@ tags:
 - one
 - liners
 - scripts
-date: "2010-10-15"
+wordpress_url: linux/linux-collection-of-handy-scripts-and-one-liners-volume-1-5-feedback-edition
 ---
 Following reader feedback please see below for an updated version of Volume 1
 
@@ -38,7 +39,7 @@ An example usage is to ensure that caching is working correctly and that cache f
 
 All being well you'll get an output similar to the following:
 
-<code>
+{% highlight bash %}
 y-tools-3.14)
 (root@132 BUZZ1) # /usr/local/bin/inotifywait -m --timefmt "[%a %b %d %H:%M:%S %Y]" --format "%T [%e] %f" -r /path/to/saiweb/wp-content/cache/supercache/*
 Setting up watches.  Beware: since -r was given, this may take a while!
@@ -74,7 +75,7 @@ Watches established.
 [Thu Jul 15 21:00:08 2010] [CLOSE_NOWRITE,CLOSE,ISDIR] 
 [Thu Jul 15 21:00:08 2010] [CLOSE_NOWRITE,CLOSE,ISDIR] security
 [Thu Jul 15 21:00:08 2010] [CLOSE_NOWRITE,CLOSE,ISDIR]
-</code>
+{% endhighlight %}
 
 Alternatively you can use the following approach contributed by Matthew Ife:
 
@@ -91,9 +92,9 @@ As can be seen the re-write rules are redirecting users to the cached files/fold
 
 You have two options for this a single line
 
-<code>
+{% highlight bash %}
  ps -Ao rsz,comm,pid | grep <process name>
-</code>
+{% endhighlight %}
 
 or a bash function you can place in your ~/.bashrc
 
@@ -110,13 +111,13 @@ function appmem(){
 
 You can then call this (after logging back in again to load the .bashrc up) using
 
-<code>
+{% highlight bash %}
 appmem <filter>
-</code>
+{% endhighlight %}
 
 replacing <filter> for instance with httpd will give you an output similar to the following:
 
-<code>
+{% highlight bash %}
 8032 httpd            6207
 33080 httpd           13828
  8552 httpd           14095
@@ -136,15 +137,15 @@ replacing <filter> for instance with httpd will give you an output similar to th
 29716 httpd           24812
 28152 httpd           24813
 31684 httpd           31291
-</code>
+{% endhighlight %}
 
 This shows memory in kilobytes, command, process id, you can see here I currently have 3mb/pid for each httpd process (due to <a href="http://www.saiweb.co.uk/linux/optimizing-apache-for-high-load-sites-part-3">my optimizations</a>, I highly recommend you read parts 1-3)
 
 <strong>Dump mysql data and compress on the fly</strong>
 
-<code>
+{% highlight bash %}
 mysqldump -h <host> -u <user> -p <dbname> | bzip2 -c7 > /path/to/dump.sql.bz2
-</code>
+{% endhighlight %}
 
 Self explanatory that one, pipes the output from mysqldump through bzip2 (which has better compression over gzip) and dumps it out to a file, if you _realy_ need a gziped file just replace bzip2 with gzip in the line above. 
 
@@ -162,9 +163,9 @@ Plant this in your ~/.basrc for a callable function that will generate a selecti
 
 example output:
 
-<code>
+{% highlight bash %}
 )S9esjccl?MMiC1
-</code>
+{% endhighlight %}
 
 If you want runtime variable length you could change to cut -1-$1 and then call pwgen 15 for example.
 

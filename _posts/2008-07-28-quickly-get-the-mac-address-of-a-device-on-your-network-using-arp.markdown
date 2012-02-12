@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Quickly get the MAC address of a device on your network using ARP
+date: 2008-07-28 08:45:34 +01:00
 tags: 
 - arp
-date: "2008-07-28"
+wordpress_url: windows/quickly-get-the-mac-address-of-a-device-on-your-network-using-arp
 ---
 This is something I find myself having to do, more and more lately due to this VoIP roll out.
 
@@ -18,21 +19,21 @@ NOTE: Even if the device blocks ICMP, this should still work, run ettercap on yo
 
 Now to get the MAC address type
 
-<code>
+{% highlight bash %}
 arp -a xxx.xxx.xxx.xxx
-</code>
+{% endhighlight %}
 
 Where xxx.xxx.xxx.xxx is the IP address of the device you just pinged.
 
 
-<code>
+{% highlight bash %}
 C:\Documents and Settings\buzz>arp  -a 10.99.1.10
 
 Interface: XXX.XXX.XXX.XXX --- 0x3
   Internet Address      Physical Address      Type
   XXX.XXX.XXX.XXX            AA-BB-CC-DD-EE-FF     dynamic
 
-</code>
+{% endhighlight %}
 
 Please note this only works for a device on the same IP range.
 

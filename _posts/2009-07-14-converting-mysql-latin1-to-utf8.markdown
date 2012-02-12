@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Converting mySQL latin1 to utf8
+date: 2009-07-14 08:46:02 +01:00
 tags: 
 - mysql
 - sysadmin
@@ -13,7 +14,7 @@ tags:
 - convert
 - converting
 - mysqldump
-date: "2009-07-14"
+wordpress_url: mysql/converting-mysql-latin1-to-utf8
 ---
 <ul>
 <strong>The problem</strong></ul>

@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: "PHP BUG #48139"
+date: 2009-05-05 14:24:27 +01:00
 tags: 
 - php
 - bug
 - "48139"
-date: "2009-05-05"
+wordpress_url: php/php-bug-48139
 ---
 Because a picture is worth over 9000 internets ... apparently
 

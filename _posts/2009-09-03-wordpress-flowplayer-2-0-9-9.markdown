@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Wordpress Flowplayer 2.0.9.9
+date: 2009-09-03 16:33:24 +01:00
 tags: 
 - flowplayer
 - wordpress
-date: "2009-09-03"
+wordpress_url: php/wordpress-flowplayer-2-0-9-9
 ---
 Finaly it is ready and in a state I am happy to release it.
 

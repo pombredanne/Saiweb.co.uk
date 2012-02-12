@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Optimizing apache for high load sites - Part 1
+date: 2008-11-13 12:33:35 +00:00
 tags: 
 - apache
 - memory
 - optimize
-date: "2008-11-13"
+wordpress_url: linux/optimizing-apache-for-high-load-sites-part-1
 ---
 Following on from <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-script-part-3">linux-the-sysadmin-script-part-3</a> I am now going to cover how to reduce the memory footprint of apache.
 
@@ -19,7 +20,7 @@ As was introduced in <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-s
 
 This is where this entry will pick up, once pmap is run you will see the following example output:
 
-<code>
+{% highlight bash %}
 ----- MEMORY USAGE REPORT FOR 'apache' -----
 PID Count: 6
 Mem usage: 1135 MB
@@ -324,7 +325,7 @@ ffffffffff600000 8192 - - - ----- [ anon ]
 total kB 193636 - - -
 
 -----
-</code>
+{% endhighlight %}
 
 As can be seen above via the script and pmap output, the majority of apache's memory footprint is taken up by dynamicaly loaded libraries or 'mods'.
 

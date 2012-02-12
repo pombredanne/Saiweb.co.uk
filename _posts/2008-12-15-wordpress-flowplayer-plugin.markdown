@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Wordpress Flowplayer plugin
+date: 2008-12-15 12:04:00 +00:00
 tags: 
 - flowplayer
 - wordpress
-date: "2008-12-15"
+wordpress_url: php/wordpress-flowplayer-plugin
 ---
 After updating to 2.7 I can confirm that Wordpress Flowplayer does not work with 2.7
 

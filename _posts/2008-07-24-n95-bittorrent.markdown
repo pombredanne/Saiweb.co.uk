@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: N95 Bittorrent
+date: 2008-07-24 14:56:13 +01:00
 tags: 
 - n95
 - s60
 - bittorrent
-date: "2008-07-24"
+wordpress_url: n95/n95-bittorrent
 ---
 Well I'll be damned, someone has actually done it!
 

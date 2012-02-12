@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Green Giant - eBay Con artists
+date: 2008-05-20 07:59:12 +01:00
 tags: 
 - ebay
 - con
-date: "2008-05-20"
+wordpress_url: hacking/green-giant-ebay-con-artists
 ---
 <div style=''>So I got my "adjusted" postage ... the seller has increased the
 combined postage to £64 and then applied a £48 discount, yeh you

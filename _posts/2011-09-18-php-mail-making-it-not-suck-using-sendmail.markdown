@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: php mail() - Making it not suck using sendmail
+date: 2011-09-18 12:22:46 +01:00
 tags: 
 - php
 - mail
 - sendmail
-date: "2011-09-18"
+wordpress_url: linux/php-mail-making-it-not-suck-using-sendmail
 ---
 Ok ok ... as some of the people work with are aware, I did this months ago fro one project, ment to blog and document it then in fact I have a draft post last modified 06/05/2011 covering full spam score reduction, and half finished instructions on setting up a mail relay ... so in the interim of finishing that post I'm going to cover improving user experience through proper php configuration.
 
@@ -21,7 +22,7 @@ Out of the box, php will use sendmail, and it will do so as follows.
 <div>So edit yout php.ini .</div>
 
 
-<code>sendmail_path = /usr/sbin/sendmail -t -i -O DeliveryMode=b</code>
+{% highlight bash %}sendmail_path = /usr/sbin/sendmail -t -i -O DeliveryMode=b{% endhighlight %}
 
 
 This sets the delivery mode to background, sendmail will return to php near instantly and send the email in the background by placing in into a queue.

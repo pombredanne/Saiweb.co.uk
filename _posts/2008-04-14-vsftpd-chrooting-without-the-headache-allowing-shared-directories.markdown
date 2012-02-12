@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: vsftpd chrooting without the headache, allowing shared directories
+date: 2008-04-14 10:35:26 +01:00
 tags: 
 - vsftpd
 - chroot
 - sahred
 - directories
-date: "2008-04-14"
+wordpress_url: linux/vsftpd-chrooting-without-the-headache-allowing-shared-directories
 ---
 <script type="text/javascript">// <![CDATA[
 google_ad_client = "pub-5002016982726982";
@@ -50,7 +51,7 @@ passwd buzz
 
 Remove the user's shell access (and subsequently sftp/scp) by editing /etc/pass wd (remove the space between pass wd, wordpress is breaking when I try to post it properly)
 
-replace <code>buzz:x:123:123::/home/buzz:/bin/bash</code> with <code>buzz:x:123:123::/home/buzz:/sbin/nologin</code>
+replace {% highlight bash %}buzz:x:123:123::/home/buzz:/bin/bash{% endhighlight %} with {% highlight bash %}buzz:x:123:123::/home/buzz:/sbin/nologin{% endhighlight %}
 
 Test the FTP session:
 [cc lang="bash"]
@@ -138,13 +139,13 @@ There are mods for SCP out there to allow logging, however you can use them at y
 
 <em>Why would I want to "chroot" the user?</em>
 
-Change <code>chroot_local_user=YES</code> to <code>chroot_local_user=NO</code>and reload vsftpd, now login to ftp hand try to get out of your home directory,
+Change {% highlight bash %}chroot_local_user=YES{% endhighlight %} to {% highlight bash %}chroot_local_user=NO{% endhighlight %}and reload vsftpd, now login to ftp hand try to get out of your home directory,
 
 you will notice you can pretty much browse the entire file system, and depending on the setup write and delete files owned by anyone in the same group as that user.
 
 By chroot'ing the user you are reducing the potential for things to go wrong on your server, as you add more and more users it reduces the "sys admin" time incurred due to user error.
 
-NOTE: Remember to put <code>chroot_local_user=YES</code>back and reload vsftpd!
+NOTE: Remember to put {% highlight bash %}chroot_local_user=YES{% endhighlight %}back and reload vsftpd!
 
 <strong>Disclaimer:</strong>
 

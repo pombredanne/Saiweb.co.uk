@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Enable logging in the SFTP subsystem
+date: 2010-07-19 17:48:05 +01:00
 tags: 
 - ssh
 - sftp
 - sshd
 - logging
-date: "2010-07-19"
+wordpress_url: linux/enable-logging-in-the-sftp-subsystem
 ---
 This is something I have wanted to get working for some time now, and thanks to James P for passing me a note that as of OpenSSH 4.4 you can infact add command line args for the Subsystem configuration, which when combined with the  (I assume new) logging functionality of the sftp-service allows you to finally log what is occuring during an sftp session.
 

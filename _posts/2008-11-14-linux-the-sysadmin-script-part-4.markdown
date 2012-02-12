@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Linux - The Sysadmin Script - Part 4
+date: 2008-11-14 09:31:23 +00:00
 tags: 
 - linux
 - sysadmin
-date: "2008-11-14"
+wordpress_url: linux/linux-the-sysadmin-script-part-4
 ---
 In part 4, I am going to cover more of an improvement than anything else to <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-script-part-3">part 3</a>
 
@@ -16,7 +17,7 @@ So what does this mean realy?
 
 The memory usage is infact the following VIRT + RSS, where RSS is the resident set size, the RSS is a representation of the memory in use by the PID, and VIRT is shared between the child processes.
 
-<code>
+{% highlight bash %}
 [buzz@buzz_srv ~]# ps aux | grep httpd | grep -v 'grep'
 root     16378  0.0  0.1 148640  3024 ?        Ss   Nov13   0:00 /usr/sbin/httpd
 apache   20088  0.0  0.1 148640  3304 ?        S    Nov13   0:00 /usr/sbin/httpd
@@ -39,14 +40,14 @@ apache   20995  0.0  0.1 148640  3288 ?        S    Nov13   0:00 /usr/sbin/httpd
 apache   20996  0.0  0.1 148640  3320 ?        S    Nov13   0:00 /usr/sbin/httpd
 apache   20997  0.0  0.1 148640  3320 ?        S    Nov13   0:00 /usr/sbin/httpd
 apache   20999  0.0  0.1 148640  3296 ?        S    Nov13   0:00 /usr/sbin/httpd
-</code>
+{% endhighlight %}
 
 As can be seen above the 'VIRT' does not change between the child processes, where as the RSS does dependant on what the thread is doing at that time.
 
 So below is an improved appmem function to allow for this:
 
 
-<code lang="bash" line="1">
+{% highlight bash %}
 function appmem {
         if [ -z "$1" ]; then
                 echo "Usage: sysadmin appmem app_name i.e. (sysadmin appmem apache)";
@@ -75,14 +76,14 @@ function appmem {
                 echo "Mem/PID: $(($RMEM/$COUNT)) MB";
         fi
 }
-</code>
+{% endhighlight %}
 
 Example output:
 
-<code>
+{% highlight bash %}
  ----- MEMORY USAGE REPORT FOR 'httpd' ----- 
 PID Count: 41
 Shared Mem usage: 140 MB
 Total Resident Set Site: 95 MB
 Mem/PID: 2 MB
-</code>
+{% endhighlight %}

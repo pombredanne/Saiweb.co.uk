@@ -1,16 +1,17 @@
 --- 
 layout: post
 title: Quickly get MAC addresses in Windows XP using ARP
+date: 2008-04-24 10:10:33 +01:00
 tags: 
 - windows xp
 - mac address
 - arp
-date: "2008-04-24"
+wordpress_url: windows/quickly-get-mac-addresses-in-windows-xp-using-arp
 ---
 <p>Just a quick blog about this ...</p>
 <p>Ever had the problem of having to assign a DHCP reservation with no mac address resolving software on your laptop? (NOOB! haha)</p>
 <p>Well ... you have software built in if you are using windows XP anyway ...</p>
-<p><code>Start > run > cmd</code></p>
+<p>{% highlight bash %}Start > run > cmd{% endhighlight %}</p>
 <p>"arp -a" (without quotes)</p>
 <p>this will list your current local interfaces and thier MAC addresses.</p>
 <p>"arp -a xxx.xxx.xxx.xxx" (without quotes) Where xxx.xxx.xxx.xxx is the target IP address on your LAN, this will resolve the MAC address for that interface.</p>

@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: Perfecting h264 conversion with ffmpeg
+date: 2009-01-06 20:34:04 +00:00
 tags: 
 - ffmpeg
 - h264
 - flowplayer
 - mp4
 - flv
-date: "2009-01-06"
+wordpress_url: linux/perfecting-h264-conversion-with-ffmpeg
 ---
 Liam (<a href="http://goodingsweb.com">http://goodingsweb.com</a>) has shared his findings on tweaking ffmpeg output with h.264, he has taken a 174MB flv file down to just 24MB (86% reduction in file size).
 

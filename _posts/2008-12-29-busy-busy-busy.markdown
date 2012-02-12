@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Busy Busy Busy ...
+date: 2008-12-29 09:56:13 +00:00
 tags: 
 - busy
-date: "2008-12-29"
+wordpress_url: general/busy-busy-busy
 ---
 Blog updates very well may become few and far between over the next couple of weeks, whilst I literally hammer out some issues with the Joomla database structure breaking mySQL replication *sigh*.
 

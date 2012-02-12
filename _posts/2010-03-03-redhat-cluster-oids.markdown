@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: RedHat Cluster OID's
+date: 2010-03-03 16:05:56 +00:00
 tags: 
 - python
 - snmp
 - redhat
 - oid
-date: "2010-03-03"
+wordpress_url: linux/redhat-cluster-oids
 ---
 Following on from the python bindings post I found myself with a real problem,
 

@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: PHP A2S Class (Valve Server Query Protocol)
+date: 2008-02-28 18:23:34 +00:00
 tags: 
 - php source class
 - a2s
 - valve
 - query
-date: "2008-02-28"
+wordpress_url: hacking/php-a2s-class-valve-server-query-protocol
 ---
 I was reminded today on MSN that I had in fact written (albeit a long time ago) a class for querying the A2S protocol using PHP sockets.
 
@@ -18,6 +19,6 @@ However  With the exception of the addition of RCON functionality (which should 
 
 Anyway check the attached files, the licence is included at the top of the file.
 
-<a href="http://cdn.saiweb.co.uk/uploads/2008/02/sourceclass.rar" title="PHP 4 A2S class (Valve Server Query)">PHP 4 A2S class (Valve Server Query)</a>
+<a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2008/02/sourceclass.rar" title="PHP 4 A2S class (Valve Server Query)">PHP 4 A2S class (Valve Server Query)</a>
 
 <a href="http://digg.com/programming/PHP_A2S_Class_Valve_Server_Query_Protocol">Digg this</a>

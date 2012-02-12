@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: mySQL and the phantom disk space
+date: 2009-07-03 09:04:35 +01:00
 tags: []
 
-date: "2009-07-03"
+wordpress_url: mysql/mysql-and-the-phantom-disk-space
 ---
 Title for a cheesy sysadmin novel I know.
 
@@ -13,13 +14,13 @@ Causing me some <a href="http://twitter.com/Saiweb/status/2451146916">headaches<
 
 Allow me to explain:
 
-<code lang="bash">
+{% highlight bash %}
 df -h
 Filesystem                     Size    Used    Avail   Use%   Mounted On
 /dev/sda1                     20G   17G      1.8G    91%    /   
 
 ...
-</code>
+{% endhighlight %}
 
 Looks simple enough right? I just need to free up some space?
 

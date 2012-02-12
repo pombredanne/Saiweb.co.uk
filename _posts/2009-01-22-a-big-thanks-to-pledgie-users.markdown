@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: A big *thanks* to Pledgie users
+date: 2009-01-22 15:02:04 +00:00
 tags: []
 
-date: "2009-01-22"
+wordpress_url: general/a-big-thanks-to-pledgie-users
 ---
 Or rather a lack of thanks,
 

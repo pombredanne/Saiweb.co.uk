@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Saying no to the YESMAN - Defense against Jasager
+date: 2011-03-16 17:52:21 +00:00
 tags: 
 - jasager
 - mitm
 - defense
-date: "2011-03-16"
+wordpress_url: hacking/saying-no-to-the-yesman-defense-against-jasager
 ---
 With work returning to "normal" levels I began digging through my backlog of seclist updates, errata updates and security related podcasts,
 

@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Linux - The Sysadmin script - Part 2
+date: 2008-10-14 08:40:55 +01:00
 tags: 
 - linux
 - sysadmin
 - bofh
 - mac
-date: "2008-10-14"
+wordpress_url: linux/linux-the-sysadmin-script-part-2
 ---
 Part 2 has finally arrived .... don't all cheer at once now ...
 
@@ -14,7 +15,7 @@ In part two I will cover how to run an IP range scan using bash script, and if t
 
 Now bare in mind this script was written to run from a MAC running OSX Leopard.
 
-<code>
+{% highlight bash %}
 #!/bin/bash
 #colours
 function colours {
@@ -43,7 +44,7 @@ done
 }
 colours;
 $1 $2
-</code>
+{% endhighlight %}
 
 To make this work on your Linux distro replace -t in the ping command with -W and check the awk entry for the arp output, a display of (no) means that no ARP entries could be found for the host, and change the IP range to that of your network.
 

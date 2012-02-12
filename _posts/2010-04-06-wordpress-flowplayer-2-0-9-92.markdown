@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Wordpress Flowplayer 2.0.9.92
+date: 2010-04-06 22:09:07 +01:00
 tags: 
 - flowplayer
 - wordpress
-date: "2010-04-06"
+wordpress_url: flowplayer/wordpress-flowplayer-2-0-9-92
 ---
 <strong>Changelog</strong>
 

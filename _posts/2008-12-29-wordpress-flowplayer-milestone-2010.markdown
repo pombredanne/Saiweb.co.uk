@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Wordpress Flowplayer milestone 2.0.1.0
+date: 2008-12-29 13:46:04 +00:00
 tags: 
 - flowplayer
 - wordpress
 - google
-date: "2008-12-29"
+wordpress_url: php/wordpress-flowplayer-milestone-2010
 ---
 Version 2.0.1.0 is aimed to close 3 enhancements to the plugin including google analytics support.
 

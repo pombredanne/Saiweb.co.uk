@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: mysql csv export scripting using TCL and expect
+date: 2010-07-05 15:06:15 +01:00
 tags: 
 - mysql
 - expect
 - tcl
 - csv
-date: "2010-07-05"
+wordpress_url: linux/mysql-csv-export-scripting-using-tcl-and-expect
 ---
 I've no idea to this day why my bash script would not work with a CSV export from mysql by simply using mysql -e "SQL COMMAND HERE".
 

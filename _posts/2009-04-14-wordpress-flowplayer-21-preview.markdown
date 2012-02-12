@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Wordpress Flowplayer 2.1 Preview
+date: 2009-04-14 16:00:45 +01:00
 tags: 
 - flowplayer
 - wordpress
 - 2.1.0.0
 - wordpress flowplayer
-date: "2009-04-14"
+wordpress_url: php/wordpress-flowplayer-21-preview
 ---
 Tonight I will be pushing to the development SVN a beta preview of the 2.1 release.
 

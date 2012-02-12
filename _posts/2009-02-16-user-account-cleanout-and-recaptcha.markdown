@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: User account cleanout and reCaptcha
+date: 2009-02-16 12:51:21 +00:00
 tags: 
 - recaptcha
 - wp-recaptcha
-date: "2009-02-16"
+wordpress_url: general/user-account-cleanout-and-recaptcha
 ---
 Due to the several hundred registered accounts in the last couple of days I have had a clean out.
 

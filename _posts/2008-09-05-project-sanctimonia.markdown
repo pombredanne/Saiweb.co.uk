@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Project "sanctimonia"
+date: 2008-09-05 09:35:42 +01:00
 tags: 
 - wordpress
 - sanctimonia
 - charity
-date: "2008-09-05"
+wordpress_url: php/project-sanctimonia
 ---
 I am in the process of contacting charitable organisations for project "sanctimonia".
 

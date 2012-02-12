@@ -10,4 +10,6 @@ Process flow is Wordpress --> Jekyll import --> Github --> Jekyll --> Static
 
 This is currently a w.i.p
 
-
+Notes
+-----
+Permalink: /%category%/%postname%

@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: "mysql moving /var/lib/mysql and error: 121"
+date: 2008-07-28 15:11:30 +01:00
 tags: 
 - mysql
 - mount
 - bind
-date: "2008-07-28"
+wordpress_url: hacking/mysql-moving-varlibmysql-and-error-121
 ---
 The downside of a development server is ... it's for development.
 
@@ -15,35 +16,35 @@ Especially if you have a multi server setup.
 
 So I find myself today moving /var/lib/mysql ... being as the OS drive is very small, and pulling down a near 20GB database backup and then trying to rebuild the database on the same drive ... well as you can imagine caused a few problems *doh*
 
-<code>
+{% highlight bash %}
 /etc/init.d/mysql stop
 mv /var/lib/mysql /raid_5/
-</code>
+{% endhighlight %}
 
 So surely you just symlink ... right?
 
-<code>
+{% highlight bash %}
 ln -s /raid_5/mysql /var/lib/mysql
 /etc/init.d/mysql start
-</code>
+{% endhighlight %}
 
 Well then answer would be no ... upon importing the backup
 
-<code>
+{% highlight bash %}
 mysql &lt; backup.sql
 Can't create table './database/table.frm' (errno: 121)
-</code>
+{% endhighlight %}
 
 A nice errorno: 121
 
-<code>
+{% highlight bash %}
 /etc/init.d/mysql stop
 rm -rf /var/lib/mysql
 mkdir /var/lib/mysql
 chown mysql:mysql /var/lib/mysql
 mount --bind /raid_5/mysql /var/lib/mysql
 /etc/init.d/mysql start
-</code>
+{% endhighlight %}
 
 et voila ...
 

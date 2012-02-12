@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: dbStat changes name to "adimpleo"
+date: 2008-05-27 13:26:27 +01:00
 tags: 
 - php
 - mysql
 - adimpleo
 - rrdtool
 - lamp
-date: "2008-05-27"
+wordpress_url: dbstat/dbstat-changes-name-to-adimpleo
 ---
 <div style=''>"adimpleo" Latin for "to perform", seemed a fitting name for dbStat.
 

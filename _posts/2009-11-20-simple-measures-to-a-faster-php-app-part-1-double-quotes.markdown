@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Simple measures to a faster PHP app - Part 1 Double Quotes
+date: 2009-11-20 10:25:06 +00:00
 tags: 
 - php
 - performance.
 - single quotes
 - double quotes
-date: "2009-11-20"
+wordpress_url: php/simple-measures-to-a-faster-php-app-part-1-double-quotes
 ---
 In some situations using a double quotes string is required i.e. "this\nstring\nappears\over\nmany\nlines" ...
 

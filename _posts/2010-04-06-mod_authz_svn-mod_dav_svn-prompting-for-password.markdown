@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: mod_authz_svn / mod_dav_svn prompting for password
+date: 2010-04-06 19:27:10 +01:00
 tags: 
 - svn
 - wtf
@@ -10,7 +11,7 @@ tags:
 - broken
 - fubar
 - authzsvnnoauthwhenanonymousallowed
-date: "2010-04-06"
+wordpress_url: linux/mod_authz_svn-mod_dav_svn-prompting-for-password
 ---
 Strangely I've had some people reporting issues with being <a href="http://trac.saiweb.co.uk/saiweb/ticket/68">prompted for a username and password when accessing files on svn.saiweb.co.uk 
 </a>

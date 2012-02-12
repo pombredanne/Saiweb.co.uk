@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "matplotlib ImportError: No module named ma"
+date: 2010-10-15 15:07:12 +01:00
 tags: 
 - mac
 - osx
@@ -9,7 +10,7 @@ tags:
 - "no"
 - module
 - named
-date: "2010-10-15"
+wordpress_url: mac/matplotlib-importerror-no-module-named-ma
 ---
 ImportError: No module named ma
 

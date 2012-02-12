@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Boeing is a Chargin their Lazors
+date: 2009-03-02 13:27:58 +00:00
 tags: 
 - boeing
 - laser
-date: "2009-03-02"
+wordpress_url: general/boeing-is-a-chargin-their-lazors
 ---
-<img src="http://cdn.saiweb.co.uk/uploads/2009/03/laserjetmissilefeb.jpg" alt="laserjetmissilefeb" title="laserjetmissilefeb" width="445" height="355" class="aligncenter size-full wp-image-584" />
+<img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2009/03/laserjetmissilefeb.jpg" alt="laserjetmissilefeb" title="laserjetmissilefeb" width="445" height="355" class="aligncenter size-full wp-image-584" />
 
 Yup, lasers mounted on planes, not snakes on a plane, lasers.
 

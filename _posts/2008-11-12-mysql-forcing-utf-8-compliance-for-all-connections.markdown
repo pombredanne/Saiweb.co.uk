@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: mySQL forcing utf-8 compliance for all connections.
+date: 2008-11-12 10:05:45 +00:00
 tags: 
 - php
 - mysql
@@ -8,7 +9,7 @@ tags:
 - utf-8
 - init_connect
 - utf8
-date: "2008-11-12"
+wordpress_url: mysql/mysql-forcing-utf-8-compliance-for-all-connections
 ---
 The problem that most people face when setting up a UTF-8 database in mySQL is that without calling 'SET NAMES' in the mySQL client prior to issuing any queries (PHP, C++ etc ...) that the client connection will actually in most cases default to  latin-1.
 
@@ -18,7 +19,7 @@ This will trigger a series of defined commands / queries every time a non super 
 
 i.e.
 
-<code code="bash">
+{% highlight bash %}
 [mysqld]
 init_connect='SET collation_connection = utf8_general_ci'
 init_connect='SET NAMES utf8'
@@ -26,7 +27,7 @@ default-character-set=utf8
 character-set-server=utf8
 collation-server=utf8_general_ci
 skip-character-set-client-handshake
-</code>
+{% endhighlight %}
 
 <strong>UPDATE 04/09/09</strong>
 
@@ -34,13 +35,13 @@ my mySQL version 5.0.45 x64 only picks up the last entry of init_connect
 
 Use this example in this case:
 
-<code code="bash">
+{% highlight bash %}
 [mysqld]
 init_connect='SET collation_connection = utf8_general_ci; SET NAMES utf8;'
 default-character-set=utf8
 character-set-server=utf8
 collation-server=utf8_general_ci
-</code>
+{% endhighlight %}
 
 
 Restart mySQL and check the mysqld.log has not returned any errors (Or your event viewer if you are using windows).
@@ -55,6 +56,6 @@ This will work for PHP, C++, ruby etc... as the client encoding is now handeled 
 
 Been having some issues with this working the workaround is to add this config as a single line:
 
-<code>
+{% highlight bash %}
 init_connect='SET collation_connection = utf8_general_ci; SET NAMES utf8;'
-</code>
+{% endhighlight %}

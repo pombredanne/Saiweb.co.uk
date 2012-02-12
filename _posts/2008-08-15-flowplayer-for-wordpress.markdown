@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Flowplayer for Wordpress
+date: 2008-08-15 08:44:24 +01:00
 tags: 
 - flowplayer
 - wordpress
-date: "2008-08-15"
+wordpress_url: php/flowplayer-for-wordpress
 ---
 Whilst I wait for a reply here: <a href="http://community.flowplayer.org/node/1051">http://community.flowplayer.org/node/1051</a>
 

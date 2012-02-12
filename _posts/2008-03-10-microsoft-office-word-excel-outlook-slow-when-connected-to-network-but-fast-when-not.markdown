@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Microsoft Office (Word, Excel, Outlook) Slow When Connected To Network, But Fast When Not?
+date: 2008-03-10 15:46:56 +00:00
 tags: 
 - microsoft office
 - slow
@@ -9,7 +10,7 @@ tags:
 - word
 - excel
 - outlook
-date: "2008-03-10"
+wordpress_url: windows/microsoft-office-word-excel-outlook-slow-when-connected-to-network-but-fast-when-not
 ---
 Yes the title seems a little weird, but it's a little problem that has been the bane of my and a fellow techs existence for a couple months now.
 

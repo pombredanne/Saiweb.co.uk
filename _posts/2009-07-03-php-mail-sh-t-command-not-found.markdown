@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: "php mail() sh: -t command not found"
+date: 2009-07-03 16:06:25 +01:00
 tags: []
 
-date: "2009-07-03"
+wordpress_url: linux/php-mail-sh-t-command-not-found
 ---
 PHP mail() not working?
 

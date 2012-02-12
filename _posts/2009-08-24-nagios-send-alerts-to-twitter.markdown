@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: Nagios - Send alerts to twitter
+date: 2009-08-24 12:37:18 +01:00
 tags: 
 - nagios
 - sms
 - text
 - twitter
 - alert
-date: "2009-08-24"
+wordpress_url: nagios/nagios-send-alerts-to-twitter
 ---
 Pre-req reading:
 

@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Bash Hello World in 60 seconds
+date: 2009-01-19 11:49:08 +00:00
 tags: 
 - bash
 - hello world
-date: "2009-01-19"
+wordpress_url: linux/bash-hello-world-in-60-seconds
 ---
 How to write a bash 'hello world' script in 60 seconds, admitedly it could of been faster ... damn typos
 
@@ -16,9 +17,9 @@ Also the first line you can add as an alias, if your going to be writing a lot o
 
 Or you can copy paste and have it done in about 5 seconds :-P
 
-<code>
+{% highlight bash %}
 BPATH=`which bash`; echo "#! $BPATH" | awk '{print $1$2}' > script.sh
-</code>
+{% endhighlight %}
 
 The reason for the echo and awk is when trying to do echo "#!$BPATH" > script.sh my shell wouldn't cooperate so all the awk does is take out the space :-).
 

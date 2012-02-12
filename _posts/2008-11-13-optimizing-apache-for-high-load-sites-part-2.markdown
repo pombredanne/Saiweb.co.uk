@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Optimizing Apache for high load sites - Part 2
+date: 2008-11-13 15:38:45 +00:00
 tags: 
 - apache
 - optimize
-date: "2008-11-13"
+wordpress_url: linux/optimizing-apache-for-high-load-sites-part-2
 ---
 This is going to be quite an extension from what I had planned, instead of providing just a list of results post optimization I am going to provide a basic list of modules loaded as part of a basic apache install, and provide a description for each, the ones I have disabled are mods I have deemed not required for my purposes, use your own best judgment before switching things off...
 <ul>
@@ -207,13 +208,13 @@ Source's used:
 
 Module information can be found HERE: <a href="http://www-uxsup.csx.cam.ac.uk/~jw35/courses/apache/html/a2617.htm">http://www-uxsup.csx.cam.ac.uk/~jw35/courses/apache/html/a2617.htm</a>
 
-<code>
+{% highlight bash %}
 ----- MEMORY USAGE REPORT FOR 'apache' -----
 PID Count: 32
 Mem usage: 4594 MB
 Mem/PID: 143 MB
 For more information run: pmap -x 12345
-</code>
+{% endhighlight %}
 
 <del datetime="2008-11-14T09:34:03+00:00">So 143mb down from 189mb, saving 46mb/thread.
 
@@ -233,25 +234,25 @@ Following the improvements to the appmem script in <a href="http://www.saiweb.co
 
 With all mods enabled:
 
-<code>
+{% highlight bash %}
  ----- MEMORY USAGE REPORT FOR 'httpd' ----- 
 PID Count: 37
 Shared Mem usage: 176 MB
 Total Resident Set Size: 112 MB
 Mem/PID: 3 MB
-</code>
+{% endhighlight %}
 
 Results attained running "ab -n 1000 -c 100 http://xxx.xxx.xxx.xxx/".
 
 Results with disabled mods (listed above):
 
-<code>
+{% highlight bash %}
  ----- MEMORY USAGE REPORT FOR 'httpd' ----- 
 PID Count: 41
 Shared Mem usage: 140 MB
 Total Resident Set Size: 95 MB
 Mem/PID: 2 MB
-</code>
+{% endhighlight %}
 
 Shared mem down 36MB (20.45% improvement), RSS/PID down 1mb (33% improvement)
 

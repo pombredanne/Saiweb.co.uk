@@ -1,10 +1,11 @@
 --- 
 layout: post
 title: Easynet outage
+date: 2008-08-15 10:06:44 +01:00
 tags: 
 - easynet
 - outage
-date: "2008-08-15"
+wordpress_url: networking/easynet-outage
 ---
 Oh dear oh dear ...
 

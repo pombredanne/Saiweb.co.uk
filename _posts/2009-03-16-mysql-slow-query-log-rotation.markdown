@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: mySQL slow query log rotation
+date: 2009-03-16 11:50:11 +00:00
 tags: 
 - mysql
 - slow query
 - log rotation
-date: "2009-03-16"
+wordpress_url: mysql/mysql-slow-query-log-rotation
 ---
 One of the issues facing log rotation in mySQL is that mySQL doesn't seem to have the ability to perform a "reload".
 
@@ -34,7 +35,7 @@ The script is written to perform the following actions:
 
 <a href="http://svn.saiweb.co.uk/branches/linux-the-sysadmin-script/branches/logrotate.d/mysql">http://svn.saiweb.co.uk/branches/linux-the-sysadmin-script/branches/logrotate.d/mysql</a>
 
-<code lang="bash">
+{% highlight bash %}
 #
 # mySQL slow log rotation script by D.Busby
 # place this script in /etc/logrotate.d/ or your appropriate logrotate dir.
@@ -55,4 +56,4 @@ The script is written to perform the following actions:
 		/usr/bin/mysqladmin flush-logs
 	endscript
 }
-</code>
+{% endhighlight %}

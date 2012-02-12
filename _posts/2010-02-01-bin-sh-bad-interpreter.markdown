@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: "/bin/sh: bad interpreter"
+date: 2010-02-01 11:41:58 +00:00
 tags: 
 - linux
 - php
 - interpreter
 - bad
-date: "2010-02-01"
+wordpress_url: uncategorized/bin-sh-bad-interpreter
 ---
 For security newer distros of RHEL and their derivatives an mounting /tmp with the noexec option.
 

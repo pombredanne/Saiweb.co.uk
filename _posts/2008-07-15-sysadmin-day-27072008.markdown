@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Sysadmin Day 25/07/2008
+date: 2008-07-15 11:26:25 +01:00
 tags: 
 - sysadmin day
-date: "2008-07-15"
+wordpress_url: uncategorized/sysadmin-day-27072008
 ---
 <p>Or that would be 07/25/2008 for the US readers.</p>
 <p>It is here again, the last friday of july is <a href="http://en.wikipedia.org/wiki/System_Administrator_Appreciation_Day">System Administrator Appreciation Day</a></p>

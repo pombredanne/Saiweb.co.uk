@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: net-snmp python bindings
+date: 2010-03-03 14:26:09 +00:00
 tags: 
 - python
 - snmp
 - net-snmp
 - bindings
-date: "2010-03-03"
+wordpress_url: python/net-snmp-python-bindings
 ---
 <strong>UPDATE 28/06/10:</strong> added --libdir=/usr/lib64 --enable-shared otherwise shared libs are not built at all!
 

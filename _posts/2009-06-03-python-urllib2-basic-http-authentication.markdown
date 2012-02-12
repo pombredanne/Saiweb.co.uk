@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: Python urllib2, basic http authentication
+date: 2009-06-03 11:43:27 +01:00
 tags: 
 - python
 - urllib2
 - http
 - basic
 - auth
-date: "2009-06-03"
+wordpress_url: python/python-urllib2-basic-http-authentication
 ---
 I meant to write this up over a week ago now, basically the need arose for one of my Python scripts to use HTTP Basic authentication when grabbing the output from a URL.
 

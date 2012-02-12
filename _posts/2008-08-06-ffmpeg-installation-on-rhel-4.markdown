@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: ffmpeg installation on RHEL 4
+date: 2008-08-06 11:28:59 +01:00
 tags: 
 - ffmpeg
 - h264
@@ -13,11 +14,11 @@ tags:
 - libtheora
 - libvorbis
 - xvid
-date: "2008-08-06"
+wordpress_url: linux/ffmpeg-installation-on-rhel-4
 ---
 Just try to find documentation on this ... absolute nightmare is an understatement, so here are my notes of the steps I took to compile ffmpeg with a selection of codecs:
 
-<code>
+{% highlight bash %}
 up2date automake autoconf libtool
 wget http://downloads.sourceforge.net/faac/faac-1.26.tar.gz
 wget http://downloads.sourceforge.net/faac/faad2-2.6.1.tar.gz
@@ -27,16 +28,16 @@ wget http://downloads.xiph.org/releases/theora/libtheora-1.0beta2.tar.gz
 wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.2.0.tar.gz
 wget http://downloads.xvid.org/downloads/xvidcore-1.1.3.tar.gz
 wget ftp://ftp.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20080805-2245.tar.bz2
-</code>
+{% endhighlight %}
 
 <b><u>NOTE:</u></b> The above are current at the time of writing, check for more recent versions at the relevant sites.
 
 Extract:
 
-<code>
+{% highlight bash %}
  for i in *.tar.gz; do tar -xzvf "$i"; done
  for i in *.tar.bz2; do tar -xjvf "$i"; done
-</code>
+{% endhighlight %}
 
 cd to relevant directories and run the following:
 
@@ -51,21 +52,21 @@ The following is required otherwise ffmpeg will display errors about being unabl
 
 i.e.
 
-<code>
+{% highlight bash %}
 ffmpeg: error while loading shared libraries: libavdevice.so.52: cannot open shared object file
-</code>
+{% endhighlight %}
 
 FIX: 
 
-<code>
+{% highlight bash %}
 echo '/usr/local/lib' > /etc/ld.so.conf.d/buzz-saiweb.conf
 ldconfig
-</code>
+{% endhighlight %}
 
 You must run "ldconfig" any time you install a new lib you want to use with ffmpeg!
 
 <b><u>Install FFMPEG</u></b>
-<code>
+{% highlight bash %}
 svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
 
 ./configure --enable-libmp3lame --enable-libvorbis --enable-libxvid --enable-shared --enable-libfaac --enable-libfaad --enable-gpl --enable-libtheora --enable-libx264
@@ -73,14 +74,14 @@ svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
 make
 
 make install
-</code>
+{% endhighlight %}
 
 
 <b>NOTE:</b> If you allready havea checkout of ffmpeg and run an update to get the latest code, make sure you run
 
-<code>
+{% highlight bash %}
 make distclean
-</code>
+{% endhighlight %}
 
 Prior to running the configure line.
 

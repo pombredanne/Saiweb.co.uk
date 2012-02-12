@@ -1,11 +1,12 @@
 --- 
 layout: post
 title: Linux - The sysadmin script - Part 1
+date: 2008-07-09 16:10:47 +01:00
 tags: 
 - linux
 - sysadmin
 - bofh
-date: "2008-07-09"
+wordpress_url: linux/linux-the-sysadmin-script-part-1
 ---
 Prompted by the following remarks today ...
 
@@ -25,9 +26,9 @@ Right then, onto the point of this post, the sysadmin script part 1, this is goi
 
 Trust me this becomes very useful when you have exhausted all other options when trying to figure out why your web server is running like a dog with no legs ...
 
-<code>
+{% highlight bash %}
 netstat -ant
-</code>
+{% endhighlight %}
 
 After running the above on your SSH session you will see lines, and lines ... and yet more lines of network connection information, especially if you just run this on a busy server.
 
@@ -51,10 +52,10 @@ Bash script, now for some history, Bash is the Bourne Again Shell, or as I like 
 
 Now create a directory:
 
-<code>
+{% highlight bash %}
 mkdir ~/.sysadmin
 cd ~/.sysadmin
-</code>
+{% endhighlight %}
 
 Note the prefixing dot, this will create a "hidden" directory in your home directory (~), the reason for this is so you don't have system admin script sat in your home directoy, as if you are like me, all sorts of crap moves in an out of that directory on a daily basis, and the last thing you want to do is to have to rummage through backups trying to find "<em>that script you wrote to diagnose connection problems a year ago</em>".
 
@@ -62,13 +63,13 @@ The point is these scripts will become part of your workflow, once written they 
 
 In this case:
 
-<code>
+{% highlight bash %}
 vi ~/.sysadmin/buzz.sh
-</code>
+{% endhighlight %}
 
 You can of course call your script whatever you want, and use any text editor you want, if you don't like / know vi ...
 
-<code>
+{% highlight bash %}
 #!/bin/bash
 # Sysadmin script PART 1 http://www.saiweb.co.uk
 # Provided under the MIT license (http://www.opensource.org/licenses/mit-license.php)
@@ -87,7 +88,7 @@ usage;
 exit
 fi
 $1 $2
-</code>
+{% endhighlight %}
 
 Ok so the above code is provided with two functions usage and portcon.
 
@@ -95,15 +96,15 @@ Ok so the above code is provided with two functions usage and portcon.
 
 CHMOD this file to allow execution.
 
-<code>
+{% highlight bash %}
 chmod +x ~/.sysadmin/buzz.sh
-</code>
+{% endhighlight %}
 
 Now edit your bashrc file.
 
-<code>
+{% highlight bash %}
 vi ~/.bashrc
-</code>
+{% endhighlight %}
 
 And add the following:
 
@@ -111,16 +112,16 @@ alias buzz='~/.sysadmin/buzz.sh'
 
 Now exit (logout) your SSH session and log back in (or SU root &gt; SU your_user for testing).
 
-<code>
+{% highlight bash %}
 [buzz@buzz_srv ~]$ buzz
 Usage: portcon port
 i.e. portcon 80
 [buzz@buzz_srv ~]$
-</code>
+{% endhighlight %}
 
 Now run the portcon check ...
 
-<code>
+{% highlight bash %}
 [buzz@buzz_srv ~]$ buzz portcon 80
 ----- Active Connections For Port 80 -----
 505
@@ -134,7 +135,7 @@ Now run the portcon check ...
 14 ***.***.***.***
 16 ***.***.***.***
 76 ***.***.***.***
-373 ***.***.***.***</code>
+373 ***.***.***.***{% endhighlight %}
 
 (Yes before you ask ***.***.***.*** does display the correct IP address, I have purposely removed them for security).
 

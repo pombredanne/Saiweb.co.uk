@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: no-www.org should you participate?
+date: 2008-09-11 15:27:57 +01:00
 tags: 
 - no-www
-date: "2008-09-11"
+wordpress_url: general/no-wwworg-should-you-participate
 ---
 This question has arrived at my feet a few times now.
 

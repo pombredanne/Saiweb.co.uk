@@ -1,19 +1,20 @@
 --- 
 layout: post
 title: WiFi recon using OSX native tools
+date: 2011-09-23 10:13:12 +01:00
 tags: 
 - osx
 - wifi
 - pentesting
 - pcap
 - airport
-date: "2011-09-23"
+wordpress_url: hacking/wifi-recon-using-osx-native-tools
 ---
 So you wanted to get your aircrak suite on under OSX, getting airodump etc to work I can tell you will be a nightmare (infact just dont use a VM with a USB wifi for that, however there is an alternative ...), after a lot of searching there is a native tool under OSX that will let you cap packets, list networks etc.
 
 Credit goes to <a href="http://forum.aircrack-ng.org/index.php?topic=293.msg34031#msg34031">d3in0s</a> for his awesome forum post.
 
-<code>
+{% highlight bash %}
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport
 Usage: airport <interface> <verb> <options>
 
@@ -114,7 +115,7 @@ Supported arguments:
  -h        --help               Show this help
 Credit goes to <a href="http://forum.aircrack-ng.org/index.php?PHPSESSID=osr5e11icl40hib1f57qkh0u35&topic=293.msg34031#msg34031">d3in0s post</a> showing true forum awesomeness. 
 
-<code>
+{% highlight bash %}
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I
      agrCtlRSSI: -40
      agrExtRSSI: 0
@@ -134,19 +135,19 @@ lastAssocStatus: 0
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
                             SSID BSSID             RSSI CHANNEL HT CC SECURITY (auth/unicast/group)
                           <removed> <removed> -41  6       N  -- WPA(PSK/AES,TKIP/TKIP) WPA2(PSK/AES,TKIP/TKIP)
-</code>
+{% endhighlight %}
 
 Doing a frame cap.
 
-<code>
+{% highlight bash %}
 
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport en1 sniff 6
 Capturing 802.11 frames on en1.
-</code>
+{% endhighlight %}
 
-You will see your airport icon changes to <a href="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
+You will see your airport icon changes to <a href="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
 
-<code>
+{% highlight bash %}
 ^CSession saved to /tmp/airportSniff813ZrA.cap.
-</code>
+{% endhighlight %}
 

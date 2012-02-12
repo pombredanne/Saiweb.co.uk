@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Red Hat "Spam" Network
+date: 2008-08-28 14:13:52 +01:00
 tags: 
 - red hat
-date: "2008-08-28"
+wordpress_url: linux/red-hat-spam-network
 ---
 In the last 24 hours I have received one email every 30-40 minutes from the red hat network alerting me to a "bug" fix ...
 

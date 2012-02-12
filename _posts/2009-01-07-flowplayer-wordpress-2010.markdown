@@ -1,12 +1,13 @@
 --- 
 layout: post
 title: Flowplayer Wordpress 2.0.1.0
+date: 2009-01-07 10:36:35 +00:00
 tags: 
 - flowplayer
 - wordpress
-date: "2009-01-07"
+wordpress_url: uncategorized/flowplayer-wordpress-2010
 ---
-<img src="http://cdn.saiweb.co.uk/uploads/2009/01/2009-01-07_1029.png" alt="2009-01-07_1029" title="2009-01-07_1029" width="225" height="81" class="alignleft size-full wp-image-394" />
+<img src="http://www.saiweb.co.ukcdn.saiweb.co.uk/uploads/2009/01/2009-01-07_1029.png" alt="2009-01-07_1029" title="2009-01-07_1029" width="225" height="81" class="alignleft size-full wp-image-394" />
 
 Completion of the milestone listed here: <a href="http://trac.saiweb.co.uk/saiweb/milestone/wordpress-flowplayer%202.0.1.0">http://trac.saiweb.co.uk/saiweb/milestone/wordpress-flowplayer%202.0.1.0</a>
 

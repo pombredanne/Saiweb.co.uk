@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: mySQL >= 5.0.37 community profiling SQL queries.
+date: 2010-07-15 19:30:06 +01:00
 tags: 
 - mysql
 - query
@@ -10,7 +11,7 @@ tags:
 - profiling
 - community
 - 5.0.37
-date: "2010-07-15"
+wordpress_url: mysql/mysql-5-0-37-community-profiling-sql-queries
 ---
 Whilst there indeed seems to be a veritable plethora of SQL profiling / benchmarking tools, most of them with insane commercial license fees (&gt;= $400 per annum on most)
 
@@ -45,7 +46,7 @@ show profile for 1;
 
 Upon running the above you will now be using your database and will see an output similar to
 
-<code>
+{% highlight bash %}
 +----------+------------+-------------------+
 | Query_ID | Duration   | Query             |
 +----------+------------+-------------------+
@@ -53,11 +54,11 @@ Upon running the above you will now be using your database and will see an outpu
 |        2 | 0.00048900 | show databases    |
 |        3 | 0.00026600 | show tables       |
 +----------+------------+-------------------+
-</code>
+{% endhighlight %}
 
 Followed by
 
-<code>
+{% highlight bash %}
 +----------------------+----------+
 | Status               | Duration |
 +----------------------+----------+
@@ -74,7 +75,7 @@ Followed by
 | logging slow query   | 0.000002 |
 | cleaning up          | 0.000002 |
 +----------------------+----------+
-</code>
+{% endhighlight %}
 In my case here nothing really eventful, lets assume for the moment you are using a wordpress database, and you have numerous posts
 
 [cc lang="sql"]
@@ -84,10 +85,10 @@ select count(ID) from wp_posts where ID > 100
 
 in my case I got the following results:
 
-<code>
+{% highlight bash %}
 0.00072600 | select count(*) from wp_posts where ID &gt; 100
 0.00069900 | select count(ID) from wp_posts where ID &gt; 100
-</code>
+{% endhighlight %}
 
 a simple demonstration showing the difference between a count() on an indexed field vs *, in this case the saving is ~4%.
 
@@ -98,7 +99,7 @@ show profile for query <n>;
 
 Will give you an output similar to:
 
-<code>
+{% highlight bash %}
 +--------------------+----------+
 | Status             | Duration |
 +--------------------+----------+
@@ -121,7 +122,7 @@ Will give you an output similar to:
 | cleaning up        | 0.000003 |
 +--------------------+----------+
 17 rows in set (0.00 sec)
-</code>
+{% endhighlight %}
 
 this is very similar to a <a href="http://en.wikipedia.org/wiki/Strace">stack trace</a> you may run on a problematic script, or <a href="http://www.xdebug.org">xdebug</a> + <a href="http://code.google.com/p/webgrind/">webgrind</a>, and will gain futher insight into your SQL should <a href="http://dev.mysql.com/doc/refman/5.0/en/explain.html">EXPLAIN</a> no give you enough of an insight.
 

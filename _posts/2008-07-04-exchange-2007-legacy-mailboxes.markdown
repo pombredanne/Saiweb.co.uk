@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: Exchange 2007 Legacy Mailboxes
+date: 2008-07-04 10:16:32 +01:00
 tags: 
 - exchange
 - windows
 - "2007"
 - "2003"
 - legacy mailbox
-date: "2008-07-04"
+wordpress_url: windows/exchange-2007-legacy-mailboxes
 ---
 This one comes via <a href="http://www.absolutech.co.uk/">Kerm</a>.
 

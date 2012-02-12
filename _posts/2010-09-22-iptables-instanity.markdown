@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: iptables instanity
+date: 2010-09-22 17:57:27 +01:00
 tags: 
 - wtf
 - iptables
 - rate
 - limit
 - b0rk
-date: "2010-09-22"
+wordpress_url: linux/iptables-instanity
 ---
 Namely a bug to do with iptables rate limiting,
 

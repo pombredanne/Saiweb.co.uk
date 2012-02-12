@@ -1,40 +1,41 @@
 --- 
 layout: post
 title: "Linux collection of handy scripts and one liners \xE2\x80\x93 Volume 2 (Warning: contains shortcuts)"
+date: 2011-09-26 15:43:34 +01:00
 tags: 
 - linux
 - lhol
 - one
 - liners
-date: "2011-09-26"
+wordpress_url: linux/linux-collection-of-handy-scripts-and-one-liners-%e2%80%93-volume-2-warning-contains-shortcuts
 ---
 <strong>See if hosts are up using ping in range 60 -> 200</strong>
 
-<code>
+{% highlight bash %}
 for i in {60..200}; do ping -c 1 -W 1 192.168.1.$i > /dev/null; ([[ $? == 0 ]] && echo "$i UP" || echo "$i DOWN");  done
 1 UP
 2 DOWN
 3 UP
 ...
-</code>
+{% endhighlight %}
 
 Note: for OSX use "ping -c 1 -t 1"
 
 <strong>Chaining "UP" hosts for a quick (syn) port scan</strong>
 
-<code>
+{% highlight bash %}
 for i in {60..200}; do ping -c 1 -W 1 192.168.1.$i > /dev/null; ({{ $? == 0 ]] && nc -v -n -z -w1 192.168.1.$i 20-22); done
 (UNKNOWN) [192.168.1.1] 22 (ssh) open
 (UNKNOWN) [192.168.1.3] 22 (ssh) open
-</code>
+{% endhighlight %}
 
 <strong>Recover from a bad mysql password set (Update mysql.users set password='Iforgotawherestatemenlulz')</strong>
 
 Assumes for every user there is an @localhost host, grabs the in memory password hash and resets 
-<code>
+{% highlight bash %}
 
 mysql -Bse 'Select distinct(user) from mysql.user;' | while read uname; do mysql -Bse "show grants for '$uname'@'localhost';" 2>&1 | grep IDENTIFIED | grep -v 'root' | grep -v 'ERROR' | sed 's|GRANT USAGE ON *.* TO ||g' | sed "s|@'localhost' IDENTIFIED BY PASSWORD||g" | awk '{print "Update user set Password="$2" where User="$1";"}' | mysql mysql; done
-</code>
+{% endhighlight %}
 
 If you've run FLUSH PRIVILEGES; however you == b0ned.
 
@@ -42,15 +43,15 @@ If you've run FLUSH PRIVILEGES; however you == b0ned.
 
 Command1:
 
-<code>
+{% highlight bash %}
 ping -c 1 -t 1 192.168.1.1
-</code>
+{% endhighlight %}
 Opps that's OSX synatx 
 
 Command2:
-<code>
+{% highlight bash %}
 ^-t 1^-W 1
-</code>
+{% endhighlight %}
 et voila corrected syntax.
 
 <strong>Shortcuts</strong>
