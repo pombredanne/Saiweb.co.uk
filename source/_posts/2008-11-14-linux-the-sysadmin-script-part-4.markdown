@@ -10,6 +10,7 @@ categories:
 - linux
 - bash script
 wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-4
+comments: true
 ---
 In part 4, I am going to cover more of an improvement than anything else to <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-script-part-3">part 3</a>
 

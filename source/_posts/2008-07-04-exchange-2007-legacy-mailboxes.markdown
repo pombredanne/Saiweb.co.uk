@@ -12,6 +12,7 @@ tags:
 categories: 
 - windows
 wordpress_url: http://saiweb.co.uk/windows/exchange-2007-legacy-mailboxes
+comments: true
 ---
 This one comes via <a href="http://www.absolutech.co.uk/">Kerm</a>.
 

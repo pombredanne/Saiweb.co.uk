@@ -9,6 +9,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/boeing-is-a-chargin-their-lazors
+comments: true
 ---
 <img src="http://cdn.saiweb.co.uk/uploads/2009/03/laserjetmissilefeb.jpg" alt="laserjetmissilefeb" title="laserjetmissilefeb" width="445" height="355" class="aligncenter size-full wp-image-584" />
 

@@ -10,6 +10,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2013-in-testing
+comments: true
 ---
 If you are interested in helping to test release 2.0.1.3, check out the current development version here:
 

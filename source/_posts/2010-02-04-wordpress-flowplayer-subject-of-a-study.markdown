@@ -9,6 +9,7 @@ tags:
 categories: 
 - uncategorized
 wordpress_url: http://saiweb.co.uk/uncategorized/wordpress-flowplayer-subject-of-a-study
+comments: true
 ---
 I was a bit taken back today after stumbling across this pdf by Dr. Wolf-Fritz Riekert <a href="http://share.ieservices.de/downloads/documents/Wordpress_Flowplayer_Plugin_pash-m_recent_version.pdf">http://share.ieservices.de/downloads/documents/Wordpress_Flowplayer_Plugin_pash-m_recent_version.pdf</a>
 

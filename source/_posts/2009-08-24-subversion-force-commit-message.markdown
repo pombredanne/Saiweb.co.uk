@@ -10,6 +10,7 @@ tags:
 categories: 
 - python
 wordpress_url: http://saiweb.co.uk/python/subversion-force-commit-message
+comments: true
 ---
 Again this is a late blog post about some code committed several months ago, in this case the code was committed 09/06/2009 
 

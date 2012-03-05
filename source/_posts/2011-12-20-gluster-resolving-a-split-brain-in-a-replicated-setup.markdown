@@ -12,6 +12,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/gluster-resolving-a-split-brain-in-a-replicated-setup
+comments: true
 ---
 Initially this took about ~7hours to diagnose and fix, with what I have learned about the inner workings of gluster and the tools I am providing opensource this should cut resolution time down to ~5minutes.
 

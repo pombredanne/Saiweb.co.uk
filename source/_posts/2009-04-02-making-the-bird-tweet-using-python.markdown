@@ -9,6 +9,7 @@ tags:
 categories: 
 - python
 wordpress_url: http://saiweb.co.uk/python/making-the-bird-tweet-using-python
+comments: true
 ---
 After taking another look at Python I am quickly coming to love it, as an "exercise" in re-learning python I decided to write a very simple command line "tweeter" this uses the Twitter API to update your twitter status, extending from the "<a href="http://www.saiweb.co.uk/linux/update-twitter-in-a-single-line">update twitter in a single line</a>"
 

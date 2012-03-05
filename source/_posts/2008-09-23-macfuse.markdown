@@ -10,6 +10,7 @@ tags:
 categories: 
 - mac
 wordpress_url: http://saiweb.co.uk/mac/macfuse
+comments: true
 ---
 <img class="aligncenter" title="macFUSE" src="http://macfuse.googlecode.com/svn/trunk/meta/images/MacFUSE_Banner.jpg" alt="" width="474" height="128" />
 

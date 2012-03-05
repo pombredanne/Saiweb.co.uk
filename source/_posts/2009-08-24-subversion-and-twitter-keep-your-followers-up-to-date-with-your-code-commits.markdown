@@ -13,6 +13,7 @@ categories:
 - python
 - twitter
 wordpress_url: http://saiweb.co.uk/python/subversion-and-twitter-keep-your-followers-up-to-date-with-your-code-commits
+comments: true
 ---
 Some two months after the fact, I thought it may well be time to post a blog on this little code snippet.
 

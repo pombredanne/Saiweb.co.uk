@@ -11,6 +11,7 @@ categories:
 - flowplayer
 - flash
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2012
+comments: true
 ---
 Ah yeh so I forgot to blog about this, 2.0.1.2 of my wordpress plugin is now available, as noted development of this plugin is unaffected by recent events.
 

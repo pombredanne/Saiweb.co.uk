@@ -11,6 +11,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/linux-collection-of-handy-scripts-and-one-liners-volume-2-warning-contains-shortcuts
+comments: true
 ---
 <strong>See if hosts are up using ping in range 60 -> 200</strong>
 

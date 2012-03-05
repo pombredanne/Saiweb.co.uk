@@ -15,6 +15,7 @@ categories:
 - iphone
 - icluster
 wordpress_url: http://saiweb.co.uk/hacking/green-giant-the-i-cluster
+comments: true
 ---
 <p>So the 3g iPhone is out, and a _lot_ of 1st gen iPhone people are looking to grab this new phone as a replacement due to the new features, 3g, gps etc ...</p>
 <p>That leaves a _LOT_ of 1st gen iPhones that potentially are going to end up on your local dump (landfill) ...</p>

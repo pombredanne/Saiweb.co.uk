@@ -11,6 +11,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/redhat-cluster-oids
+comments: true
 ---
 Following on from the python bindings post I found myself with a real problem,
 

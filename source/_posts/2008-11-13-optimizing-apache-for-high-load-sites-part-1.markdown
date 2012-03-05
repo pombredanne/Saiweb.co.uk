@@ -11,6 +11,7 @@ categories:
 - linux
 - apache
 wordpress_url: http://saiweb.co.uk/linux/optimizing-apache-for-high-load-sites-part-1
+comments: true
 ---
 Following on from <a href="http://www.saiweb.co.uk/linux/linux-the-sysadmin-script-part-3">linux-the-sysadmin-script-part-3</a> I am now going to cover how to reduce the memory footprint of apache.
 

@@ -8,6 +8,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/red-hat-spam-network
+comments: true
 ---
 In the last 24 hours I have received one email every 30-40 minutes from the red hat network alerting me to a "bug" fix ...
 

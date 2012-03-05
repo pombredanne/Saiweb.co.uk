@@ -13,6 +13,7 @@ categories:
 - linux
 - mac
 wordpress_url: http://saiweb.co.uk/windows/saiweb-foldinghome-team-id-156680
+comments: true
 ---
 For those not in the know Folding@Home is a piece of software that runs in the background of your desktop, server, heck even your PS3.
 

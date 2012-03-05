@@ -9,6 +9,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/user-account-cleanout-and-recaptcha
+comments: true
 ---
 Due to the several hundred registered accounts in the last couple of days I have had a clean out.
 

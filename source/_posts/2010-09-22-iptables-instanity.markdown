@@ -12,6 +12,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/iptables-instanity
+comments: true
 ---
 Namely a bug to do with iptables rate limiting,
 

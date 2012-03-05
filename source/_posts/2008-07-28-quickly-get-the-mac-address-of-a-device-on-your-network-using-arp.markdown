@@ -9,6 +9,7 @@ categories:
 - windows
 - networking
 wordpress_url: http://saiweb.co.uk/windows/quickly-get-the-mac-address-of-a-device-on-your-network-using-arp
+comments: true
 ---
 This is something I find myself having to do, more and more lately due to this VoIP roll out.
 

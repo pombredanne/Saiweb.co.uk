@@ -10,6 +10,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/cp-f-prompting
+comments: true
 ---
 <img src="http://cdn.saiweb.co.uk/uploads/2008/12/chibi_angry_small.jpg" alt="So ... angry ... *rage*" title="chibi_angry_small" width="90" height="115" class="size-full wp-image-343" />
 

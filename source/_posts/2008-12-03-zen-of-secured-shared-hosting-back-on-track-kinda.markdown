@@ -8,6 +8,7 @@ tags: []
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/zen-of-secured-shared-hosting-back-on-track-kinda
+comments: true
 ---
 Well I have managed to plug the security hole, and I am currently working on refining the deployment by using the ability to disable functions in php ...
 

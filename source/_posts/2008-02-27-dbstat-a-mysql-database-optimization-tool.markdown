@@ -15,6 +15,7 @@ categories:
 - php
 - dbstat
 wordpress_url: http://saiweb.co.uk/linux/dbstat-a-mysql-database-optimization-tool
+comments: true
 ---
 I have been working on a script as of late to aid in the ever ongoing process of optimizing a web applications "back end", inevitably the database, and underlying code.
 

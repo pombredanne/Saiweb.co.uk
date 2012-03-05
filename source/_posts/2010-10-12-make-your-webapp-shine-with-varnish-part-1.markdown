@@ -14,6 +14,7 @@ categories:
 - technology
 - hosting
 wordpress_url: http://saiweb.co.uk/linux/make-your-webapp-shine-with-varnish-part-1
+comments: true
 ---
 <strong>Part 1, what is varnish?</strong>
 

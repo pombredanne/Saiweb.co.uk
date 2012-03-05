@@ -19,6 +19,7 @@ categories:
 - mysql
 wordpress_url: http://saiweb.co.uk/mysql/converting-mysql-latin1-to-utf8
 comments: true
+comments: true
 ---
 <ul>
 <strong>The problem</strong></ul>

@@ -10,6 +10,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2012-in-testing
+comments: true
 ---
 2.0.1.2 brings a fix for <a href="http://trac.saiweb.co.uk/saiweb/ticket/15">#15</a> allowing users to edit the relative path.
 

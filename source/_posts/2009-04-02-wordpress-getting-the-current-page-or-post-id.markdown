@@ -11,6 +11,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-getting-the-current-page-or-post-id
+comments: true
 ---
 An example of getting the current page / post ID, identifying whether the current item is a page or a post, and then appending the results to the content.
 

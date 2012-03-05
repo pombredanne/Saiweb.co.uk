@@ -11,6 +11,7 @@ tags:
 categories: 
 - uncategorized
 wordpress_url: http://saiweb.co.uk/uncategorized/bin-sh-bad-interpreter
+comments: true
 ---
 For security newer distros of RHEL and their derivatives an mounting /tmp with the noexec option.
 

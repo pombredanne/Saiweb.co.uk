@@ -9,6 +9,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/red-nose-day-2009-sysadmin-for-the-day
+comments: true
 ---
 <img src="http://cdn.saiweb.co.uk/uploads/2009/03/2009-03-12_1238.png" alt="2009-03-12_1238" title="2009-03-12_1238" width="120" height="121" class="alignleft size-full wp-image-610" /> I should of put something up sooner but here goes, for red nose day 2009 I am running the following 'competition' "Sysadmin for the day".
 

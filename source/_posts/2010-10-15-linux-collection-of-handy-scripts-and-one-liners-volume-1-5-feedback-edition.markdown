@@ -14,6 +14,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/linux-collection-of-handy-scripts-and-one-liners-volume-1-5-feedback-edition
+comments: true
 ---
 Following reader feedback please see below for an updated version of Volume 1
 

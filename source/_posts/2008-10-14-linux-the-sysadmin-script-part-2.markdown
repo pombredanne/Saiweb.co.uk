@@ -13,6 +13,7 @@ categories:
 - bash script
 - mac
 wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-2
+comments: true
 ---
 Part 2 has finally arrived .... don't all cheer at once now ...
 

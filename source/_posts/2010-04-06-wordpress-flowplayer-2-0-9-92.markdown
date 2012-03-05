@@ -9,6 +9,7 @@ tags:
 categories: 
 - flowplayer
 wordpress_url: http://saiweb.co.uk/flowplayer/wordpress-flowplayer-2-0-9-92
+comments: true
 ---
 <strong>Changelog</strong>
 

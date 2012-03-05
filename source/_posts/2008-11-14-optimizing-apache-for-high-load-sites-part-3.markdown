@@ -10,6 +10,7 @@ categories:
 - linux
 - apache
 wordpress_url: http://saiweb.co.uk/linux/optimizing-apache-for-high-load-sites-part-3
+comments: true
 ---
 <b>Pulling it all together.</b>
 

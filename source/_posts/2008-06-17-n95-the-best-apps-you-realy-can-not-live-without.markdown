@@ -15,6 +15,7 @@ categories:
 - n95
 - iphone
 wordpress_url: http://saiweb.co.uk/hacking/n95-the-best-apps-you-realy-can-not-live-without
+comments: true
 ---
 <p>Want iPhone style functionality on your n95?</p>
 <p>Well one thing that didn't make it into the tech spec sheets is the fact the n95 has an accelerometer!</p>

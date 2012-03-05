@@ -12,6 +12,7 @@ categories:
 - nagios
 - mysql
 wordpress_url: http://saiweb.co.uk/nagios/high-availability-mysql-binlog-position-comparrison-woes
+comments: true
 ---
 I ment to note this down yesterday but everything is going ten to the dozen at the moment.
 

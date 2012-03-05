@@ -10,6 +10,7 @@ tags:
 categories: 
 - hacking
 wordpress_url: http://saiweb.co.uk/hacking/venturing-into-micro-controller-programming
+comments: true
 ---
 Or, as one of my colleagues this morning said, firmware programming which in the literal sense of the word I suppose it is firmware.
 

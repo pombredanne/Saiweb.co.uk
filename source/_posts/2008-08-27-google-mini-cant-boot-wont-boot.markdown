@@ -8,6 +8,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/google-mini-cant-boot-wont-boot
+comments: true
 ---
 First off let me start by saying if your google mini is still in warranty <strong>APPLY FOR AN IN WARRANTY REPAIR.</strong>
 

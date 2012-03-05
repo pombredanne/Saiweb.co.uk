@@ -8,6 +8,7 @@ tags: []
 categories: 
 - uncategorized
 wordpress_url: http://saiweb.co.uk/uncategorized/blocked-by-spambag-org
+comments: true
 ---
 spambag.org domain appears to have not been renewed as such it is sat at a generic 'adverts' placeholder.
 

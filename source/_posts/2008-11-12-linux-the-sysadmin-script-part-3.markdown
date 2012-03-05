@@ -12,6 +12,7 @@ categories:
 - apache
 - bash script
 wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-3
+comments: true
 ---
 <strong>PART 3 IS INACCURATE, THE BELOW SCRIPT IS FOR REFERENCE ONLY, IT HAS BEEN REPLACED IN <a href="http://www.saiweb.co.uk/uncategorized/linux-the-sysadmin-script-part-4">PART 4</a></strong>
 

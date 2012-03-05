@@ -8,6 +8,7 @@ tags: []
 categories: 
 - mysql
 wordpress_url: http://saiweb.co.uk/mysql/mysql-and-the-phantom-disk-space
+comments: true
 ---
 Title for a cheesy sysadmin novel I know.
 

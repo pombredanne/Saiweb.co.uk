@@ -9,6 +9,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-flowplayer-for-wordpress-update
+comments: true
 ---
 With the release of wordpress 2.7 and flowplayer 3.x I thought it was time to update the plugin.
 

@@ -13,6 +13,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/syntax-highlighting-vi-for-rhelcentos
+comments: true
 ---
 The default install of VI is very basic, and being as I spend a lot of my time in there I find syntax highlighting invaluable, to get this however you will need the vim-enhanced package.
 

@@ -11,6 +11,7 @@ categories:
 - php
 - acies
 wordpress_url: http://saiweb.co.uk/linux/acies-update
+comments: true
 ---
 <p>Well the XML rendering API has been giving me no end of head ache during the development ... the end is in sight however.</p>
 <p>Acies is moving along nicely, I am debating the use of globals over extended classes.</p>

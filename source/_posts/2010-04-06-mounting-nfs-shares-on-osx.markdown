@@ -12,6 +12,7 @@ tags:
 categories: 
 - mac
 wordpress_url: http://saiweb.co.uk/mac/mounting-nfs-shares-on-osx
+comments: true
 ---
 Having little time to update my blog, I've been updating a wiki I keep with various tidbits, so I thought I might as well share a few, they will be appearing on here over the next few days.
 

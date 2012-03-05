@@ -10,6 +10,7 @@ tags:
 categories: 
 - property investment
 wordpress_url: http://saiweb.co.uk/property investment/property-investment-the-credit-crunch-and-finding-the-ideal-investment-property
+comments: true
 ---
 " <i>
 Property Investment is the best investment opportunity thanks to the growth of the World economy.

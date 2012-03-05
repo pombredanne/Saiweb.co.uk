@@ -10,6 +10,7 @@ tags:
 categories: 
 - python
 wordpress_url: http://saiweb.co.uk/python/easy_install-for-python-3
+comments: true
 ---
 easy_install for python3 simple
 

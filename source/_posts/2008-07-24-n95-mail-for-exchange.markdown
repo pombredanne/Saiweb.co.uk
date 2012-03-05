@@ -10,6 +10,7 @@ tags:
 categories: 
 - n95
 wordpress_url: http://saiweb.co.uk/n95/n95-mail-for-exchange
+comments: true
 ---
 The page here: <a href="http://blog.totalcomputing.co.uk/2007/06/installing-mail-for-exchange-on-nokia.html">http://blog.totalcomputing.co.uk/2007/06/installing-mail-for-exchange-on-nokia.html</a>
 

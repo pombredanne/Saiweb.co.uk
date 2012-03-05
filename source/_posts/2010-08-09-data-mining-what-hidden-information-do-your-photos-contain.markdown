@@ -12,6 +12,7 @@ tags:
 categories: 
 - hacking
 wordpress_url: http://saiweb.co.uk/hacking/data-mining-what-hidden-information-do-your-photos-contain
+comments: true
 ---
 Time was when a photo was just a captured moment in time, /end nostalgia
 

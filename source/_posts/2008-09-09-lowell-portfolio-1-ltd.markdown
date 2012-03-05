@@ -14,6 +14,7 @@ tags:
 categories: 
 - uncategorized
 wordpress_url: http://saiweb.co.uk/uncategorized/lowell-portfolio-1-ltd
+comments: true
 ---
 UPDATE 26/07/09 -----
 

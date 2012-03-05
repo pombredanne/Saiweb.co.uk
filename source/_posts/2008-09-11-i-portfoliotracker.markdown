@@ -14,6 +14,7 @@ tags:
 categories: 
 - property investment
 wordpress_url: http://saiweb.co.uk/property investment/i-portfoliotracker
+comments: true
 ---
 Property secrets have released a free online property management web application, at least for the time being it is free during development and testing!
 

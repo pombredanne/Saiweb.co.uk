@@ -9,6 +9,7 @@ tags:
 categories: 
 - jquery
 wordpress_url: http://saiweb.co.uk/jquery/jquerysaiweb-jquery-plugin
+comments: true
 ---
 jQuery.saiweb is a plugin I am releasing under the creative commons license, it is more a tool set than anything else, that I will be adding additional functions to as / when I require them.
 

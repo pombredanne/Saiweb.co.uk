@@ -11,6 +11,7 @@ categories:
 - linux
 - php
 wordpress_url: http://saiweb.co.uk/hacking/usrbinld-cannot-find-lltdl
+comments: true
 ---
 <p>Now this one was annoying!</p>
 <p>Whilst adding imap support to a php 5.2.2 installation running from a red hat linux 4 distro, I kept getting the same error, when running my custom config script.</p>

@@ -15,6 +15,7 @@ categories:
 - mysql
 - php
 wordpress_url: http://saiweb.co.uk/mysql/high-availability-joomla-wordpress-load-balance-persistant-php-database-sessions
+comments: true
 ---
 If you've seen the new twitter feed to the right you may of seem some ramblings about 'cura'.
 

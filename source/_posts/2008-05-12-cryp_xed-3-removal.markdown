@@ -11,6 +11,7 @@ categories:
 - hacking
 - security
 wordpress_url: http://saiweb.co.uk/windows/cryp_xed-3-removal
+comments: true
 ---
 <p><script type="text/javascript"><!--
 google_ad_client = "pub-5002016982726982";

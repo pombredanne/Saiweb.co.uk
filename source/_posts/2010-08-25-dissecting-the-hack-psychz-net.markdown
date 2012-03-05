@@ -11,6 +11,7 @@ tags:
 categories: 
 - hacking
 wordpress_url: http://saiweb.co.uk/hacking/dissecting-the-hack-psychz-net
+comments: true
 ---
 For some background you may want to read the <a href="http://www.saiweb.co.uk/hacking/when-fail2ban-fails-to-ban-dissecting-the-hack">Original Story</a> leading to this write up.
 

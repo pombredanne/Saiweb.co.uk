@@ -13,6 +13,7 @@ categories:
 - nagios
 - twitter
 wordpress_url: http://saiweb.co.uk/nagios/nagios-send-alerts-to-twitter
+comments: true
 ---
 Pre-req reading:
 

@@ -13,6 +13,7 @@ categories:
 - dbstat
 - adimpleo
 wordpress_url: http://saiweb.co.uk/dbstat/dbstat-changes-name-to-adimpleo
+comments: true
 ---
 <div style=''>"adimpleo" Latin for "to perform", seemed a fitting name for dbStat.
 

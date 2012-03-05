@@ -10,6 +10,7 @@ tags:
 categories: 
 - n95
 wordpress_url: http://saiweb.co.uk/n95/n95-bittorrent
+comments: true
 ---
 Well I'll be damned, someone has actually done it!
 

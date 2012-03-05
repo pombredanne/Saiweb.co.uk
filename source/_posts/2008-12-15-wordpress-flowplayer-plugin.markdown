@@ -9,6 +9,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-plugin
+comments: true
 ---
 After updating to 2.7 I can confirm that Wordpress Flowplayer does not work with 2.7
 

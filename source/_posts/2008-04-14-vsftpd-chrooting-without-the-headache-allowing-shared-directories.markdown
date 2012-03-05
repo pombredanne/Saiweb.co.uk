@@ -12,6 +12,7 @@ categories:
 - linux
 - security
 wordpress_url: http://saiweb.co.uk/linux/vsftpd-chrooting-without-the-headache-allowing-shared-directories
+comments: true
 ---
 <script type="text/javascript">// <![CDATA[
 google_ad_client = "pub-5002016982726982";

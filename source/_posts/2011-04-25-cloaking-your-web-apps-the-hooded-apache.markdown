@@ -13,6 +13,7 @@ categories:
 - linux
 - security
 wordpress_url: http://saiweb.co.uk/hacking/cloaking-your-web-apps-the-hooded-apache
+comments: true
 ---
 <p>Go ahead and run</p>
 <p>{% highlight bash %}
