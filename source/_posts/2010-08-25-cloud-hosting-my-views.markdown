@@ -11,6 +11,7 @@ tags:
 categories: 
 - hosting
 wordpress_url: http://saiweb.co.uk/hosting/cloud-hosting-my-views
+comments: true
 ---
 This blog entry here: <a href="http://rackerhacker.com/2010/08/25/a-nerds-perspective-on-cloud-hosting/">http://rackerhacker.com/2010/08/25/a-nerds-perspective-on-cloud-hosting/</a> prompted me to write this blog post, after I realized I'd filled the comment field, without ending my "monologue", anyway I thought it would be better to voice my opinions here, to you lot who are daft enough to read this blog.
 

@@ -11,6 +11,7 @@ categories:
 - php
 - hosting
 wordpress_url: http://saiweb.co.uk/php/php-caching-an-in-depth-review-follow-up-using-varnish
+comments: true
 ---
 Ok, so following up on PHP & Caching with Varnish, let's cut to the hard facts shall we?
 

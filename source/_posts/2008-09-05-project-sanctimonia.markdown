@@ -11,6 +11,7 @@ categories:
 - php
 - sanctimonia
 wordpress_url: http://saiweb.co.uk/php/project-sanctimonia
+comments: true
 ---
 I am in the process of contacting charitable organisations for project "sanctimonia".
 

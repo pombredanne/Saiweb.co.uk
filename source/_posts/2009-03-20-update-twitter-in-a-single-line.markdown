@@ -8,6 +8,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/update-twitter-in-a-single-line
+comments: true
 ---
 As it turns out twitter account can be updated in a single line, this makes writing "bots" just that little bit easier.
 

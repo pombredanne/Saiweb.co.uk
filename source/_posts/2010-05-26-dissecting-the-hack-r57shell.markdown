@@ -15,6 +15,7 @@ categories:
 - php
 - python
 wordpress_url: http://saiweb.co.uk/hacking/dissecting-the-hack-r57shell
+comments: true
 ---
 <span style="color: #ff0000;"><strong>Before you read any further note, I will not be including the original hack file, simply due to peoples stupidity in putting this on a production environment to play with, if you use the code you do so at your own risk, and by reading this blog entry / using the code provided you agree to accept all liability upon yourself for your own actions. Don't be an idiot.</strong></span>
 

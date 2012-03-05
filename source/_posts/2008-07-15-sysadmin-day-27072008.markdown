@@ -8,6 +8,7 @@ tags:
 categories: 
 - uncategorized
 wordpress_url: http://saiweb.co.uk/uncategorized/sysadmin-day-27072008
+comments: true
 ---
 <p>Or that would be 07/25/2008 for the US readers.</p>
 <p>It is here again, the last friday of july is <a href="http://en.wikipedia.org/wiki/System_Administrator_Appreciation_Day">System Administrator Appreciation Day</a></p>

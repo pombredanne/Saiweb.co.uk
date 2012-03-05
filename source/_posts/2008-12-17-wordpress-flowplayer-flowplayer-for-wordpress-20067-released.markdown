@@ -9,6 +9,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-flowplayer-for-wordpress-20067-released
+comments: true
 ---
 After much head banging you can now get a tagged release from <a href="http://wordpress.org/extend/plugins/word-press-flow-player/">http://wordpress.org/extend/plugins/word-press-flow-player/</a>
 

@@ -8,6 +8,7 @@ tags: []
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/a-big-thanks-to-pledgie-users
+comments: true
 ---
 Or rather a lack of thanks,
 

@@ -8,6 +8,7 @@ tags: []
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/update-2
+comments: true
 ---
 Ok now it has all been officialy announced here at work I can finaly update this blog.
 

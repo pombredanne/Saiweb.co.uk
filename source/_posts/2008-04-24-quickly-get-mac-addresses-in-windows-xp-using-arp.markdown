@@ -11,6 +11,7 @@ categories:
 - windows
 - networking
 wordpress_url: http://saiweb.co.uk/windows/quickly-get-mac-addresses-in-windows-xp-using-arp
+comments: true
 ---
 <p>Just a quick blog about this ...</p>
 <p>Ever had the problem of having to assign a DHCP reservation with no mac address resolving software on your laptop? (NOOB! haha)</p>

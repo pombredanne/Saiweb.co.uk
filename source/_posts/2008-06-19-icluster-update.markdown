@@ -11,6 +11,7 @@ tags:
 categories: 
 - icluster
 wordpress_url: http://saiweb.co.uk/icluster/icluster-update
+comments: true
 ---
 No joy so far, and despite my postings to the local freecycle groups my list postings have been rejected as being "too extravagant" ...
 

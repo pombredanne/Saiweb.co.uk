@@ -10,6 +10,7 @@ tags:
 categories: 
 - mysql
 wordpress_url: http://saiweb.co.uk/mysql/mysql-slow-query-log-rotation
+comments: true
 ---
 One of the issues facing log rotation in mySQL is that mySQL doesn't seem to have the ability to perform a "reload".
 

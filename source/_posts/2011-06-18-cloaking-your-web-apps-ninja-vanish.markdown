@@ -13,6 +13,7 @@ tags:
 categories: 
 - security
 wordpress_url: http://saiweb.co.uk/security/cloaking-your-web-apps-ninja-vanish
+comments: true
 ---
 Bad <a href="http://lmgtfy.com/?q=tmnt">TMNT</a> reference I know but with a reboot coming what do you expect realy?
 

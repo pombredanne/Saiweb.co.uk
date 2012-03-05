@@ -10,6 +10,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-milestone-2010
+comments: true
 ---
 Version 2.0.1.0 is aimed to close 3 enhancements to the plugin including google analytics support.
 

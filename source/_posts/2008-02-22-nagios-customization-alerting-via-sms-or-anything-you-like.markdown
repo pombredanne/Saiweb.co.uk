@@ -20,6 +20,7 @@ categories:
 - networking
 - linux
 wordpress_url: http://saiweb.co.uk/nagios/nagios-customization-alerting-via-sms-or-anything-you-like
+comments: true
 ---
 So I find myself needing to tweak my <a href="http://www.nagios.org/" title="Nagios" target="_blank">Nagios</a> installation a little bit, in this case I found the need for "out of hours" SMS alerts.
 

@@ -11,6 +11,7 @@ tags:
 categories: 
 - uncategorized
 wordpress_url: http://saiweb.co.uk/uncategorized/windows-xp-sp3
+comments: true
 ---
 <p><script type="text/javascript"><!--<br/>google_ad_client = "pub-5002016982726982";<br/>/* 468x60, created 09/04/08 */<br/>google_ad_slot = "2202844884";<br/>google_ad_width = 468;<br/>google_ad_height = 60;<br/>//--><br/></script></p>
 <p><script type="text/javascript"><br/>src="http://pagead2.googlesyndication.com/pagead/show_ads.js"><br/></script></p>

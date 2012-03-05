@@ -10,6 +10,7 @@ categories:
 - linux
 - bash script
 wordpress_url: http://saiweb.co.uk/linux/bash-hello-world-in-60-seconds
+comments: true
 ---
 How to write a bash 'hello world' script in 60 seconds, admitedly it could of been faster ... damn typos
 

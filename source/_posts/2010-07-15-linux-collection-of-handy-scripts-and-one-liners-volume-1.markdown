@@ -14,6 +14,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/linux-collection-of-handy-scripts-and-one-liners-volume-1
+comments: true
 ---
 <strong>Ever wanted / needed HTTPD or another service to run with a raised thread priority?</strong>
 

@@ -11,6 +11,7 @@ categories:
 - linux
 - green giant
 wordpress_url: http://saiweb.co.uk/hacking/green-giant-ebay-con-artists
+comments: true
 ---
 <div style=''>So I got my "adjusted" postage ... the seller has increased the
 combined postage to £64 and then applied a £48 discount, yeh you

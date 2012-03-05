@@ -9,6 +9,7 @@ tags:
 categories: 
 - networking
 wordpress_url: http://saiweb.co.uk/networking/easynet-outage
+comments: true
 ---
 Oh dear oh dear ...
 

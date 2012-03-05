@@ -9,6 +9,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/vote-buzz-for-it-superhero-2008
+comments: true
 ---
 Basically I have actually been shortlisted "woo"<br /><br />So if you have found anything usefull on this blog please vote for me here<br /><br />
 

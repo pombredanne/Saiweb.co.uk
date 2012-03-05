@@ -9,6 +9,7 @@ categories:
 - hacking
 - linux
 wordpress_url: http://saiweb.co.uk/hacking/red-hat-hacked
+comments: true
 ---
 OK so I'm a little behind here, last friday 22/08/2008, hackers broke into Red Hat.
 

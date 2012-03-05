@@ -13,6 +13,7 @@ categories:
 - php
 - acies
 wordpress_url: http://saiweb.co.uk/technology/announcing-project-acies
+comments: true
 ---
 <img border="0" align="middle" width="280" src="http://acies.saiweb.co.uk/www/acies/images/logo.jpg" alt="Acies" height="162" /> 
 

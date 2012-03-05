@@ -12,6 +12,7 @@ categories:
 - hacking
 - cuda
 wordpress_url: http://saiweb.co.uk/hacking/cuda-yet-another-distraction
+comments: true
 ---
 oooooooo SHINY .... I mean erm ... yeh ... *whistles*
 

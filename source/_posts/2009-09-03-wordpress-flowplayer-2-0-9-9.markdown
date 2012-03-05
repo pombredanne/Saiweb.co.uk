@@ -10,6 +10,7 @@ categories:
 - php
 - flowplayer
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2-0-9-9
+comments: true
 ---
 Finaly it is ready and in a state I am happy to release it.
 

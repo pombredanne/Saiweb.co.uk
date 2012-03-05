@@ -13,6 +13,7 @@ categories:
 - apache
 - hosting
 wordpress_url: http://saiweb.co.uk/general/new-host
+comments: true
 ---
 Due to latency issues, and the lack of multi site support I have ditched my old web-host.
 

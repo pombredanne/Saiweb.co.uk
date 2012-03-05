@@ -10,6 +10,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-2013
+comments: true
 ---
 Wordpress Flowplayer 2.0.1.3 comes with bug fixes and more features.
 

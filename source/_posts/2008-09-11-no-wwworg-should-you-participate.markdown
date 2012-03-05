@@ -9,6 +9,7 @@ categories:
 - general
 - apache
 wordpress_url: http://saiweb.co.uk/general/no-wwworg-should-you-participate
+comments: true
 ---
 This question has arrived at my feet a few times now.
 

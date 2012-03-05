@@ -12,6 +12,7 @@ tags:
 categories: 
 - python
 wordpress_url: http://saiweb.co.uk/python/python-urllib2-basic-http-authentication
+comments: true
 ---
 I meant to write this up over a week ago now, basically the need arose for one of my Python scripts to use HTTP Basic authentication when grabbing the output from a URL.
 

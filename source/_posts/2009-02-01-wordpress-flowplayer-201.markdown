@@ -11,5 +11,6 @@ categories:
 - php
 - flowplayer
 wordpress_url: http://saiweb.co.uk/php/wordpress-flowplayer-201
+comments: true
 ---
 This release fixes BUG <a href="http://trac.saiweb.co.uk/saiweb/ticket/23#">#23</a><br />

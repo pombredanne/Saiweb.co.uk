@@ -9,6 +9,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/trac-and-subversion-now-available
+comments: true
 ---
 I am still in the midst of getting everything made available.
 

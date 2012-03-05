@@ -9,6 +9,7 @@ tags:
 categories: 
 - windows
 wordpress_url: http://saiweb.co.uk/windows/cryp_tap-2-removal
+comments: true
 ---
 <p><script type="text/javascript"><!--
 google_ad_client = "pub-5002016982726982";

@@ -12,6 +12,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/sysamin-iconv-update
+comments: true
 ---
 I had a major issue facing the iconv functionality of the <a href="http://www.saiweb.co.uk/sysadmin">sysadmin toolset</a> namely due to rushed coding.
 

@@ -10,6 +10,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/php-bug-48139
+comments: true
 ---
 Because a picture is worth over 9000 internets ... apparently
 

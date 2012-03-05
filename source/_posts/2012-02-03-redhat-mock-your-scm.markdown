@@ -15,6 +15,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/redhat-mock-your-scm
+comments: true
 ---
 The mock tool can be a wonderful thing, allowing you to produce rpm packages for any rpm based system (assuming your have the written .cfg for it).
 

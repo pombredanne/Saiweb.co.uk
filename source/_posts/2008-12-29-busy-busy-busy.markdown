@@ -8,6 +8,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/busy-busy-busy
+comments: true
 ---
 Blog updates very well may become few and far between over the next couple of weeks, whilst I literally hammer out some issues with the Joomla database structure breaking mySQL replication *sigh*.
 

@@ -10,6 +10,7 @@ tags:
 categories: 
 - green giant
 wordpress_url: http://saiweb.co.uk/green giant/green-giant-ebay-con-artists-part-4-fastmemoryman
+comments: true
 ---
 Name and shame time!
 

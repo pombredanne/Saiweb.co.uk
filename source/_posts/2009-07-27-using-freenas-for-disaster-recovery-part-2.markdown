@@ -11,6 +11,7 @@ tags:
 categories: 
 - freenas
 wordpress_url: http://saiweb.co.uk/freenas/using-freenas-for-disaster-recovery-part-2
+comments: true
 ---
 We are still unfortunately waiting for the memory to arrive from crucial, *sigh*, so in this part I will cover what the "extras" are and the installation of them.
 

@@ -15,6 +15,7 @@ categories:
 - windows
 - microsoft office 2003
 wordpress_url: http://saiweb.co.uk/windows/microsoft-office-word-excel-outlook-slow-when-connected-to-network-but-fast-when-not
+comments: true
 ---
 Yes the title seems a little weird, but it's a little problem that has been the bane of my and a fellow techs existence for a couple months now.
 

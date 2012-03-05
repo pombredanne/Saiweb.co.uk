@@ -9,6 +9,7 @@ tags:
 categories: 
 - java
 wordpress_url: http://saiweb.co.uk/java/motion-tracking-with-processing
+comments: true
 ---
 For this quick video I spent about 30 minutes playing around with the exmaples provided with the processing SDK, you can get a copy from <a href="http://processing.org">processing.org</a><br /><br />[FLOWPLAYER=motion_tracking_demo.mp4,320,262]<br />
 <strong>

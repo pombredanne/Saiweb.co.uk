@@ -9,6 +9,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/the-end-is-nigh
+comments: true
 ---
 Ok well maybe not bit it is kinda strange that today Friday the 13th Feb 2009 EPOCH time will become 1234567890.
 

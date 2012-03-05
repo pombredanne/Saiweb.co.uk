@@ -9,6 +9,7 @@ tags:
 categories: 
 - php
 wordpress_url: http://saiweb.co.uk/php/flowplayer-for-wordpress
+comments: true
 ---
 Whilst I wait for a reply here: <a href="http://community.flowplayer.org/node/1051">http://community.flowplayer.org/node/1051</a>
 

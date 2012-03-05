@@ -12,6 +12,7 @@ tags:
 categories: 
 - mac
 wordpress_url: http://saiweb.co.uk/mac/my-time-machine-needs-970-08-peta-bytes
+comments: true
 ---
 <a href="http://cdn.saiweb.co.uk/uploads/2010/05/time_machine_wtf.png"><img src="http://cdn.saiweb.co.uk/uploads/2010/05/time_machine_wtf.png" alt="" title="time_machine_wtf" width="475" height="217" class="alignnone size-full wp-image-862" /></a>
 

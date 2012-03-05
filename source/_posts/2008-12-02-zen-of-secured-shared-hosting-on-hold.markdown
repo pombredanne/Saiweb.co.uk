@@ -11,6 +11,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/zen-of-secured-shared-hosting-on-hold
+comments: true
 ---
 This series is officially on hold until further notice,
 

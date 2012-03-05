@@ -10,6 +10,7 @@ tags:
 categories: 
 - flowplayer
 wordpress_url: http://saiweb.co.uk/flowplayer/wordpress-flowplayer-2100
+comments: true
 ---
 The following milestone is planned for completion by the end of March.
 

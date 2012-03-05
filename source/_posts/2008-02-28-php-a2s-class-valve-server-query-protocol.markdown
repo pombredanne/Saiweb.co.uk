@@ -13,6 +13,7 @@ categories:
 - networking
 - php
 wordpress_url: http://saiweb.co.uk/hacking/php-a2s-class-valve-server-query-protocol
+comments: true
 ---
 I was reminded today on MSN that I had in fact written (albeit a long time ago) a class for querying the A2S protocol using PHP sockets.
 

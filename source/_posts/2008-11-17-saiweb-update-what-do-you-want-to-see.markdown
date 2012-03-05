@@ -9,6 +9,7 @@ tags:
 categories: 
 - general
 wordpress_url: http://saiweb.co.uk/general/saiweb-update-what-do-you-want-to-see
+comments: true
 ---
 Well the giant banner at the top of the blog can't of escaped your attention, and I still need your votes! so please check out the blog entry for <a href="http://www.saiweb.co.uk/general/vote-buzz-for-it-superhero-2008">IT Super Hero 2008</a>
 

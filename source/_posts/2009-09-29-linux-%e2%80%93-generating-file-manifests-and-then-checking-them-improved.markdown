@@ -17,6 +17,7 @@ categories:
 - linux
 - python
 wordpress_url: http://saiweb.co.uk/linux/linux-%e2%80%93-generating-file-manifests-and-then-checking-them-improved
+comments: true
 ---
 Following on from <a href="http://www.saiweb.co.uk/linux/linux-generating-file-manifests-and-then-checking-them">Linux – Generating file manifests and then checking them</a> I was always getting the same questions ...
 

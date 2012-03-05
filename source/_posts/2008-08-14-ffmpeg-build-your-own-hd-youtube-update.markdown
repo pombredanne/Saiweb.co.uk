@@ -11,6 +11,7 @@ tags:
 categories: 
 - linux
 wordpress_url: http://saiweb.co.uk/linux/ffmpeg-build-your-own-hd-youtube-update
+comments: true
 ---
 Well the intrest in this subject seems to be picking up!
 
