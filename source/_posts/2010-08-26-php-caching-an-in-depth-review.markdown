@@ -8,7 +8,8 @@ tags:
 - cache
 - caching
 - faster
-categories: 
+categories:
+- php 
 - hosting
 wordpress_url: http://saiweb.co.uk/hosting/php-caching-an-in-depth-review
 ---
