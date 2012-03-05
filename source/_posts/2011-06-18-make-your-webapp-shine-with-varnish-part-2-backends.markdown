@@ -1,7 +1,7 @@
 --- 
 wordpress_id: 1039
 layout: post
-title: "Make your webapp shine with varnish \xE2\x80\x93 Part 2 backends"
+title: "Make your webapp shine with varnish Part 2 backends"
 date: 2011-06-18 12:09:39 +01:00
 tags: 
 - cache
