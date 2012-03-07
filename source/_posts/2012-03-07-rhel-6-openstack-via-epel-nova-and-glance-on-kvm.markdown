@@ -286,4 +286,40 @@ And as <a href="https://blueprints.launchpad.net/nova/+spec/iso-boot">iso-boot</
 2. Sucessfully configured glance
 3. Have nova using glance
 
-All you need do is load a valid image into glance and boot using nova.
+All you need do is load a valid image into glance and boot using nova, so now I will be cheating a little I will create a blank 10GB qcow2 image, import it into glance
+boot it and use virt-manager to attach the .iso and reboot.
+
+```
+qemu-img create -f qcow2 blank.qcow2 10G
+Formatting 'blank.qcow2', fmt=qcow2 size=10737418240 encryption=off cluster_size=65536
+glance add name="blank-10G" is_public=True container_format=bare disk_format=qcow2 < ./blank.qcow2
+Added new image with ID: 2
+nova boot --flavor 2 --image 2 "BT5"
++--------------+--------------------------------------+
+|   Property   |                Value                 |
++--------------+--------------------------------------+
+| accessIPv4   |                                      |
+| accessIPv6   |                                      |
+| adminPass    | H3khDYMwheNNWBV3                     |
+| config_drive |                                      |
+| created      | 2012-03-07T23:01:50Z                 |
+| flavor       | m1.small                             |
+| hostId       |                                      |
+| id           | 2                                    |
+| image        | blank-10G                            |
+| key_name     | None                                 |
+| metadata     | {}                                   |
+| name         | BT5                                  |
+| progress     | 0                                    |
+| status       | BUILD                                |
+| tenant_id    | home                                 |
+| updated      | 2012-03-07T23:01:50Z                 |
+| user_id      | oneiroi                              |
+| uuid         | 05ce2b5d-d03c-442e-99e3-2c079469ec5b |
++--------------+--------------------------------------+
+```
+
+Now I cheat I used virt-manager to force off the insance, create and attache an IDE cdrom and set it as the primary boot device.
+BT5 boots from the ISO and I can even begin to work through the install to hard drive menus, which as irony would have it prompts me that it needs an 11.5GB partition to install upon :D
+
+I will cover producing proper images in my next openstack post, as the size of the storage volume should not be defined by the image in glance, it should be defined by the falvour being started.
