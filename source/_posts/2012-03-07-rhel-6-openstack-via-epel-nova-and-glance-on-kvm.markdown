@@ -15,7 +15,7 @@ I will also be carrying out mySQL configuration of glance and nova, for 2011.3 (
 
 {% highlight bash %}
 rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm
-{% highlight %}
+{% endhighlight %}
 
 <strong>Install Nova and Glance</strong>
 
@@ -41,11 +41,24 @@ Name                 State      Autostart
 default              active     yes 
 virsh net-destroy default
 Network default destroyed
+virsh net-undefine default
+Network default has been undefined
+service libvirtd restart
 {% endhighlight %}
 
-<u> Building Bridges </a>
+<u> Building Bridges </u>
 
 The theory here is that this configuration of bridge will give us near native network performance, which if you are setting up for use beyond a throwaway sandbox, you really do not want to start introducing bottlenecks.
+
+Shutdown and disable NetworkManager
+
+{% highlight bash %}
+service NetworkManager stop
+chkconfig NetworkManager off
+chkconfig network on
+{% endhighlight %}
+
+If you know of a NetworkManager friendly way of doing the following please let me know!
 
 In this scenario br0 becomes your current eth0 
 
@@ -54,9 +67,9 @@ In this scenario br0 becomes your current eth0
 DEVICE=br0
 TYPE=Bridge
 BOOTPROTO=static
-IPADDR=10.0.1.1
+IPADDR=10.0.0.1
 NETMASK=255.255.255.0
-GATEWAY=10.0.1.254
+GATEWAY=10.0.0.254
 ONBOOT=yes
 DELAY=0
 ```
@@ -65,21 +78,25 @@ DELAY=0
 ```
 DEVICE=eth0
 BOOTPROTO=none
-HWADDR=00:11:22:33:44:55
+TYPE=Ethernet
+HWADDR=3c:4a:92:77:b3:9d
 ONBOOT=yes
 USERCTL=no
 BRIDGE=br0
-TYPE=Ethernet
 ```
 
 There is plenty more fun to be had here such as bonded interfaces (I myself have a few systems with bonded interfaces as such becoming br0 -> bond0 -> NIC's), but that's for another time.
 
+Note: you may also use brctl for temporary configurations if you are just experimenting.
+Caution: my network dropped out immediatly on my testbox, most likely because networkmanager was running, always ensure you can attach to the head of your box when doing network configuration ;-)
 
 Once you have these configurations in place (Ensuring your have replaced the placeholder IP's and MAC address with valid ones) you can now go for a 
 
 ```
 service network restart
 ```
+
+All being well you'll lose and re-establish connection, of you'll be attaching a monitor / to kvm over ip.
 
 <strong>Configuring Nova</strong>
 
@@ -108,6 +125,31 @@ Your /etc/nova.conf should resemble this:
 --rabbit_host=localhost
 --glance_api_servers=localhost:9292
 --iscsi_ip_prefix=192.168.99.1
+--bridge=br0
 ```
 
-Rememeber this is only a basic setup so a lot of the options are left default such as the network_manager, I will cover their options at a later date.
+Setup the database and start the relevant nova services
+
+{% highlight bash %}
+nova-manage db sync
+for i in api network scheduler compute; do service openstack-nova-$i start; done
+for i in api network scheduler compute; do chkconfig openstack-nova-$i on; done
+{% endhighlight %}
+
+Note: you could also use openstack-nova-db-setup instead of "nova-manage db sync", _but_ it requires mysql-server, which at the time of writing if you have Percona installed will falsely adivse you a need t install mysql-server, Percona need to add: "Provides: mysql-server" to their spec ideally.
+
+Remember this is only a basic setup so a lot of the options are left default such as the network_manager, I will cover their options at a later date.
+
+Onto setting up a basic user (Note: this will be replaced in future posts with keystone)
+
+{% highlight bash %}
+nova-manage user admin saiweb
+nova-manage project create saiweb saiweb
+nova-manage network create saiweb 10.0.0.0/24 1 256 --bridge=br0
+{% endhighlight %}
+
+
+
+<strong> Configuring Glance </strong>
+
+
