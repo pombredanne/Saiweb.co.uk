@@ -8,7 +8,12 @@ categories:
 - openstack 
 ---
 
-In this post I will cover getting openstack nova and glance services installed from EPEL and configured to the point where an image can be started.
+In this post I will cover getting openstack nova and glance services installed from EPEL and configured to the point where an image can be started, this assumes
+
+1. You have a mysql instance installed and running
+2. you have a rabbitmq-server installed and running
+3. you have kvm installed and running (libvirt)
+
 I will also be carrying out mySQL configuration of glance and nova, for 2011.3 (Diablo), though most if not all of this should be portable to the Essex release
 
 <strong>Install EPEL</strong>
@@ -124,7 +129,7 @@ Your /etc/nova.conf should resemble this:
 --sql_connection=mysql://nova:nova@localhost/nova
 --rabbit_host=localhost
 --glance_api_servers=localhost:9292
---iscsi_ip_prefix=192.168.99.1
+--iscsi_ip_prefix=10.0.0.1
 --bridge=br0
 ```
 
@@ -136,7 +141,7 @@ for i in api network scheduler compute; do service openstack-nova-$i start; done
 for i in api network scheduler compute; do chkconfig openstack-nova-$i on; done
 {% endhighlight %}
 
-Note: you could also use openstack-nova-db-setup instead of "nova-manage db sync", _but_ it requires mysql-server, which at the time of writing if you have Percona installed will falsely adivse you a need t install mysql-server, Percona need to add: "Provides: mysql-server" to their spec ideally.
+Note: you could also use openstack-nova-db-setup instead of "nova-manage db sync", _but_ it requires mysql-server, which at the time of writing if you have Percona installed will falsely adivse you a need to install mysql-server, Percona need to add: "Provides: mysql-server" to their spec ideally.
 
 Remember this is only a basic setup so a lot of the options are left default such as the network_manager, I will cover their options at a later date.
 
@@ -148,8 +153,134 @@ nova-manage project create saiweb saiweb
 nova-manage network create saiweb 10.0.0.0/24 1 256 --bridge=br0
 {% endhighlight %}
 
+Take a moment to run a quick check on your services and network
+
+```
+nova-manage service list
+Binary           Host                                 Zone             Status     State Updated_At
+nova-network     oneiroi                              nova             enabled    :-)   2012-03-07 22:21:10
+nova-compute     oneiroi                              nova             enabled    :-)   2012-03-07 22:21:12
+nova-scheduler   oneiroi                              nova             enabled    :-)   2012-03-07 22:21:10
+
+nova-manage network list
+id      IPv4                IPv6            start address   DNS1            DNS2            VlanID          project         uuid           
+1       10.0.0.0/24         None            10.0.0.2        8.8.4.4         None            None            None            7d480f13-47f7-4117-9889-d44f378c3fee
+
+```
+
+Now we need the nova credentials for this user + project.
+
+```
+nova-manage project zipfile saiweb saiweb
+unzip nova.zip
+mv ./{novarc,pk.pem,cert.pem,cacert.pem} ~/.nova/
+chmod 700 ~/.nova
+chmod 600 ~/.nova/*
+rm ./nova.zip
+echo ". ~/.nova/novarc" >> ~/.bashrc
+source ~/.bashrc
+euca-add-keypair nova_key > ~/.nova/nova_key.priv
+chmod 600  ~/.nova/nova_key.priv
+
+```
 
 
 <strong> Configuring Glance </strong>
 
+The only change I made was to make glance use mysql.
 
+{% highlight sql %}
+create database glance;
+grant all privilges on glance.* to 'glance'@'localhost' identified by 'glance';
+{% endhighlight %}
+
+/etc/glance/glance-resgistry.conf
+```
+...
+sql_connection = mysql://glance:glance@localhost/glance
+...
+```
+
+Once you have made the change, unlike nova all you need do is start glance and it will setup the database.
+
+{% highlight bash %}
+for i in api registry; do chkconfig openstack-glance-$i on; service openstack-glance-$i start; done
+{% endhighlight %}
+
+Now were going to need an image, I'm using the <a href="http://www.backtrack-linux.org/">BT5-R2</a> .iso as an example, you could use any of the pre-generated images out there, or evern build them using <a href="http://fedoraproject.org/wiki/Getting_started_with_OpenStack_Nova#Building_an_Image_With_Oz">oz</a>
+
+```
+glance add name="BT5-R2-Gnome-x64" is_public=True container_format=ovf disk_format=raw < ./BT5R2-GNOME-64.iso
+```
+
+Once the import has completed it should appear in your glance index
+
+```
+glance index
+ID               Name                           Disk Format          Container Format     Size          
+---------------- ------------------------------ -------------------- -------------------- --------------
+1                BT5-R2-Gnome-x64               raw                  ovf                      2762084352
+```
+
+And assuming you setup your nova.conf correctly you should now be able to see this image from nova
+
+```
+nova image-list
++----+------------------+--------+
+| ID |       Name       | Status |
++----+------------------+--------+
+| 1  | BT5-R2-Gnome-x64 | ACTIVE |
++----+------------------+--------+
+```
+
+You will also have some default instance sizes aka flavours (commands use american spelling flavor).
+
+```
+nova-manage flavor list
+m1.medium: Memory: 4096MB, VCPUS: 2, Storage: 40GB, FlavorID: 3, Swap: 0MB, RXTX Quota: 0GB, RXTX Cap: 0MB
+m1.large: Memory: 8192MB, VCPUS: 4, Storage: 80GB, FlavorID: 4, Swap: 0MB, RXTX Quota: 0GB, RXTX Cap: 0MB
+m1.tiny: Memory: 512MB, VCPUS: 1, Storage: 0GB, FlavorID: 1, Swap: 0MB, RXTX Quota: 0GB, RXTX Cap: 0MB
+m1.xlarge: Memory: 16384MB, VCPUS: 8, Storage: 160GB, FlavorID: 5, Swap: 0MB, RXTX Quota: 0GB, RXTX Cap: 0MB
+m1.small: Memory: 2048MB, VCPUS: 1, Storage: 20GB, FlavorID: 2, Swap: 0MB, RXTX Quota: 0GB, RXTX Cap: 0MB
+```
+
+<strong> Booting your first Instance </strong>
+
+```
+nova boot --flavor 2 --image 1 "BT5"
++--------------+--------------------------------------+
+|   Property   |                Value                 |
++--------------+--------------------------------------+
+| accessIPv4   |                                      |
+| accessIPv6   |                                      |
+| adminPass    | pnFKeVPpbb7bKKy6                     |
+| config_drive |                                      |
+| created      | 2012-03-07T23:11:59Z                 |
+| flavor       | m1.small                             |
+| hostId       |                                      |
+| id           | 1                                    |
+| image        | BT5-R2-Gnome-x64                     |
+| key_name     | None                                 |
+| metadata     | {}                                   |
+| name         | BT5                                  |
+| progress     | 0                                    |
+| status       | BUILD                                |
+| tenant_id    | saiweb                               |
+| updated      | 2012-03-07T23:11:59Z                 |
+| user_id      | saiweb                               |
+| uuid         | fb08be47-2647-4cb2-86d8-867ea0ef4981 |
++--------------+--------------------------------------+
+virsh list
+ Id Name                 State
+----------------------------------
+  1 instance-00000001    running
+
+```
+
+And as <a href="https://blueprints.launchpad.net/nova/+spec/iso-boot">iso-boot</a> is not currently complete, this example falls down here, as the instance fails to boot from the .iso file, still you now have
+
+1. Successfully configured nova
+2. Sucessfully configured glance
+3. Have nova using glance
+
+All you need do is load a valid image into glance and boot using nova.
