@@ -11,8 +11,10 @@ categories:
 In this post I will cover getting openstack nova and glance services installed from EPEL and configured to the point where an image can be started, this assumes
 
 1. You have a mysql instance installed and running
-2. you have a rabbitmq-server installed and running
-3. you have kvm installed and running (libvirt)
+2. You have a rabbitmq-server installed and running
+3. You have kvm installed and running (libvirt)
+4. You have selinux set to permissive, as I will not be covering selinux rules here at this time and I do notnthing disabled is a valid option ;-)
+
 
 I will also be carrying out mySQL configuration of glance and nova, for 2011.3 (Diablo), though most if not all of this should be portable to the Essex release
 
@@ -72,9 +74,9 @@ In this scenario br0 becomes your current eth0
 DEVICE=br0
 TYPE=Bridge
 BOOTPROTO=static
-IPADDR=10.0.0.1
+IPADDR=192.168.99.1
 NETMASK=255.255.255.0
-GATEWAY=10.0.0.254
+GATEWAY=192.168.99.254
 ONBOOT=yes
 DELAY=0
 ```
@@ -84,7 +86,7 @@ DELAY=0
 DEVICE=eth0
 BOOTPROTO=none
 TYPE=Ethernet
-HWADDR=3c:4a:92:77:b3:9d
+HWADDR=00:11:22:33:44:55
 ONBOOT=yes
 USERCTL=no
 BRIDGE=br0
@@ -93,6 +95,7 @@ BRIDGE=br0
 There is plenty more fun to be had here such as bonded interfaces (I myself have a few systems with bonded interfaces as such becoming br0 -> bond0 -> NIC's), but that's for another time.
 
 Note: you may also use brctl for temporary configurations if you are just experimenting.
+
 Caution: my network dropped out immediatly on my testbox, most likely because networkmanager was running, always ensure you can attach to the head of your box when doing network configuration ;-)
 
 Once you have these configurations in place (Ensuring your have replaced the placeholder IP's and MAC address with valid ones) you can now go for a 
@@ -150,7 +153,7 @@ Onto setting up a basic user (Note: this will be replaced in future posts with k
 {% highlight bash %}
 nova-manage user admin saiweb
 nova-manage project create saiweb saiweb
-nova-manage network create saiweb 10.0.0.0/24 1 256 --bridge=br0
+nova-manage network create saiweb 192.168.99.1/24 1 256 --bridge=br0
 {% endhighlight %}
 
 Take a moment to run a quick check on your services and network
@@ -207,7 +210,7 @@ Once you have made the change, unlike nova all you need do is start glance and i
 for i in api registry; do chkconfig openstack-glance-$i on; service openstack-glance-$i start; done
 {% endhighlight %}
 
-Now were going to need an image, I'm using the <a href="http://www.backtrack-linux.org/">BT5-R2</a> .iso as an example, you could use any of the pre-generated images out there, or evern build them using <a href="http://fedoraproject.org/wiki/Getting_started_with_OpenStack_Nova#Building_an_Image_With_Oz">oz</a>
+Now were going to need an image, I'm using the <a href="http://www.backtrack-linux.org/">BT5-R2</a> .iso as an example, you could use any of the pre-generated images out there, or even build them using <a href="http://fedoraproject.org/wiki/Getting_started_with_OpenStack_Nova#Building_an_Image_With_Oz">oz</a>
 
 ```
 glance add name="BT5-R2-Gnome-x64" is_public=True container_format=ovf disk_format=raw < ./BT5R2-GNOME-64.iso
