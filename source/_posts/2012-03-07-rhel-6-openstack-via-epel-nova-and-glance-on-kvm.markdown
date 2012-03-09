@@ -8,13 +8,13 @@ categories:
 - openstack 
 ---
 
+{% img http://cdn.saiweb.co.uk/openstack-cloud-software-vertical-small.png %}
 In this post I will cover getting openstack nova and glance services installed from EPEL and configured to the point where an image can be started, this assumes
 
 1. You have a mysql instance installed and running
 2. You have a rabbitmq-server installed and running
 3. You have kvm installed and running (libvirt)
-4. You have selinux set to permissive, as I will not be covering selinux rules here at this time and I do notnthing disabled is a valid option ;-)
-
+4. You have selinux set to permissive, as I will not be covering selinux rules here at this time and I do not think disabled is a valid option ;-)
 
 I will also be carrying out mySQL configuration of glance and nova, for 2011.3 (Diablo), though most if not all of this should be portable to the Essex release
 
@@ -38,7 +38,7 @@ First thing's first KVM is going to install with it's own default bridged networ
 
 Which is also noted as being <a href="http://www.cyberciti.biz/faq/linux-kvm-disable-virbr0-nat-interface/">very slow</a> (There is/was an note on the wiki@ linux-kvm.org but I have been unable to locate it at the time of writing)
 
-If you are only setting this up for experimentation you can run with the default networking, simply use vibr0 in your nova.conf instead of br0.
+If you are only setting this up for experimentation you can run with the default networking, simply use vibr0 in your nova.conf instead of br0, and ensure you have ipv4 forwarding enabled.
 
 <u> Burning Bridges </u>
 {% highlight bash %}
@@ -319,7 +319,7 @@ nova boot --flavor 2 --image 2 "BT5"
 +--------------+--------------------------------------+
 ```
 
-Now I cheat I used virt-manager to force off the insance, create and attache an IDE cdrom and set it as the primary boot device.
+Now I cheat I used virt-manager to force off the insance, create and attach an IDE cdrom and set it as the primary boot device.
 BT5 boots from the ISO and I can even begin to work through the install to hard drive menus, which as irony would have it prompts me that it needs an 11.5GB partition to install upon :D
 
 I will cover producing proper images in my next openstack post, as the size of the storage volume should not be defined by the image in glance, it should be defined by the falvour being started.
