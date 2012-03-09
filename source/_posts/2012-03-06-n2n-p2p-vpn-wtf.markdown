@@ -55,7 +55,7 @@ supernode whilst installed does not at the time of writing provide an init.d/sys
 place the above in /etc/init.d/supernode and chmod +x i.e.
 
 {% highlight bash %}
-curl -o /etc/init.d/supernode https://gist.github.com/1986260/supernode.sh && chmod +x /etc/init.d/supernode
+curl -o /etc/init.d/supernode https://raw.github.com/gist/1986260/b66b38da265ea14aac8d0ef7196a9ba98939716c/supernode.sh && chmod +x /etc/init.d/supernode
 {% endhighlight %}
 (Though I really do recommend you read through this code first before trusting it blindly!)
 
@@ -119,7 +119,7 @@ mkdir /var/run/edge && chown n2n:n2n /var/run/edge
 place the above in /etc/init.d/edge and chmod +x i.e.
 
 {% highlight bash %}
-curl -o /etc/init.d/edge https://gist.github.com/1986260/edge.sh && chmod +x /etc/init.d/edge
+curl -o /etc/init.d/edge https://raw.github.com/gist/1986260/3061d0fb9d6f2ddf1608f01917129d65b8131d33/edge.sh && chmod +x /etc/init.d/edge
 {% endhighlight %}
 (Again I HIGHLY recommend you actually read the code before blindly trusting it!)
 
