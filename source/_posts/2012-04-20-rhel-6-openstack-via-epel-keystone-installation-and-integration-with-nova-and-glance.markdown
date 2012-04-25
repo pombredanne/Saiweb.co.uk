@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RHEL 6 Openstack via EPEL Keystone installation and intergration with Nova and Glance"
+title: "RHEL 6 Openstack via EPEL Keystone installation and integration with Nova and Glance"
 date: 2012-04-22 16:04
 comments: true
 categories: 
