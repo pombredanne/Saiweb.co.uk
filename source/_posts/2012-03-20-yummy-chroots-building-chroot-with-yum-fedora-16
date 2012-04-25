@@ -1,6 +1,12 @@
----
-
----
+------
+layout: post
+title: "yummy chroots. Building chroots with yum on fedora 16"
+date: 2012-03-07 16:59
+comments: true
+published: true
+categories:
+- linux
+------
 
 We're going to build a minimal chroot directory for Fedora 16 using yum and rpm, we are using the ChrootDirectory functionality of Openssh which only came in >= 4.9p1
 
@@ -19,7 +25,7 @@ groupadd chrooted
 
 Edit /etc/ssh/sshd_config
 
-{% highlight %}
+{% highlight bash %}
 Match Group chrooted
         ChrootDirectory /chroot/%u
         AllowTcpForwarding no
@@ -37,7 +43,4 @@ Add the user:
 useradd -G chrooted -d /chroot/chrootuser chrootuser
 {% endhighlight %}
 
-Now the use should be able to login and will be chrooted by openssh
-
-
-
+ssh in as the user and they will be in the jailed directory

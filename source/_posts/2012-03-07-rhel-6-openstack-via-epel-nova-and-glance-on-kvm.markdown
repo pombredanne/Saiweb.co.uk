@@ -33,6 +33,7 @@ yum -y install openstack-nova openstack-glance
 yum should take care of all the dependencies here, and install both with a minimal configuration.
 
 <strong>Burning and Rebuilding bridges</strong>
+<a id="burning-bridges"></a>
 
 First thing's first KVM is going to install with it's own default bridged networking, this provides NAT.
 
@@ -41,7 +42,8 @@ Which is also noted as being <a href="http://www.cyberciti.biz/faq/linux-kvm-dis
 If you are only setting this up for experimentation you can run with the default networking, simply use vibr0 in your nova.conf instead of br0, and ensure you have ipv4 forwarding enabled.
 
 <u> Burning Bridges </u>
-{% highlight bash %}
+
+```
 virsh net-list
 Name                 State      Autostart
 -----------------------------------------
@@ -51,7 +53,7 @@ Network default destroyed
 virsh net-undefine default
 Network default has been undefined
 service libvirtd restart
-{% endhighlight %}
+```
 
 <u> Building Bridges </u>
 
@@ -59,17 +61,18 @@ The theory here is that this configuration of bridge will give us near native ne
 
 Shutdown and disable NetworkManager
 
-{% highlight bash %}
+```
 service NetworkManager stop
 chkconfig NetworkManager off
 chkconfig network on
-{% endhighlight %}
+```
 
 If you know of a NetworkManager friendly way of doing the following please let me know!
 
 In this scenario br0 becomes your current eth0 
 
 /etc/sysconfig/network-scripts/ifcfg-br0 
+
 ```
 DEVICE=br0
 TYPE=Bridge
@@ -150,11 +153,11 @@ Remember this is only a basic setup so a lot of the options are left default suc
 
 Onto setting up a basic user (Note: this will be replaced in future posts with keystone)
 
-{% highlight bash %}
+```
 nova-manage user admin saiweb
 nova-manage project create saiweb saiweb
 nova-manage network create saiweb 192.168.99.1/24 1 256 --bridge=br0
-{% endhighlight %}
+```
 
 Take a moment to run a quick check on your services and network
 
