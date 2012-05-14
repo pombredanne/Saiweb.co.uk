@@ -324,7 +324,7 @@ Usage from 2012-03-26 to 2012-04-24:
 
 <strong>BE WARNED</strong>
 
-Most of the other command for myself are presently returning 404 / 500 errors, with the [Essex Release Impending](http://pbrady.fedorapeople.org/openstack-el6/) the current EPEL advice seems to be to use Essex, I will update as/when I can with futher information on these issues.
+Most of the other commands for myself are presently returning 404 / 500 errors, with the [Essex Release Impending](http://pbrady.fedorapeople.org/openstack-el6/) the current EPEL advice seems to be to use Essex, I will update as/when I can with futher information on these issues.
 
 For instance on a: flavor-create a 500 error is encountered with the following logged in api.log
 
