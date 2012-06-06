@@ -4,8 +4,9 @@ require "stringex"
 require "cloudfiles"
 require "mime/types"
 require "find"
+require "colored"
 
-cloudfiles_container = "saiweb"
+cloudfiles_container = "test"
 cloudfiles_auth = CloudFiles::AUTH_UK
 
 ## -- Rsync Deploy config -- ##
@@ -369,10 +370,18 @@ task :cloudfiles do
     local_files[0] = pub_dir.to_s
     to_upload = local_files.reject { |i| cdn_files.include?(i[pub_dir.to_s.length..-1]) }    
     #@todo: delete files no longer required
+    #upload files
     to_upload.each do |f|
-        rPath = f[pub_dir.to_s.length..-1]
-        puts " Uploading -> " + rPath
-    #Upload files
+        unless File.directory?(f)
+            rPath = f[pub_dir.to_s.length..-1]
+            puts "    +".green + " Uploading -> " + rPath
+            fp = open(f,'r')
+            t = MIME::Types.type_for(f)
+            obj = container.create_object rPath,true
+            obj.write f
+            obj.content_type = t[0].to_s
+            fp.close
+        end
     end    
 end
 
