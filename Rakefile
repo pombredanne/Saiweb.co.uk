@@ -1,12 +1,18 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require "cloudfiles"
+require "mime/types"
+require "find"
+
+cloudfiles_container = "saiweb"
+cloudfiles_auth = CloudFiles::AUTH_UK
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "saiweb"
+ssh_user       = ""
 ssh_port       = "22"
-document_root  = "/var/www/oneiroi/saiweb/public/"
+document_root  = ""
 rsync_delete   = true
 deploy_default = "rsync"
 
@@ -346,6 +352,28 @@ task :setup_github_pages, :repo do |t, args|
     end
   end
   puts "\n---\n## Now you can deploy to #{url} with `rake deploy` ##"
+end
+
+desc "Use cloudfiles to deploy the blog assets, assumes X-Container-Meta-Web-Index: index.html"
+task :cloudfiles do
+    #Adapted from code here: http://jondavidjohn.com/blog/2012/04/sync-static-assets-to-rackpace-cloudfiles-with-a-rake-task
+    cf = CloudFiles::Connection.new(
+        :username => get_stdin("What is your cloudfiles username?"),
+        :api_key => get_stdin("What is your api key?"),
+        :auth_url => "#{cloudfiles_auth}"
+    )
+    container = cf.container("#{cloudfiles_container}")
+    pub_dir = "public/"
+    cdn_files = container.objects
+    local_files = Find.find(pub_dir).map { |i| i }
+    local_files[0] = pub_dir.to_s
+    to_upload = local_files.reject { |i| cdn_files.include?(i[pub_dir.to_s.length..-1]) }    
+    #@todo: delete files no longer required
+    to_upload.each do |f|
+        rPath = f[pub_dir.to_s.length..-1]
+        puts " Uploading -> " + rPath
+    #Upload files
+    end    
 end
 
 def ok_failed(condition)
