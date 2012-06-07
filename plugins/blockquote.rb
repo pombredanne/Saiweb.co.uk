@@ -47,6 +47,7 @@ module Jekyll
 
     def render(context)
       quote = paragraphize(super.map(&:strip).join)
+      quote = paragraphize(super)
       author = "<strong>#{@by.strip}</strong>" if @by
       if @source
         url = @source.match(/https?:\/\/(.+)/)[1].split('/')
@@ -76,6 +77,7 @@ module Jekyll
 
     def paragraphize(input)
       "<p>#{input.gsub(/\n\n/, '</p><p>').gsub(/\n/, '<br/>')}</p>"
+      "<p>#{input.lstrip.rstrip.gsub(/\n\n/, '</p><p>').gsub(/\n/, '<br/>')}</p>"
     end
   end
 end
