@@ -10,7 +10,7 @@ tags:
 categories: 
 - linux
 - apache
-- bash script
+- bash-script
 wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-3
 comments: true
 ---

@@ -1,13 +1,13 @@
 --- 
 wordpress_id: 766
 layout: post
-title: Linux - Generating file manifests and then checking them
+title: Generating file manifests and then checking them
 date: 2009-09-07 10:50:26 +01:00
 tags: []
 
 categories: 
 - linux
-- bash script
+- bash-script
 wordpress_url: http://saiweb.co.uk/linux/linux-generating-file-manifests-and-then-checking-them
 comments: true
 ---

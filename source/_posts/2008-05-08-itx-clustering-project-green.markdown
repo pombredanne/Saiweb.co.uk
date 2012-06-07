@@ -12,7 +12,7 @@ categories:
 - hacking
 - linux
 - hosting
-- green giant
+- green_giant
 wordpress_url: http://saiweb.co.uk/hacking/itx-clustering-project-green
 comments: true
 ---

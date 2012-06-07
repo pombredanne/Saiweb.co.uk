@@ -4,12 +4,12 @@ layout: post
 title: Green Giant - Hardware Estimates
 date: 2008-06-02 14:02:06 +01:00
 tags: 
-- green giant
+- green_giant
 - cluster
 - cost
 categories: 
 - linux
-- green giant
+- green_giant
 wordpress_url: http://saiweb.co.uk/linux/green-giant-hardware-estimates
 comments: true
 ---

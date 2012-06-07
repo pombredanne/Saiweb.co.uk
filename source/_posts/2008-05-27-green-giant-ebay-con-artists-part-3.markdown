@@ -8,8 +8,8 @@ tags:
 - con
 - postage
 categories: 
-- green giant
-wordpress_url: http://saiweb.co.uk/green giant/green-giant-ebay-con-artists-part-3
+- green_giant
+wordpress_url: http://saiweb.co.uk/green_giant/green-giant-ebay-con-artists-part-3
 comments: true
 ---
 <p>Well lets start with the good news, the compact flash memory has arrived ...</p>

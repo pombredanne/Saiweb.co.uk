@@ -8,7 +8,7 @@ tags:
 - property auctions
 - propertysecrets
 categories: 
-- property investment
+ - property-investment
 wordpress_url: http://saiweb.co.uk/property investment/buy-to-let-madness
 comments: true
 ---

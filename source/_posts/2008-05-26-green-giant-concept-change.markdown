@@ -5,11 +5,11 @@ title: Green Giant Concept change
 date: 2008-05-26 13:06:15 +01:00
 tags: 
 - linux
-- green giant
+- green_giant
 - cluster
 categories: 
 - linux
-- green giant
+- green_giant
 wordpress_url: http://saiweb.co.uk/linux/green-giant-concept-change
 comments: true
 ---

@@ -5,6 +5,7 @@ require "cloudfiles"
 require "mime/types"
 require "find"
 require "colored"
+require "uri-handler"
 
 cloudfiles_container = "saiweb"
 cloudfiles_auth = CloudFiles::AUTH_UK

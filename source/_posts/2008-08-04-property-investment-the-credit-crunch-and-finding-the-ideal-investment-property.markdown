@@ -5,10 +5,10 @@ title: Property Investment, the credit crunch and finding the ideal Investment P
 date: 2008-08-04 14:24:49 +01:00
 tags: 
 - propertysecrets
-- property investment
+ - property-investment
 - investment property
 categories: 
-- property investment
+ - property-investment
 wordpress_url: http://saiweb.co.uk/property investment/property-investment-the-credit-crunch-and-finding-the-ideal-investment-property
 comments: true
 ---
