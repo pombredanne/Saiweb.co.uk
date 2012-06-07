@@ -12,7 +12,7 @@ tags:
 categories: 
 - hacking
 - linux
-- microsoft office 2003
+- microsoft_office_2003
 - security
 wordpress_url: http://saiweb.co.uk/hacking/honeypotting-for-viruses-statement-of-fees-200809
 comments: true

@@ -6,7 +6,7 @@ date: 2008-03-14 12:18:25 +00:00
 tags: []
 
 categories: 
-- property investment
+ - property-investment
 wordpress_url: http://saiweb.co.uk/property investment/property-investment-uk-is-the-btl-market-facing-armageddon
 comments: true
 ---

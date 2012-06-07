@@ -4,14 +4,14 @@ layout: post
 title: "\"Green Giant\" the i-cluster?"
 date: 2008-06-10 12:01:19 +01:00
 tags: 
-- green giant
+- green_giant
 - accelerometer
 - iphone
 - icluster
 - recycle
 categories: 
 - hacking
-- green giant
+- green_giant
 - iphone
 - icluster
 wordpress_url: http://saiweb.co.uk/hacking/green-giant-the-i-cluster

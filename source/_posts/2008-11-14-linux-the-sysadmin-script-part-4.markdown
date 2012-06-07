@@ -8,7 +8,7 @@ tags:
 - sysadmin
 categories: 
 - linux
-- bash script
+- bash-script
 wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-4
 comments: true
 ---

@@ -9,7 +9,7 @@ tags:
 - bofh
 categories: 
 - linux
-- bash script
+- bash-script
 wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-1
 comments: true
 ---

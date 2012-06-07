@@ -10,7 +10,7 @@ tags:
 - mac
 categories: 
 - linux
-- bash script
+- bash-script
 - mac
 wordpress_url: http://saiweb.co.uk/linux/linux-the-sysadmin-script-part-2
 comments: true

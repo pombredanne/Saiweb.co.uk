@@ -9,7 +9,7 @@ tags:
 categories: 
 - hacking
 - linux
-- green giant
+- green_giant
 wordpress_url: http://saiweb.co.uk/hacking/green-giant-ebay-con-artists-part-2
 comments: true
 ---

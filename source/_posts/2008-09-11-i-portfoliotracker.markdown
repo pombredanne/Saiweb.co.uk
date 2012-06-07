@@ -12,7 +12,7 @@ tags:
 - property management software
 - iportfoliotracker
 categories: 
-- property investment
+ - property-investment
 wordpress_url: http://saiweb.co.uk/property investment/i-portfoliotracker
 comments: true
 ---

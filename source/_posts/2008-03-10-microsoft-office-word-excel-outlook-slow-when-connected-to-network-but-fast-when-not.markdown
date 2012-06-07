@@ -13,7 +13,7 @@ tags:
 - outlook
 categories: 
 - windows
-- microsoft office 2003
+- microsoft_office_2003
 wordpress_url: http://saiweb.co.uk/windows/microsoft-office-word-excel-outlook-slow-when-connected-to-network-but-fast-when-not
 comments: true
 ---

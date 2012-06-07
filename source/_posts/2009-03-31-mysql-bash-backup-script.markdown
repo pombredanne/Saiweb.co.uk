@@ -10,7 +10,7 @@ tags:
 - gzip
 categories: 
 - mysql
-- bash script
+- bash-script
 wordpress_url: http://saiweb.co.uk/mysql/mysql-bash-backup-script
 comments: true
 ---

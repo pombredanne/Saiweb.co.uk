@@ -6,7 +6,7 @@ date: 2011-11-13 13:53:37 +00:00
 tags: []
 
 categories: 
-- via google+
+ - via-google-plus
 wordpress_url: http://saiweb.co.uk/via google+/an-update-i-know-i-havent-been-updating
 comments: true
 ---
