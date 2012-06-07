@@ -11,9 +11,10 @@ cloudfiles_auth = CloudFiles::AUTH_UK
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = ""
+ssh_user       = "user@domain.com"
 ssh_port       = "22"
-document_root  = ""
+document_root  = "~/website.com/"
+
 rsync_delete   = true
 deploy_default = "rsync"
 
