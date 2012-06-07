@@ -6,7 +6,7 @@ require "mime/types"
 require "find"
 require "colored"
 
-cloudfiles_container = "test"
+cloudfiles_container = "saiweb"
 cloudfiles_auth = CloudFiles::AUTH_UK
 
 ## -- Rsync Deploy config -- ##
@@ -379,7 +379,7 @@ task :cloudfiles do
             fp = open(f,'r')
             t = MIME::Types.type_for(f)
             obj = container.create_object rPath,true
-            obj.write f
+            obj.write fp
             obj.content_type = t[0].to_s
             fp.close
         end
