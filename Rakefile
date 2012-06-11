@@ -6,6 +6,7 @@ require "mime/types"
 require "find"
 require "colored"
 require "uri-handler"
+require "digest/md5"
 
 cloudfiles_container = "saiweb"
 cloudfiles_auth = CloudFiles::AUTH_UK
@@ -361,8 +362,8 @@ desc "Use cloudfiles to deploy the blog assets, assumes X-Container-Meta-Web-Ind
 task :cloudfiles do
     #Adapted from code here: http://jondavidjohn.com/blog/2012/04/sync-static-assets-to-rackpace-cloudfiles-with-a-rake-task
     cf = CloudFiles::Connection.new(
-        :username => get_stdin("What is your cloudfiles username?"),
-        :api_key => get_stdin("What is your api key?"),
+        :username => get_stdin("What is your cloudfiles username?: "),
+        :api_key => get_stdin("What is your api key?: "),
         :auth_url => "#{cloudfiles_auth}"
     )
     container = cf.container("#{cloudfiles_container}")
@@ -370,9 +371,23 @@ task :cloudfiles do
     cdn_files = container.objects
     local_files = Find.find(pub_dir).map { |i| i }
     local_files[0] = pub_dir.to_s
-    to_upload = local_files.reject { |i| cdn_files.include?(i[pub_dir.to_s.length..-1]) }    
-    #@todo: delete files no longer required
+    to_upload = local_files.reject { |i| cdn_files.include?(i[pub_dir.to_s.length..-1]) }
     #upload files
+    # Extending the method here, I'm checking the md5 hash (etag) on cloudfiles
+    # Against the local md5 hash, if the hash differs, the local will be uploaded.
+    puts "--- Checking for changed files"
+    for f in cdn_files
+        rPath = f[pub_dir.to_s.length..-1]
+        print rPath
+        #    cfMeta = container.object(f).object_metadata
+            #Could also work on modified date here save some cpu cycles on larger files.
+        #    h = Digest::MD5.hexdigest(File.read(rPath))
+        #    if hash != cfMeta.etag
+        #        puts "    +".green + " MD5 Hash differs Uploading -> " + rPath
+        #   end
+        #end
+    end
+
     to_upload.each do |f|
         unless File.directory?(f)
             rPath = f[pub_dir.to_s.length..-1]
