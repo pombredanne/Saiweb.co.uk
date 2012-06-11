@@ -381,9 +381,10 @@ task :cloudfiles do
         cfMeta = container.object(f).object_metadata
         #Could also work on modified date here save some cpu cycles on larger files.
         if File.file?(lPath)
+            
             h = Digest::MD5.hexdigest(File.read(lPath))
-            if hash != cfMeta[:etag]
-                puts "    +".green + " MD5 #{hash} #{cfMeta[:etag]} Hash differs Uploading -> " + lPath
+            if h != cfMeta[:etag]
+                puts "    +".green + " MD5 #{h} #{cfMeta[:etag]} Hash differs Uploading -> " + lPath
             else
                 puts "    -".blue + " MD5 Hash unchanged, Skipping ->" + lPath
             end
