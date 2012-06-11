@@ -377,15 +377,20 @@ task :cloudfiles do
     # Against the local md5 hash, if the hash differs, the local will be uploaded.
     puts "--- Checking for changed files"
     for f in cdn_files
-        rPath = f[pub_dir.to_s.length..-1]
-        print rPath
-        #    cfMeta = container.object(f).object_metadata
-            #Could also work on modified date here save some cpu cycles on larger files.
-        #    h = Digest::MD5.hexdigest(File.read(rPath))
-        #    if hash != cfMeta.etag
-        #        puts "    +".green + " MD5 Hash differs Uploading -> " + rPath
-        #   end
-        #end
+        lPath = "public/#{f}"
+        cfMeta = container.object(f).object_metadata
+        #Could also work on modified date here save some cpu cycles on larger files.
+        if File.file?(lPath)
+            h = Digest::MD5.hexdigest(File.read(lPath))
+            if hash != cfMeta[:etag]
+                puts "    +".green + " MD5 #{hash} #{cfMeta[:etag]} Hash differs Uploading -> " + lPath
+            else
+                puts "    -".blue + " MD5 Hash unchanged, Skipping ->" + lPath
+            end
+            
+        else
+            puts "    !".red + " Found #{f} on CDN but not on local Filesystem"
+        end
     end
 
     to_upload.each do |f|
