@@ -375,25 +375,30 @@ task :cloudfiles do
     #upload files
     # Extending the method here, I'm checking the md5 hash (etag) on cloudfiles
     # Against the local md5 hash, if the hash differs, the local will be uploaded.
-    puts "--- Checking for changed files"
+    puts "--- Checking for changed files, this may take a long time if you have a lot of files"
+    i = 0
+    c = 0
     for f in cdn_files
+        i+=1
         lPath = "public/#{f}"
-        cfMeta = container.object(f).object_metadata
+        begin
+            cfMeta = container.object(f).object_metadata
+        rescue
+            cfMeta = []
+            cfMeta[:etag] = 'error'
+        end
         #Could also work on modified date here save some cpu cycles on larger files.
         if File.file?(lPath)
-            
             h = Digest::MD5.hexdigest(File.read(lPath))
             if h != cfMeta[:etag]
-                puts "    +".green + " MD5 #{h} #{cfMeta[:etag]} Hash differs Uploading -> " + lPath
-            else
-                puts "    -".blue + " MD5 Hash unchanged, Skipping ->" + lPath
+                #push back onto to_upload
+                c+=1
+                to_upload.push(lPath)
             end
-            
-        else
-            puts "    !".red + " Found #{f} on CDN but not on local Filesystem"
         end
+        print "\r\e[OK Checked #{i}/#{cdn_files.count} Changed #{c}"
+        $stdout.flush 
     end
-
     to_upload.each do |f|
         unless File.directory?(f)
             rPath = f[pub_dir.to_s.length..-1]
@@ -405,7 +410,7 @@ task :cloudfiles do
             obj.content_type = t[0].to_s
             fp.close
         end
-    end    
+    end
 end
 
 def ok_failed(condition)
