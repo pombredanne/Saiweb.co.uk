@@ -396,7 +396,7 @@ task :cloudfiles do
                 to_upload.push(lPath)
             end
         end
-        print "\r\e[OK Checked #{i}/#{cdn_files.count} Changed #{c}"
+        print "\rChecked #{i}/#{cdn_files.count} Changed #{c}"
         $stdout.flush 
     end
     to_upload.each do |f|
