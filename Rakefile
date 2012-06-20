@@ -368,48 +368,39 @@ task :cloudfiles do
     )
     container = cf.container("#{cloudfiles_container}")
     pub_dir = "public/"
-    cdn_files = container.objects
     local_files = Find.find(pub_dir).map { |i| i }
     local_files[0] = pub_dir.to_s
-    to_upload = local_files.reject { |i| cdn_files.include?(i[pub_dir.to_s.length..-1]) }
-    #upload files
-    # Extending the method here, I'm checking the md5 hash (etag) on cloudfiles
-    # Against the local md5 hash, if the hash differs, the local will be uploaded.
-    puts "--- Checking for changed files, this may take a long time if you have a lot of files"
     i = 0
     c = 0
-    for f in cdn_files
+    n = 0
+    local_files.each do |f|
         i+=1
-        lPath = "public/#{f}"
-        begin
-            cfMeta = container.object(f).object_metadata
-        rescue
-            cfMeta = []
-            cfMeta[:etag] = 'error'
-        end
-        #Could also work on modified date here save some cpu cycles on larger files.
-        if File.file?(lPath)
-            h = Digest::MD5.hexdigest(File.read(lPath))
-            if h != cfMeta[:etag]
-                #push back onto to_upload
-                c+=1
-                to_upload.push(lPath)
-            end
-        end
-        print "\rChecked #{i}/#{cdn_files.count} Changed #{c}"
-        $stdout.flush 
-    end
-    to_upload.each do |f|
         unless File.directory?(f)
             rPath = f[pub_dir.to_s.length..-1]
-            puts "    +".green + " Uploading -> " + rPath
-            fp = open(f,'r')
-            t = MIME::Types.type_for(f)
-            obj = container.create_object rPath,true
-            obj.write fp
-            obj.content_type = t[0].to_s
-            fp.close
+            begin
+                cfMeta = container.object(rPath).object_metadata
+                h = Digest::MD5.hexdigest(File.read(f))
+                if h != cfMeta[:etag]
+                    c+=1
+                    send = true
+                else
+                    send = false
+                end
+            rescue
+                n+=1
+                send = true
+            end
+            if send == true 
+                puts "    +".green + " Uploading -> " + rPath
+                fp = open(f,'r')
+                t = MIME::Types.type_for(f)
+                obj = container.create_object rPath,true
+                obj.write fp
+                obj.content_type = t[0].to_s
+                fp.close
+            end
         end
+        print "\rChecked #{i}/#{local_files.count} Changed #{c} New #{n}"
     end
 end
 
