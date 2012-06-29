@@ -32,7 +32,7 @@ You'll be concerned with the results (unless you have somehow found a random gro
 
 In my experience no matter how you phrase it; for the general end consumer any conversation on netsec is met with indifference mainly due to a lack of understanding which is frustrating to say the least.
 
-However you can can two directions in this situation berate the stupid luser; or you can attempt to education them, and to that effect the most successfull method is something visual, in the form of a practical demonstration of the point you are trying to get across.
+However you can can two directions in this situation berate the stupid luser; or you can attempt to educate them, and to that effect the most successfull method is something visual, in the form of a practical demonstration of the point you are trying to get across.
 
 Why? It removes the need for the end consumer to attempt to mentally visualise what you are describing; all puns aside this makes it far easier for the end consumer to understand.
 
