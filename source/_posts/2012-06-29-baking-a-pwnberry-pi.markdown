@@ -32,13 +32,15 @@ You'll be concerned with the results (unless you have somehow found a random gro
 
 In my experience no matter how you phrase it; for the general end consumer any conversation on netsec is met with indifference mainly due to a lack of understanding which is frustrating to say the least.
 
-However you can can two directions in this situation berate the stupid luser; or you can attempt to education them, and to that effect the most successfull method is something visual, in that a proactical demonstration of the point you are trying to get across.
+However you can can two directions in this situation berate the stupid luser; or you can attempt to education them, and to that effect the most successfull method is something visual, in the form of a practical demonstration of the point you are trying to get across.
 
-Why? it removes the need for the end consumer to attempt to mentally visualise what you are describing, all puns aside this makes it far easier for the end consumer to understand.
+Why? It removes the need for the end consumer to attempt to mentally visualise what you are describing; all puns aside this makes it far easier for the end consumer to understand.
 
 <strong>Education, got it ... so why the pi?</strong>
 
-Simple really, inexpesnive 600MHZ arm processor that can boot linux and run from a batter pack, the peak consumption I read somewhere is around 700ma, the batter pack in question is a 5000maH which asusming we see a 60% return on a full charge equestes to roughly 4.5hrs run time total.
+Simple really, inexpesnive 600MHZ arm processor that can boot linux and run from a battery pack.
+
+ The peak consumption I read somewhere is around 700ma, the battery pack in question is a 5000maH which asusming we see a 60% return on a full charge equestes to roughly 4.5hrs run time total.
 
 1. Low power consumption
 2. Easily portable
@@ -60,7 +62,7 @@ Couple the above with airdrop-ng for active denial of all wifi in the area, and 
 
 Whilst I don't have a working demo at this time, perhaps some photos of the "build" would suffice?
 
-{% img http://csn.saiweb.co.uk/images/pwnberry-ingredients.jpg %}
+{% img http://cdn.saiweb.co.uk/images/pwnberry-ingredients.jpg %}
 
 Running left to right:
 
@@ -70,7 +72,7 @@ Running left to right:
 3. Raspberry PI
 4. ALFA awus036nh
 
-{% img http://csn.saiweb.co.uk/images/pwnberrypi-weatherproof-box.jpg %}
+{% img http://cdn.saiweb.co.uk/images/pwnberrypi-weatherproof-box.jpg %}
 
 All boxed in the "Premium" container, aka rubber sealed tupperware of doom ...
 
