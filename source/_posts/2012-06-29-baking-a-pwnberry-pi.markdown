@@ -28,7 +28,7 @@ Want to carry out a little experiment?
 
 You'll be concerned with the results (unless you have somehow found a random grouping of people completely aware of their phones function and content at all times ...).
  
-<strong>Briding the gap</strong>
+<strong>Bridging the gap</strong>
 
 In my experience no matter how you phrase it; for the general end consumer any conversation on netsec is met with indifference mainly due to a lack of understanding which is frustrating to say the least.
 
@@ -38,7 +38,7 @@ Why? It removes the need for the end consumer to attempt to mentally visualise w
 
 <strong>Education, got it ... so why the pi?</strong>
 
-Simple really, inexpesnive 600MHZ arm processor that can boot linux and run from a battery pack.
+Simple really, inexpensive 600MHZ arm processor that can boot linux and run from a battery pack.
 
  The peak consumption I read somewhere is around 700ma, the battery pack in question is a 5000maH which asusming we see a 60% return on a full charge equestes to roughly 4.5hrs run time total.
 
@@ -69,8 +69,8 @@ Running left to right:
 1. SD Card
 2. 5000maH usb battery
 3. Bottom of the "weather proof box"
-3. Raspberry PI
-4. ALFA awus036nh
+4. Raspberry PI
+5. ALFA awus036nh
 
 {% img http://cdn.saiweb.co.uk/images/pwnberrypi-weatherproof-box.jpg %}
 
