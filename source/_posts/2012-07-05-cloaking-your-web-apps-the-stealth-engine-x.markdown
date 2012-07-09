@@ -37,21 +37,25 @@ Server: nginx
 
 You could if you are so inclined change the server string in the c code itself 
 
-``` c src/http/ngx_http_header_filter_module.c
+src/http/ngx_http_header_filter_module.c
+
+{% highlight c %}
 ...
 static char ngx_http_server_string[] = "Server: my_modified_server" CRLF;
 static char ngx_http_server_full_string[] = "Server: my_modified_server/release_version" CRLF;
 ...
-```
+{% endhighlight %}
 
 <strong>To err is human ...</strong>
 
 Sometimes standard responses can be used for service fingerprinting as such error documents could still give away your running server version even if you were to edit the header code as per above, again this _could_ be done by modifying the C code to only return "" for each error page, in which case you will need to edit
 
-``` c src/http/ngx_http_special_response.c
+src/http/ngx_http_special_response.c
+
+{% highlight c %}
 ...
 static char ngx_http_error_301_page[] = "";
-```
+{% endhighlight %}
 
 I'm not going to list all of them you should get the idea from the exmaple above; however this is not really required, you can also swap out the default error pages with standard configuration.
 
