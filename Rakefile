@@ -358,6 +358,23 @@ task :setup_github_pages, :repo do |t, args|
   puts "\n---\n## Now you can deploy to #{url} with `rake deploy` ##"
 end
 
+desc "Nuke all files in the .CDN_LOG_FILES container"
+task :cloudfileslognuke do
+    cf = CloudFiles::Connection.new(
+        :username => get_stdin("What is your cloudfiles username?: "),
+        :api_key => get_stdin("What is your api key?: "),
+        :auth_url => "#{cloudfiles_auth}"
+    )
+    container = cf.container(".CDN_ACCESS_LOGS")
+    cdn_files = container.objects
+    cdn_count = cdn_files.count
+    i = 0
+    cdn_files.each do |f|
+        container.delete_object(f)
+        print "\r Removed #{i}/#{cdn_count}"
+        i+=1
+    end
+end
 desc "Use cloudfiles to deploy the blog assets, assumes X-Container-Meta-Web-Index: index.html"
 task :cloudfiles do
     #Adapted from code here: http://jondavidjohn.com/blog/2012/04/sync-static-assets-to-rackpace-cloudfiles-with-a-rake-task
