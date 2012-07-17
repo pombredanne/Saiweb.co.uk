@@ -14,13 +14,13 @@ categories:
 - security 
 ---
 
-First off what is n2n ?
+<strong>First off what is n2n ?</strong>
 
-{% blockquote %}
+`
 n2n is a layer-two peer-to-peer virtual private network (VPN) which allows users to exploit features typical of P2P applications at network instead of application level. This means that users can gain native IP visibility (e.g. two PCs belonging to the same n2n network can ping each other) and be reachable with the same network IP address regardless of the network where they currently belong. In a nutshell, as OpenVPN moved SSL from application (e.g. used to implement the HTTPS protocol) to network protocol, n2n moves P2P from application to network level.
-{% endblockquote %}
+`
 
-So why do I care ?
+<strong>So why do I care ?</strong>
 
 Some services you may wish to run on a public cloud such as Gluster do not have (at the time of writing) internal TLS (read: encryption), this n2n allows you to establish peer to peer vpn connections, wihtout the need of a single routing device (with some assume caveats I will cover shortly).
 
