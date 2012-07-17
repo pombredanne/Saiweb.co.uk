@@ -411,7 +411,7 @@ task :cloudfiles do
                 puts "    +".green + " Uploading -> " + rPath
                 fp = open(f,'r')
                 t = MIME::Types.type_for(f)
-                obj = container.create_object rPath,true
+                obj = container.create_object rPath,false
                 obj.write fp
                 obj.content_type = t[0].to_s
                 fp.close
