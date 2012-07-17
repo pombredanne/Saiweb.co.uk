@@ -8,7 +8,7 @@ require "colored"
 require "uri-handler"
 require "digest/md5"
 
-cloudfiles_container = "saiweb"
+cloudfiles_container = "oneiroi"
 cloudfiles_auth = CloudFiles::AUTH_UK
 
 ## -- Rsync Deploy config -- ##
