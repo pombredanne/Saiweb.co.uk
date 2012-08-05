@@ -5,4 +5,4 @@
 {% else %}
   {% assign author = site.author %}
 {% endif %}
-{% if author %}<span class="byline author vcard">Posted by {% if post.author_googleplus %}<a rel="author" href="https://plus.google.com/u/0/117561367404774597588?rel=author">{% endif %}<span class="fn">{{ author }}</span>{% if post.author_googleplus %}</a>{% endif %}</span>{% endif %}
+{% if author %}<span class="byline author vcard">Posted by {% if post.author_googleplus %}<a rel="author" href="https://plus.google.com/u/0/{{ author_googleplus }}?rel=author">{% endif %}<span class="fn">{{ author }}</span>{% if post.author_googleplus %}</a>{% endif %}</span>{% endif %}
