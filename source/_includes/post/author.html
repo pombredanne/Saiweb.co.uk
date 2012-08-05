@@ -5,4 +5,12 @@
 {% else %}
   {% assign author = site.author %}
 {% endif %}
-{% if author %}<span class="byline author vcard">Posted by {% if post.author_googleplus %}<a rel="author" href="https://plus.google.com/u/0/{{ author_googleplus }}?rel=author">{% endif %}<span class="fn">{{ author }}</span>{% if post.author_googleplus %}</a>{% endif %}</span>{% endif %}
+{% if post.author_googleplus %}
+  {% assign gplus = post_googleplus %}
+{% elsif page.author_googpleplus %}
+  {% assign gplus = page.author_googleplus %}
+{% else %}
+  {% assign gplus = site.author_googleplus %}
+{% endif %}
+
+{% if author %}<span class="byline author vcard">Posted by {% if gplus  %}<a rel="author" href="https://plus.google.com/u/0/{{ gplus }}?rel=author">{% endif %}<span class="fn">{{ author }}</span>{% if gplus %}</a>{% endif %}</span>{% endif %}
