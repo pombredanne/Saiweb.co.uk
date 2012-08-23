@@ -11,7 +11,7 @@ categories:
 
 Yeh yeh ... so it is true I have some quite [vocal opinions](http://saiweb.co.uk/hosting/cloud-hosting-my-views/), on all this cloud marketing fluff.
 
-That said it has some great potential, if you've been following my open source contributions and posts you'll known I have an special affinity for [Openstack](http://openstack.org), [Aeolus](http://aeolusproject.org/), and of course [Opennebula](htpp://opennebula.org/).
+That said it has some great potential, if you've been following my open source contributions and posts you'll known I have an special affinity for [Openstack](http://openstack.org), [Aeolus](http://aeolusproject.org/), and of course [Opennebula](http://opennebula.org/).
 
 As such I've taken to jumping in "feet first", what better way eh?
 
