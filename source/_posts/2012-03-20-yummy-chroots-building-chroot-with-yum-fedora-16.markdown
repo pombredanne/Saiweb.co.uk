@@ -13,7 +13,7 @@ We're going to build a minimal chroot directory for Fedora 16 using yum and rpm,
 Credit goes [http://prefetch.net/articles/yumchrootlinux.html](Here) for a great article getting me started on this.
 
 As root:
-{% highligh bash %}
+{% highlight bash %}
 mkdir --mode=700 -p /chroot/chrootuser
 rpm --root /chroot/chrootuser --initdb
 yumdownload --destdir=/var/tmp fedora-release
