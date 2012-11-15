@@ -148,7 +148,7 @@ Again warnings are for the moment at least safe to ignore.
 
 <h3>Keystone</h3>
 
-{% hgihlight sql %}
+{% highlight sql %}
 create database keystone;
 grant all privileges on keystone.* to "keystone"@"localhost" identified by "your_keystone_password";
 {% end highlight %}
