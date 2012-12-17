@@ -11,7 +11,7 @@ categories:
 wordpress_url: http://saiweb.co.uk/general/boeing-is-a-chargin-their-lazors
 comments: true
 ---
-<img src="http://cdn.saiweb.co.uk/uploads/2009/03/laserjetmissilefeb.jpg" alt="laserjetmissilefeb" title="laserjetmissilefeb" width="445" height="355" class="aligncenter size-full wp-image-584" />
+<img src="http://blog.oneiroi.co.uk/uploads/2009/03/laserjetmissilefeb.jpg" alt="laserjetmissilefeb" title="laserjetmissilefeb" width="445" height="355" class="aligncenter size-full wp-image-584" />
 
 Yup, lasers mounted on planes, not snakes on a plane, lasers.
 

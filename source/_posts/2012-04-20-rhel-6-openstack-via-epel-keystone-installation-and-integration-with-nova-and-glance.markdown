@@ -7,7 +7,7 @@ categories:
 - openstack
 ---
 
-{% img http://cdn.saiweb.co.uk/openstack-cloud-software-vertical-small.png %}
+{% img http://blog.oneiroi.co.uk/openstack-cloud-software-vertical-small.png %}
 
 In this post I follow on from [Setting up Nova and Glance](http://saiweb.co.uk/openstack/rhel-6-openstack-via-epel-nova-and-glance-on-kvm/), and now moving installing and Integrating keystone.
 I'd first like to [give credit to IBM developerWorks](https://www.ibm.com/developerworks/mydeveloperworks/wikis/home/wiki/OpenStack?lang=en#configure-nova-api) the guys in #openstack @ freenode IRC, and [Psycle Interactive](http://psycle.com) without whom I would not of been able to complete this write up.

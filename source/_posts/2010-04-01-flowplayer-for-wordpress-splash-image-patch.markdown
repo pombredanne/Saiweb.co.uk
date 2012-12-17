@@ -11,7 +11,7 @@ categories:
 wordpress_url: http://saiweb.co.uk/flowplayer/flowplayer-for-wordpress-splash-image-patch
 comments: true
 ---
-A user contributed patch from James Partington can be found <a href='http://cdn.saiweb.co.uk/uploads/2010/04/Flowplayer-WP-patch.txt'>Here</a>
+A user contributed patch from James Partington can be found <a href='http://blog.oneiroi.co.uk/uploads/2010/04/Flowplayer-WP-patch.txt'>Here</a>
 
 When applied you can specify a splash image to user and your media by seperating them with a "|"
 
