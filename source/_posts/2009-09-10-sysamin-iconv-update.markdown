@@ -22,8 +22,8 @@ Today I had need to convert a 1.3GB sql file, needles to say the script was cras
 
 As such I have now completely re-written the function it now processes the file in 1kb 'chunks', moving the load to the CPU, this process is now very cpu intensive the the memory overhead is minimal (during test processed the 1.3GB file using 113kb of memory!!!).
 
-[FLOWPLAYER=http://cdn.saiweb.co.uk/uploads/2009/09/sysadmin-iconv.mp4,487,417]
+[FLOWPLAYER=http://blog.oneiroi.co.uk/uploads/2009/09/sysadmin-iconv.mp4,487,417]
 
 Also I have now added BOM (Byte order mark) detection:
 
-[FLOWPLAYER=http://cdn.saiweb.co.uk/uploads/2009/09/sysadmin_oconv_bom.mp4,515,473]
+[FLOWPLAYER=http://blog.oneiroi.co.uk/uploads/2009/09/sysadmin_oconv_bom.mp4,515,473]

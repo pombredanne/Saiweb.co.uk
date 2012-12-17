@@ -26,4 +26,4 @@ If I have the time I will be getting a could of cuda shell projects out the door
 <strong>
 UPDATE:</strong> Despite a quick playing during my lunch I can't get CUDA example compiling ... 
 
-[FLOWPLAYER=http://cdn.saiweb.co.uk/uploads/2009/01/cuda_not_working.mp4,534,633]
+[FLOWPLAYER=http://blog.oneiroi.co.uk/uploads/2009/01/cuda_not_working.mp4,534,633]

@@ -151,7 +151,7 @@ Doing a frame cap.
 Capturing 802.11 frames on en1.
 {% endhighlight %}
 
-You will see your airport icon changes to <a href="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://cdn.saiweb.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
+You will see your airport icon changes to <a href="http://blog.oneiroi.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png"><img src="http://blog.oneiroi.co.uk/uploads/2011/09/Screen-shot-2011-09-23-at-11.20.28.png" alt="" title="Screen shot 2011-09-23 at 11.20.28" width="45" height="24" class="aligncenter size-full wp-image-1126" /></a> now hit ctrl+c to stop the cap
 
 {% highlight bash %}
 ^CSession saved to /tmp/airportSniff813ZrA.cap.

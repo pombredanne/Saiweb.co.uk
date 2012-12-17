@@ -38,7 +38,7 @@ grep kernel /var/log/messages | awk '{print $9}' | sed 's/SRC=//' | uniq -c | so
 390 173.224.217.41
 {% endhighlight %}
 
-A complete log can be found here: <a href="http://www.saiweb.co.uk/psychz-260710/iptables.log">iptables.log</a>, and a whois can be found here: <a href="http://cdn.saiweb.co.uk/uploads/2010/08/whois.txt">whois.txt</a>
+A complete log can be found here: <a href="http://www.saiweb.co.uk/psychz-260710/iptables.log">iptables.log</a>, and a whois can be found here: <a href="http://blog.oneiroi.co.uk/uploads/2010/08/whois.txt">whois.txt</a>
 
 Disclosure steps taken:
 <ol>

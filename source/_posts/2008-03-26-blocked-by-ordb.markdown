@@ -26,6 +26,6 @@ comments: true
 <p><a href="http://www.msexchange.org/tutorials/Blacklist_Support_Exchange_2003.html">http://www.msexchange.org/tutorials/Blacklist_Support_Exchange_2003.html </a></p>
 <p>Remove ORDB! (see below)</p>
 <p>(UPDATE: OR remove wirehub: see new post)</p>
-<p><img src="http://cdn.saiweb.co.uk/uploads/2008/03/ordb.JPG" alt="ordb.JPG" /></p>
+<p><img src="http://blog.oneiroi.co.uk/uploads/2008/03/ordb.JPG" alt="ordb.JPG" /></p>
 
 <a href="http://it.slashdot.org/article.pl?sid=08/03/25/2124224">Slashdot article</a>

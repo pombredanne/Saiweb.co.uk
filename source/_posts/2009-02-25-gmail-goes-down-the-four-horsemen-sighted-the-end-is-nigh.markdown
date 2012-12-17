@@ -21,6 +21,6 @@ So fair play to google, and I hope they sort the issues soon.
 
 As for the whiners crying over downtime in their free beta server (And I mean those not paying for if but demanding compensation for loss of their free service ... I mean WTF???) to paraphrase <a href="http://www.escapistmagazine.com/videos/view/zero-punctuation">Yahtzee</a>, The only help they need is the help that requires taking them behind the garden shed and tearfully putting both barrels through their oblivious little faces ... 
 
-<img src="http://cdn.saiweb.co.uk/uploads/2009/02/2008-12-31_1346.png" alt="2008-12-31_1346" title="2008-12-31_1346" width="223" height="150" class="alignnone size-full wp-image-575" />
+<img src="http://blog.oneiroi.co.uk/uploads/2009/02/2008-12-31_1346.png" alt="2008-12-31_1346" title="2008-12-31_1346" width="223" height="150" class="alignnone size-full wp-image-575" />
 
 

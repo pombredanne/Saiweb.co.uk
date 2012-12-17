@@ -8,7 +8,7 @@ categories:
 - openstack 
 ---
 
-{% img http://cdn.saiweb.co.uk/openstack-cloud-software-vertical-small.png %}
+{% img http://blog.oneiroi.co.uk/openstack-cloud-software-vertical-small.png %}
 In this post I will cover getting openstack nova and glance services installed from EPEL and configured to the point where an image can be started, this assumes
 
 1. You have a mysql instance installed and running

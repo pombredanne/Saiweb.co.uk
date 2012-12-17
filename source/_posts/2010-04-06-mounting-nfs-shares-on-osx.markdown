@@ -30,7 +30,7 @@ Where aaa.bbb.ccc.ddd is the IP or FQDN of your NFS server, this command will sh
 sudo mount -t ntfs aaa.bbb.ccc.ddd:/exported/path ~/Desktop/nfs_folder
 {% endhighlight %}
 
-If you look on your desktop you will now see that the folder icon has changed to an aliased drive icon <a href="http://cdn.saiweb.co.uk/uploads/2010/04/2010-04-06_1615.png"><img src="http://cdn.saiweb.co.uk/uploads/2010/04/2010-04-06_1615.png" alt="alias drive icon" title="mac ALIAS drive" width="35" height="40" class="alignnone size-full wp-image-845" /></a>
+If you look on your desktop you will now see that the folder icon has changed to an aliased drive icon <a href="http://blog.oneiroi.co.uk/uploads/2010/04/2010-04-06_1615.png"><img src="http://blog.oneiroi.co.uk/uploads/2010/04/2010-04-06_1615.png" alt="alias drive icon" title="mac ALIAS drive" width="35" height="40" class="alignnone size-full wp-image-845" /></a>
 
 <strong>
 NOTE:</strong> These changes will not persist through a reboot, I have not yet found a way of doing this short of some apple / automator script to remount the drives on startup.
